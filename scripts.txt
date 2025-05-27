@@ -1,0 +1,403 @@
+```python
+import bpy
+import bmesh
+import math
+from mathutils import Vector
+
+# --- Scene Setup ---
+def setup_scene():
+    # Clear existing objects
+    bpy.ops.object.select_all(action='SELECT')
+    bpy.ops.object.delete(use_hollow=False)
+
+    # Set render engine to Cycles
+    bpy.context.scene.render.engine = 'CYCLES'
+    bpy.context.scene.cycles.feature_set = 'SUPPORTED'
+    bpy.context.scene.cycles.samples = 128 # Reasonable samples for initial render
+    bpy.context.scene.cycles.max_bounces = 8
+    bpy.context.scene.cycles.diffuse_bounces = 4
+    bpy.context.scene.cycles.glossy_bounces = 4
+    bpy.context.scene.cycles.transmission_bounces = 8
+    bpy.context.scene.cycles.volume_bounces = 4
+
+    # Set unit system to Metric (Blender default is usually fine, but explicit is good)
+    bpy.context.scene.unit_settings.system = 'METRIC'
+    bpy.context.scene.unit_settings.scale_length = 1.0
+
+# --- World Settings (Sky & Atmosphere) ---
+def setup_world():
+    world = bpy.context.scene.world
+    if not world:
+        world = bpy.data.worlds.new("RainyWorld")
+        bpy.context.scene.world = world
+
+    world.use_nodes = True
+    nodes = world.node_tree.nodes
+    links = world.node_tree.links
+
+    # Clear existing nodes
+    for node in nodes:
+        nodes.remove(node)
+
+    # Add background node
+    background_node = nodes.new(type='ShaderNodeBackground')
+    background_node.inputs[0].default_value = (0.266, 0.333, 0.4, 1) # Dark, desaturated blue-gray (#445566)
+    background_node.location = (-300, 0)
+
+    # Add volume scatter node
+    volume_scatter_node = nodes.new(type='ShaderNodeVolumeScatter')
+    volume_scatter_node.inputs['Density'].default_value = 0.02 # Low density
+    volume_scatter_node.inputs['Color'].default_value = (0.4, 0.466, 0.533, 1) # Slightly lighter blue-gray (#667788)
+    volume_scatter_node.location = (-100, -150)
+
+    # Add World Output node
+    world_output_node = nodes.new(type='ShaderNodeOutputWorld')
+    world_output_node.location = (200, 0)
+
+    # Link nodes
+    links.new(background_node.outputs['Background'], world_output_node.inputs['Surface'])
+    links.new(volume_scatter_node.outputs['Volume'], world_output_node.inputs['Volume'])
+
+# --- Materials ---
+def create_ground_material():
+    mat_name = "Wet_Ground_Material"
+    mat = bpy.data.materials.get(mat_name)
+    if mat is None:
+        mat = bpy.data.materials.new(name=mat_name)
+    mat.use_nodes = True
+    nodes = mat.node_tree.nodes
+    links = mat.node_tree.links
+
+    # Clear existing nodes
+    for node in nodes:
+        nodes.remove(node)
+
+    # Add Principled BSDF shader
+    principled_bsdf = nodes.new(type='ShaderNodeBsdfPrincipled')
+    principled_bsdf.location = (200, 0)
+    principled_bsdf.inputs['Base Color'].default_value = (0.2, 0.2, 0.2, 1) # Dark desaturated gray-brown (#333333 to #444444)
+    principled_bsdf.inputs['Roughness'].default_value = 0.85 # High roughness for wet ground
+
+    # Add Noise Texture for Normal Map
+    noise_texture = nodes.new(type='ShaderNodeTexNoise')
+    noise_texture.location = (-400, 150)
+    noise_texture.inputs['Scale'].default_value = 7.0 # Scale 5-10
+    noise_texture.inputs['Detail'].default_value = 5.0
+    noise_texture.inputs['Distortion'].default_value = 0.5
+
+    # Add Bump node
+    bump_node = nodes.new(type='ShaderNodeBump')
+    bump_node.location = (-100, 150)
+    bump_node.inputs['Strength'].default_value = 0.15 # Strength 0.1-0.2
+    links.new(noise_texture.outputs['Factor'], bump_node.inputs['Height'])
+    links.new(bump_node.outputs['Normal'], principled_bsdf.inputs['Normal'])
+
+    # Add Material Output
+    material_output = nodes.new(type='ShaderNodeOutputMaterial')
+    material_output.location = (400, 0)
+    links.new(principled_bsdf.outputs['BSDF'], material_output.inputs['Surface'])
+
+    # Enable true displacement for Cycles
+    mat.cycles.displacement_method = 'DISPLACEMENT' # Or 'DISPLACEMENT_AND_BUMP'
+    
+    # Add displacement (optional, but requested if high vertex count)
+    displacement_node = nodes.new(type='ShaderNodeDisplacement')
+    displacement_node.location = (-100, -150)
+    displacement_node.inputs['Scale'].default_value = 0.08 # Scale 0.05-0.1
+    links.new(noise_texture.outputs['Factor'], displacement_node.inputs['Height'])
+    links.new(displacement_node.outputs['Displacement'], material_output.inputs['Displacement'])
+
+    return mat
+
+def create_puddle_material():
+    mat_name = "Rain_Puddle_Material"
+    mat = bpy.data.materials.get(mat_name)
+    if mat is None:
+        mat = bpy.data.materials.new(name=mat_name)
+    mat.use_nodes = True
+    nodes = mat.node_tree.nodes
+    links = mat.node_tree.links
+
+    # Clear existing nodes
+    for node in nodes:
+        nodes.remove(node)
+
+    # Add Principled BSDF shader
+    principled_bsdf = nodes.new(type='ShaderNodeBsdfPrincipled')
+    principled_bsdf.location = (200, 0)
+    principled_bsdf.inputs['Base Color'].default_value = (0.15, 0.15, 0.15, 1) # Slightly darker than ground
+    principled_bsdf.inputs['Roughness'].default_value = 0.2 # Lower roughness (0.1-0.3)
+    principled_bsdf.inputs['IOR'].default_value = 1.333 # Water IOR
+    principled_bsdf.inputs['Transmission'].default_value = 1.0 # Fully transparent
+
+    # Add Noise Texture for subtle ripples (instead of "inverting" ground normal map)
+    noise_texture_puddle = nodes.new(type='ShaderNodeTexNoise')
+    noise_texture_puddle.location = (-400, 150)
+    noise_texture_puddle.inputs['Scale'].default_value = 20.0
+    noise_texture_puddle.inputs['Detail'].default_value = 8.0
+    noise_texture_puddle.inputs['Distortion'].default_value = 0.0 # No distortion for calmer water
+
+    # Add Bump node for subtle ripples
+    bump_node_puddle = nodes.new(type='ShaderNodeBump')
+    bump_node_puddle.location = (-100, 150)
+    bump_node_puddle.inputs['Strength'].default_value = 0.02 # Very subtle
+    links.new(noise_texture_puddle.outputs['Factor'], bump_node_puddle.inputs['Height'])
+    links.new(bump_node_puddle.outputs['Normal'], principled_bsdf.inputs['Normal'])
+
+    # Add Material Output
+    material_output = nodes.new(type='ShaderNodeOutputMaterial')
+    material_output.location = (400, 0)
+    links.new(principled_bsdf.outputs['BSDF'], material_output.inputs['Surface'])
+
+    return mat
+
+def create_rain_droplet_material():
+    mat_name = "Rain_Droplet_Material"
+    mat = bpy.data.materials.get(mat_name)
+    if mat is None:
+        mat = bpy.data.materials.new(name=mat_name)
+    mat.use_nodes = True
+    nodes = mat.node_tree.nodes
+    links = mat.node_tree.links
+
+    # Clear existing nodes
+    for node in nodes:
+        nodes.remove(node)
+
+    principled_bsdf = nodes.new(type='ShaderNodeBsdfPrincipled')
+    principled_bsdf.location = (0, 0)
+    principled_bsdf.inputs['Base Color'].default_value = (0.8, 0.9, 1.0, 0.5) # Slight bluish tint, semi-transparent
+    principled_bsdf.inputs['Roughness'].default_value = 0.05
+    principled_bsdf.inputs['IOR'].default_value = 1.333
+    principled_bsdf.inputs['Transmission'].default_value = 1.0
+
+    material_output = nodes.new(type='ShaderNodeOutputMaterial')
+    material_output.location = (200, 0)
+    links.new(principled_bsdf.outputs['BSDF'], material_output.inputs['Surface'])
+
+    return mat
+
+# --- Geometry Creation ---
+def create_ground_plane(size=40, subdivisions=6):
+    bpy.ops.mesh.primitive_plane_add(size=size, enter_editmode=False, location=(0, 0, 0))
+    ground_obj = bpy.context.object
+    ground_obj.name = "Ground_Plane"
+
+    # Add Subdivision Surface Modifier
+    bpy.ops.object.modifier_add(type='SUBSURF')
+    subdiv_mod = ground_obj.modifiers[0]
+    subdiv_mod.levels = subdivisions # For viewport
+    subdiv_mod.render_levels = subdivisions # For render (e.g., 6 levels gives 409600 faces for 40x40 plane)
+
+    # Assign material
+    ground_mat = create_ground_material()
+    if ground_obj.data.materials:
+        ground_obj.data.materials[0] = ground_mat
+    else:
+        ground_obj.data.materials.append(ground_mat)
+
+    return ground_obj
+
+def create_puddles(ground_obj):
+    puddle_mat = create_puddle_material()
+    puddle_data = [
+        {"location": (5, 5, -0.01), "scale": (2, 3, 1), "rotation": (0, 0, math.radians(25))},
+        {"location": (-7, 2, -0.01), "scale": (3, 2, 1), "rotation": (0, 0, math.radians(-15))},
+        {"location": (0, -6, -0.01), "scale": (2.5, 2.5, 1), "rotation": (0, 0, math.radians(0))},
+        {"location": (10, -10, -0.01), "scale": (1.5, 2, 1), "rotation": (0, 0, math.radians(45))},
+    ]
+
+    puddle_meshes = []
+    for i, p_data in enumerate(puddle_data):
+        bpy.ops.mesh.primitive_circle_add(radius=1.0, vertices=32, fill_type='NGON', location=(0,0,0))
+        puddle_obj = bpy.context.object
+        puddle_obj.name = f"Puddle_{i+1}"
+        puddle_obj.location = p_data["location"]
+        puddle_obj.scale = p_data["scale"]
+        puddle_obj.rotation_euler = p_data["rotation"]
+
+        if puddle_obj.data.materials:
+            puddle_obj.data.materials[0] = puddle_mat
+        else:
+            puddle_obj.data.materials.append(puddle_mat)
+        puddle_meshes.append(puddle_obj)
+        
+        # Ensure puddles are slightly below the ground surface
+        # A small negative Z offset ensures it's "sunken"
+        puddle_obj.location.z = p_data["location"][2] 
+    
+    return puddle_meshes
+
+
+def create_rain_droplet_object():
+    mat = create_rain_droplet_material()
+    
+    # Create a small elongated cylinder
+    bpy.ops.mesh.primitive_cylinder_add(radius=0.01, depth=0.1, vertices=8, location=(0,0,0))
+    droplet_obj = bpy.context.object
+    droplet_obj.name = "Rain_Droplet_Mesh"
+    
+    # Apply rotation so it falls straight
+    droplet_obj.rotation_euler.x = math.radians(90)
+
+    # Apply material
+    if droplet_obj.data.materials:
+        droplet_obj.data.materials[0] = mat
+    else:
+        droplet_obj.data.materials.append(mat)
+        
+    droplet_obj.hide_render = True # Hide original object, only particles render it
+    droplet_obj.hide_viewport = True
+
+    return droplet_obj
+
+# --- Lighting ---
+def setup_lighting():
+    # Subtle Sun Lamp
+    bpy.ops.object.light_add(type='SUN', location=(10, 20, 30))
+    sun_light = bpy.context.object
+    sun_light.name = "Subtle_Sun_Light"
+    sun_light.data.color = (1.0, 0.95, 0.9, 1) # Very pale yellow
+    sun_light.data.energy = 0.2 # Very low strength (0.1-0.3)
+    sun_light.data.angle = math.radians(7) # Soft shadows (5-10 degrees)
+    sun_light.rotation_euler = (math.radians(35), math.radians(-30), math.radians(135)) # Angle for directional lighting
+
+    # No other explicit lights needed, relying on World for fill light.
+
+# --- Rain Particle System ---
+def create_rain_particle_system(droplet_obj, ground_obj_size=40):
+    # Create emitter plane above the scene
+    emitter_size = ground_obj_size * 1.5 # Larger than ground to cover entire area
+    bpy.ops.mesh.primitive_plane_add(size=emitter_size, enter_editmode=False, location=(0, 0, emitter_size/2)) # Placed high up
+    emitter_obj = bpy.context.object
+    emitter_obj.name = "Rain_Emitter_Plane"
+    emitter_obj.hide_render = True # Don't render the emitter plane itself
+    emitter_obj.hide_viewport = True
+
+    # Add particle system
+    bpy.context.view_layer.objects.active = emitter_obj
+    bpy.ops.object.modifier_add(type='PARTICLE_SYSTEM')
+    
+    psys = emitter_obj.particle_systems[0]
+    psys_settings = psys.settings
+    
+    psys_settings.type = 'EMITTER'
+    psys_settings.emit_from = 'VOLUME' # Emit from volume for more even distribution
+    psys_settings.distribution = 'RAND' # Random distribution
+    
+    psys_settings.frame_start = 1
+    psys_settings.frame_end = 250 # Adjust as needed for animation length
+    psys_settings.lifetime = 20 # Relatively short (10-30 frames)
+    psys_settings.count = 20000 # Several thousands (start with 10k-20k and adjust)
+    
+    # Velocity
+    psys_settings.normal_factor = 0.0 # No normal velocity
+    psys_settings.object_velocity_factor = 0.0
+    psys_settings.factor_random = 0.0
+    psys_settings.effector_weights.gravity = 0.0 # Control motion purely by initial velocity
+    
+    psys_settings.velocity_factor = 1.0 # Overall velocity multiplier
+    psys_settings.velocity_random = 0.05 # Add some random X/Y velocity
+    
+    # Custom initial velocity
+    psys_settings.normal_factor = 0.0
+    psys_settings.tangent_factor = 0.0
+    psys_settings.random_factor = 0.0 # For the initial velocity of particles
+
+    # Set initial velocity directly in particle settings
+    # This requires accessing the "Initial Velocity" panel attributes which are not directly exposed
+    # via typical psys_settings attributes. For a script, we set the overall velocity properties
+    # and then rely on gravity if explicit Z velocity is needed, or force fields.
+    # A simpler way to achieve downward motion without gravity is to set `velocity_factor` high
+    # and then apply an initial Z velocity via a force field or by rotating the emitter.
+    # For a clean downward motion, let's use a subtle negative Z velocity component.
+    
+    # A cleaner approach for direct velocity:
+    psys_settings.factor_random = 0.0 # No random emission velocity
+    psys_settings.normal_factor = 0.0 # No normal velocity
+    psys_settings.object_align_factor[2] = -1.0 # Align along Z-axis, pointing down (might not work directly as a velocity)
+    
+    # Best way for constant downward velocity: use force field or an initial velocity setting.
+    # Since bpy.ops.particle.set_initial_velocity is not a public operator,
+    # we'll use `bpy.context.scene.gravity` and a strong `lifetime` or apply velocity through psys_settings.
+    
+    # Let's use negative Z velocity and enable physics for a slight fall.
+    psys_settings.effector_weights.gravity = 0.0 # Disable Blender's gravity for precise control
+    
+    # Set the initial velocity directly for X, Y, Z
+    # These attributes are usually not directly accessible as `psys_settings.object_velocity_factor` for direct XYZ
+    # instead, `velocity_factor` controls the speed of the normal emission.
+    # For a global downward velocity, we can either use `bpy.context.scene.gravity` or
+    # ensure the emitter's Z velocity is negative and `object_velocity_factor` is set.
+    # Or, the simplest: use `velocity_factor` with the emitter rotated, or just `normal_factor` with emitter's normal pointing down.
+    
+    # For simple downward rain, normal_factor combined with emission from faces/volume can work.
+    # However, for pure negative Z velocity, a `Force` field might be more robust for long scripts.
+    # Let's set normal_factor and then apply a -Z effect using a negative normal or rotation.
+    
+    # Let's try adjusting the tangent velocity for direction
+    psys_settings.velocity_factor = 10.0 # Overall speed of rain
+    psys_settings.object_velocity_factor = 0.0 # No velocity inherited from emitter movement
+    
+    # To make it fall, we need a negative Z component.
+    # In particle systems, `normal_factor` typically pushes particles along the face normal.
+    # A simpler trick: set the emitter's rotation or use a force field.
+    
+    # For the simplest: `normal_factor` and then rotate the emitter 180 degrees around X.
+    # emitter_obj.rotation_euler.x = math.radians(180) # To make normals point down
+    # psys_settings.normal_factor = 10.0 # Speed
+    
+    # A better, more direct way:
+    psys_settings.velocity_factor = 15.0  # Speed
+    psys_settings.normal_factor = 0.0 # No normal velocity
+    psys_settings.tangent_phase = 0.0
+    psys_settings.tangent_v = Vector((0, 0, -1)) # Direct negative Z velocity component
+    psys_settings.tangent_factor = 1.0 # Use this vector
+
+    psys_settings.random_factor = 0.1 # Add some randomness to velocity for variation
+    
+    # Render settings
+    psys_settings.render_type = 'OBJECT'
+    psys_settings.instance_object = droplet_obj
+    psys_settings.use_render_emitter = False
+    
+    # Viewport display (for better visibility)
+    psys_settings.display_type = 'RENDERED' # Show as objects in viewport
+    
+    return emitter_obj
+
+# --- Camera ---
+def setup_camera(location=(0, -20, 10), rotation=(math.radians(70), 0, math.radians(0))):
+    bpy.ops.object.camera_add(location=location)
+    camera = bpy.context.object
+    camera.name = "Scene_Camera"
+    camera.rotation_euler = rotation
+    bpy.context.scene.camera = camera
+
+    # Set camera focal length for perspective
+    camera.data.lens = 50 # Standard lens
+
+# --- Main function to assemble the scene ---
+def generate_rain_scene():
+    setup_scene()
+    setup_world()
+    
+    ground_plane = create_ground_plane(size=40, subdivisions=6)
+    create_puddles(ground_plane)
+    
+    setup_lighting()
+    
+    rain_droplet_mesh = create_rain_droplet_object()
+    create_rain_particle_system(rain_droplet_mesh, ground_obj_size=40)
+    
+    setup_camera()
+    
+    # Update scene for changes to take effect in viewport
+    bpy.context.view_layer.update()
+    print("Rain-soaked scene generated successfully!")
+
+# Run the generation function
+if __name__ == "__main__":
+    generate_rain_scene()
+
+```
