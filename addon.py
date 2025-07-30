@@ -376,21 +376,36 @@ class BlenderMCPServer:
             return {"error": str(e)}
 
     def execute_code(self, code):
-        """Execute arbitrary Blender Python code"""
-        # This is powerful but potentially dangerous - use with caution
+        import sys
+        import traceback
+        namespace = {"bpy": bpy}
+        capture_buffer = io.StringIO()
+        error_buffer = io.StringIO()
         try:
-            # Create a local namespace for execution
-            namespace = {"bpy": bpy}
-
-            # Capture stdout during execution, and return it as result
-            capture_buffer = io.StringIO()
+            from contextlib import redirect_stdout, redirect_stderr
+        except ImportError:
+            # Blender <3.1 might not have redirect_stderr, handle this gracefully
+            class DummyRedirect:
+                def __enter__(self): return self
+                def __exit__(self, exc_type, exc_val, exc_tb): pass
+            redirect_stderr = DummyRedirect
+        try:
             with redirect_stdout(capture_buffer):
-                exec(code, namespace)
-
-            captured_output = capture_buffer.getvalue()
-            return {"executed": True, "result": captured_output}
+                with redirect_stderr(error_buffer):
+                    exec(code, namespace)
+            output = capture_buffer.getvalue()
+            errors = error_buffer.getvalue()
+            return {"executed": True, "stdout": output, "stderr": errors}
         except Exception as e:
-            raise Exception(f"Code execution error: {str(e)}")
+            output = capture_buffer.getvalue()
+            tb = traceback.format_exc()
+            return {
+                "executed": False,
+                "stdout": output,
+                "stderr": tb
+            }
+
+
 
 
 
