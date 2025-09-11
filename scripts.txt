@@ -1,373 +1,122 @@
+```python
 import bpy
 import math
-import random
+import os
 
-def clean_scene():
-    """
-    Deletes all objects, materials, and data from the current scene.
-    """
-    if bpy.ops.object.mode_set.poll():
-        bpy.ops.object.mode_set(mode='OBJECT')
-    
-    # Deselect all
-    bpy.ops.object.select_all(action='DESELECT')
-    
-    # Select all objects in the scene
-    bpy.ops.object.select_all(action='SELECT')
-    
-    # Delete all selected objects
-    bpy.ops.object.delete()
-    
-    # Purge orphan data
-    bpy.ops.outliner.orphans_purge(do_local_ids=True, do_linked_ids=True, do_recursive=True)
-
-def setup_renderer():
-    """
-    Configures the renderer settings for a high-quality result.
-    """
-    scene = bpy.context.scene
-    scene.render.engine = 'CYCLES'
-    
-    # Attempt to set to GPU compute
-    try:
-        scene.cycles.device = 'GPU'
-        prefs = bpy.context.preferences.addons['cycles'].preferences
-        prefs.compute_device_type = 'CUDA' # or 'OPTIX', 'HIP', 'METAL'
-        prefs.get_devices()
-        for device in prefs.devices:
-            if device.type == 'CUDA' or device.type == 'OPTIX': # Enable NVIDIA GPUs
-                device.use = True
-    except (TypeError, AttributeError):
-        print("GPU rendering not available or failed to set. Falling back to CPU.")
-        scene.cycles.device = 'CPU'
-
-    scene.cycles.samples = 128
-    scene.cycles.use_denoising = True
-    scene.frame_end = 250 # Set scene length for particle animation
+# Define constants and variables
+GROUND_COLOR = (0.2, 0.2, 0.2, 1)
+SKY_COLOR = (0.3, 0.3, 0.4, 1)
+RAINDROP_COLOR = (0.1, 0.1, 0.5, 0.5)
+FOG_COLOR = (0.5, 0.5, 0.6, 1)
+PUDDLE_ROUGHNESS = 0.1
+GROUND_ROUGHNESS = 0.5
+SUBDIVISION_LEVEL = 3
 
 def create_ground():
-    """
-    Creates the subdivided and displaced ground plane with a wet material.
-    """
-    # I. Ground Plane Geometry
-    bpy.ops.mesh.primitive_plane_add(size=40, enter_editmode=True, align='WORLD', location=(0, 0, 0))
+    # Create ground plane
+    bpy.ops.mesh.primitive_plane_add(size=50, enter_editmode=False, location=(0, 0, 0))
+    ground = bpy.context.active_object
     
-    # Subdivide
-    # 100x100 faces requires 99 cuts
-    bpy.ops.mesh.subdivide(number_cuts=99)
-    bpy.ops.object.mode_set(mode='OBJECT')
+    # Create material
+    ground_mat = bpy.data.materials.new("RainSoakedGround")
+    ground_mat.use_nodes = True
+    bsdf = ground_mat.node_tree.nodes["Principled BSDF"]
+    bsdf.inputs["Base Color"].default_value = GROUND_COLOR
+    bsdf.inputs["Roughness"].default_value = GROUND_ROUGHNESS
     
-    ground_plane = bpy.context.object
-    ground_plane.name = "Ground"
-    
-    # Apply smooth shading
-    bpy.ops.object.shade_smooth()
-
-    # II. Displacement Modifier
-    disp_mod = ground_plane.modifiers.new(name="Displacement", type='DISPLACE')
-    
-    # Create displacement texture
-    disp_tex = bpy.data.textures.new(name="GroundDisplacementTexture", type='CLOUDS')
-    
-    # Cloud Texture Details (Interpreting Voronoi F2-F1 as Cloud for subtle ground)
-    disp_tex.noise_type = 'SOFT_NOISE'
-    disp_tex.noise_basis = 'VORONOI_F2_F1' # This corresponds to the UI name
-    disp_tex.noise_size = 0.25
-    disp_tex.noise_depth = 3
-    
-    # Link texture to modifier
-    disp_mod.texture = disp_tex
-    disp_mod.strength = 0.15 # Between 0.1 and 0.2
-    disp_mod.direction = 'NORMAL'
-
-    # III. Wet Ground Material with Puddles
-    mat_ground = bpy.data.materials.new(name="WetGroundMaterial")
-    mat_ground.use_nodes = True
-    nodes = mat_ground.node_tree.nodes
-    links = mat_ground.node_tree.links
-    
-    # Clear default nodes
-    for node in nodes:
-        nodes.remove(node)
-
-    # Create shader nodes
-    output_node = nodes.new(type='ShaderNodeOutputMaterial')
-    mix_shader = nodes.new(type='ShaderNodeMixShader')
-    
-    # Ground BSDF (base dirt)
-    ground_bsdf = nodes.new(type='ShaderNodeBsdfPrincipled')
-    ground_bsdf.name = "DryGroundShader"
-    ground_bsdf.inputs['Base Color'].default_value = (0.2, 0.2, 0.2, 1) # #333333
-    ground_bsdf.inputs['Roughness'].default_value = 0.8
-    ground_bsdf.inputs['Specular'].default_value = 0.05
-
-    # Puddle BSDF (wet parts)
-    puddle_bsdf = nodes.new(type='ShaderNodeBsdfPrincipled')
-    puddle_bsdf.name = "PuddleShader"
-    puddle_bsdf.inputs['Base Color'].default_value = (0.133, 0.133, 0.133, 1) # #222222
-    puddle_bsdf.inputs['Roughness'].default_value = 0.1
-    puddle_bsdf.inputs['Specular'].default_value = 0.9
-    puddle_bsdf.inputs['IOR'].default_value = 1.333
-
-    # Procedural Normal Map for Ground
-    tex_coord = nodes.new(type='ShaderNodeTexCoord')
-    noise_tex_bump = nodes.new(type='ShaderNodeTexNoise')
-    noise_tex_bump.inputs['Scale'].default_value = 150
-    noise_tex_bump.inputs['Detail'].default_value = 8
-    noise_tex_bump.inputs['Roughness'].default_value = 0.6
-    
-    bump_node = nodes.new(type='ShaderNodeBump')
-    bump_node.inputs['Strength'].default_value = 0.5
-    
-    # Puddle Mask
-    noise_tex_puddle = nodes.new(type='ShaderNodeTexNoise')
-    noise_tex_puddle.inputs['Scale'].default_value = 2.0
-    noise_tex_puddle.inputs['Detail'].default_value = 5
-    noise_tex_puddle.inputs['Distortion'].default_value = 1.5
-    
-    color_ramp = nodes.new(type='ShaderNodeColorRamp')
-    color_ramp.color_ramp.elements[0].position = 0.45
-    color_ramp.color_ramp.elements[1].position = 0.55
-
-    # Link nodes
-    # Puddle mask
-    links.new(tex_coord.outputs['Generated'], noise_tex_puddle.inputs['Vector'])
-    links.new(noise_tex_puddle.outputs['Fac'], color_ramp.inputs['Fac'])
-    
-    # Surface bump
-    links.new(tex_coord.outputs['Generated'], noise_tex_bump.inputs['Vector'])
-    links.new(noise_tex_bump.outputs['Fac'], bump_node.inputs['Height'])
-    links.new(bump_node.outputs['Normal'], ground_bsdf.inputs['Normal'])
-    links.new(bump_node.outputs['Normal'], puddle_bsdf.inputs['Normal'])
-    
-    # Mix shaders
-    links.new(color_ramp.outputs['Color'], mix_shader.inputs['Fac'])
-    links.new(ground_bsdf.outputs['BSDF'], mix_shader.inputs[1])
-    links.new(puddle_bsdf.outputs['BSDF'], mix_shader.inputs[2])
-    
-    # Final output
-    links.new(mix_shader.outputs['Shader'], output_node.inputs['Surface'])
-
     # Assign material to ground
-    ground_plane.data.materials.append(mat_ground)
+    ground.data.materials.append(ground_mat)
     
-    return ground_plane
+    # Add subdivision modifier
+    subdivision_mod = ground.modifiers.new("Subdivision", type="SUBSURF")
+    subdivision_mod.levels = SUBDIVISION_LEVEL
+    
+    return ground
 
-def setup_sky_and_lighting():
-    """
-    Configures the world background, volumetric scattering, and sun lamp.
-    """
-    world = bpy.context.scene.world
-    world.use_nodes = True
+def create_sky():
+    # Create sky
+    bpy.context.scene.world.use_nodes = True
+    world_node_tree = bpy.context.scene.world.node_tree
+    background_node = world_node_tree.nodes["Background"]
+    background_node.inputs["Color"].default_value = SKY_COLOR
     
-    nodes = world.node_tree.nodes
-    links = world.node_tree.links
+    # Create volume scatter node
+    volume_scatter_node = world_node_tree.nodes.new("ShaderNodeVolumeScatter")
+    volume_scatter_node.inputs["Density"].default_value = 0.02
+    volume_scatter_node.inputs["Color"].default_value = (0.5, 0.5, 0.6, 1)
     
-    # Clear default nodes
-    for node in nodes:
-        nodes.remove(node)
-        
-    # I. World Settings
-    output_node = nodes.new(type='ShaderNodeOutputWorld')
-    bg_node = nodes.new(type='ShaderNodeBackground')
-    bg_node.inputs['Color'].default_value = (0.5, 0.5, 0.5, 1) # #808080
-    bg_node.inputs['Strength'].default_value = 0.7
+    # Connect nodes
+    world_node_tree.links.new(volume_scatter_node.outputs["Volume"], world_node_tree.nodes["World Output"].inputs["Volume"])
     
-    # Volume Scatter
-    volume_node = nodes.new(type='ShaderNodeVolumePrincipled')
-    volume_node.inputs['Color'].default_value = (0.627, 0.627, 0.627, 1) # #A0A0A0
-    volume_node.inputs['Density'].default_value = 0.035
-    volume_node.inputs['Anisotropy'].default_value = -0.25
+    return world_node_tree
 
-    links.new(bg_node.outputs['Background'], output_node.inputs['Surface'])
-    links.new(volume_node.outputs['Volume'], output_node.inputs['Volume'])
+def create_rain():
+    # Create particle system
+    rain = bpy.data.objects.new("Rain", None)
+    bpy.context.collection.objects.link(rain)
+    rain.location = (0, 0, 10)
+    rain_particle_system = rain.modifiers.new("Rain", type="PARTICLE_SYSTEM")
+    
+    # Create particle settings
+    particle_settings = rain_particle_system.particle_system.settings
+    particle_settings.type = "EMITTER"
+    particle_settings.particle_size = 0.2
+    particle_settings.particle_radius = 0.01
+    particle_settings.emit_from = "FACE"
+    particle_settings.velocity_min = 0.1
+    particle_settings.velocity_max = 5.0
+    particle_settings.lifetime = 10.0
+    particle_settings.lifetime_random = 5.0
+    
+    # Create raindrop material
+    raindrop_mat = bpy.data.materials.new("Raindrop")
+    raindrop_mat.use_nodes = True
+    bsdf = raindrop_mat.node_tree.nodes["Principled BSDF"]
+    bsdf.inputs["Base Color"].default_value = RAINDROP_COLOR
+    bsdf.inputs["Transmission"].default_value = 0.5
+    
+    # Assign material to raindrops
+    particle_settings.material = raindrop_mat
+    
+    return rain
 
-    # II. Sun Lamp
-    bpy.ops.object.light_add(type='SUN', align='WORLD', location=(0, -20, 30))
-    sun = bpy.context.object
-    sun.name = "SunLamp"
-    sun.data.color = (1.0, 0.992, 0.816) # #FFFDD0
-    sun.data.energy = 1.5
-    sun.data.angle = math.radians(5)
+def create_puddles():
+    # Create puddle material
+    puddle_mat = bpy.data.materials.new("Puddle")
+    puddle_mat.use_nodes = True
+    bsdf = puddle_mat.node_tree.nodes["Principled BSDF"]
+    bsdf.inputs["Base Color"].default_value = (0.1, 0.1, 0.5, 1)
+    bsdf.inputs["Roughness"].default_value = PUDDLE_ROUGHNESS
     
-    # Aim the sun
-    sun.rotation_euler[0] = math.radians(45)
-    sun.rotation_euler[1] = math.radians(-15)
+    # Create puddle objects
+    puddle = bpy.data.objects.new("Puddle", None)
+    bpy.context.collection.objects.link(puddle)
+    puddle.location = (0, 0, 0)
+    puddle.scale = (1, 1, 0.1)
+    puddle.data = bpy.data.meshes.new("Puddle")
+    puddle.data.from_pydata([(0, 0, 0), (1, 0, 0), (1, 1, 0), (0, 1, 0)], [(0, 1), (1, 2), (2, 3), (3, 0)], [(0, 1, 2), (2, 3, 0)])
+    puddle.data.update()
+    puddle.data.materials.append(puddle_mat)
+    
+    return puddle
 
-def create_rain_system(ground_plane):
-    """
-    Creates a particle system for rain, including the raindrop object and emitter.
-    """
-    # I. Raindrop Object
-    bpy.ops.mesh.primitive_cylinder_add(
-        vertices=8, 
-        radius=0.01, 
-        depth=0.2, 
-        location=(50, 50, 50) # Place it far away
-    )
-    raindrop = bpy.context.object
-    raindrop.name = "Raindrop"
-    bpy.ops.object.shade_smooth()
-
-    # Raindrop Material
-    mat_rain = bpy.data.materials.new(name="RaindropMaterial")
-    mat_rain.use_nodes = True
-    nodes = mat_rain.node_tree.nodes
-    bsdf = nodes.get('Principled BSDF')
-    
-    # Convert hex #ADD8E6 to RGB and lower the value
-    base_color = (0.678, 0.847, 0.902, 1)
-    # Lowering value by 50%
-    bsdf.inputs['Base Color'].default_value = (base_color[0]*0.5, base_color[1]*0.5, base_color[2]*0.5, 1)
-    bsdf.inputs['Roughness'].default_value = 0.2
-    bsdf.inputs['Transmission'].default_value = 1.0
-    bsdf.inputs['IOR'].default_value = 1.333
-    raindrop.data.materials.append(mat_rain)
-
-    # II. Emitter Plane
-    bpy.ops.mesh.primitive_plane_add(size=50, location=(0, 0, 20))
-    emitter = bpy.context.object
-    emitter.name = "RainEmitter"
-    
-    # Hide emitter from render
-    emitter.is_instancer = True
-    emitter.hide_render = True
-    
-    # Add Particle System
-    ps = emitter.modifiers.new(name="RainSystem", type='PARTICLE_SYSTEM').particle_system
-    settings = ps.settings
-    
-    # Emission
-    settings.count = 50000 # 500 particles/frame for 100 frames
-    settings.frame_start = 1
-    settings.frame_end = 200 # Emit over a longer period
-    settings.lifetime = 150
-    settings.lifetime_randomness = 0.5
-    
-    # Velocity
-    settings.normal_factor = -5.0
-    settings.factor_random = 1.0
-    
-    # Physics
-    settings.physics_type = 'NEWTONIAN'
-    settings.effector_weights.gravity = 1.0
-    settings.drag_factor = 0.1 # Damping
-    
-    # Render
-    settings.render_type = 'OBJECT'
-    settings.instance_object = raindrop
-    settings.particle_size = 0.015
-    settings.scale_random = 0.7
-    
-    # Rotation
-    settings.use_rotations = True
-    settings.rotation_factor_random = 1.0
-    settings.phase_factor = math.radians(90) # Orient along velocity
-    settings.phase_factor_random = 0.5
-    settings.angular_velocity_factor = 0.0 # No spinning
-    
-    # Collision
-    # Make ground plane a collision object for splashes (optional, but good for realism)
-    ground_plane.modifiers.new(name="Collision", type='COLLISION')
-    # Kill particles on collision
-    settings.use_collision_kill = True
-
-def setup_camera_and_compositing():
-    """
-    Sets up the camera, depth of field, and post-processing nodes.
-    """
-    # Create an empty to be the focus point
-    bpy.ops.object.empty_add(type='PLAIN_AXES', location=(0, 0, 1))
-    focus_target = bpy.context.object
-    focus_target.name = "FocusTarget"
-
-    # I. Camera
-    bpy.ops.object.camera_add(location=(0, -12, 1.8))
-    camera_obj = bpy.context.object
-    camera_obj.name = "Camera"
-    bpy.context.scene.camera = camera_obj
-
-    # Point camera at the target
-    track_constraint = camera_obj.constraints.new(type='TRACK_TO')
-    track_constraint.target = focus_target
-    track_constraint.track_axis = 'TRACK_NEGATIVE_Z'
-    track_constraint.up_axis = 'UP_Y'
-    
-    # Camera settings
-    cam_data = camera_obj.data
-    cam_data.lens = 40 # Between 35mm and 50mm
-    
-    # Depth of Field
-    cam_data.dof.use_dof = True
-    cam_data.dof.focus_object = focus_target
-    cam_data.dof.aperture_fstop = 3.5 # Between f/2.8 and f/4
-
-    # II. Compositing
-    bpy.context.scene.use_nodes = True
-    tree = bpy.context.scene.node_tree
-    
-    # Clear default nodes
-    for node in tree.nodes:
-        tree.nodes.remove(node)
-        
-    # Create new nodes
-    render_layers = tree.nodes.new(type='CompositorNodeRLayers')
-    composite_output = tree.nodes.new(type='CompositorNodeComposite')
-    viewer_output = tree.nodes.new(type='CompositorNodeViewer') # For viewing in backdrop
-    
-    # Glare Node (for wet surface highlights)
-    glare_node = tree.nodes.new(type='CompositorNodeGlare')
-    glare_node.glare_type = 'FOG_GLOW'
-    glare_node.threshold = 0.8
-    glare_node.size = 8
-    glare_node.mix = -0.5 # Subtle effect
-    
-    # Color Balance Node (cool tint)
-    color_balance_node = tree.nodes.new(type='CompositorNodeColorBalance')
-    color_balance_node.correction_method = 'LIFT_GAMMA_GAIN'
-    # Add a cool, somber tint by pushing gain towards blue/cyan
-    gain = color_balance_node.inputs['Gain'].default_value
-    gain.r *= 0.95
-    gain.g *= 0.98
-    gain.b *= 1.05
-    
-    # Vignette Node Group
-    mix_vignette = tree.nodes.new(type='CompositorNodeMixRGB')
-    mix_vignette.blend_type = 'MULTIPLY'
-    mix_vignette.inputs['Fac'].default_value = 0.7 # Strength of vignette
-    
-    ellipse_mask = tree.nodes.new(type='CompositorNodeEllipseMask')
-    ellipse_mask.width = 0.7
-    ellipse_mask.height = 0.7
-    
-    blur_node = tree.nodes.new(type='CompositorNodeBlur')
-    blur_node.size_x = 200
-    blur_node.size_y = 200
-    
-    # Link compositing nodes
-    links = tree.links
-    links.new(render_layers.outputs['Image'], glare_node.inputs['Image'])
-    links.new(glare_node.outputs['Image'], color_balance_node.inputs['Image'])
-    
-    # Vignette links
-    links.new(ellipse_mask.outputs['Mask'], blur_node.inputs['Image'])
-    links.new(blur_node.outputs['Image'], mix_vignette.inputs[2])
-    links.new(color_balance_node.outputs['Image'], mix_vignette.inputs[1])
-
-    # Final output links
-    links.new(mix_vignette.outputs['Image'], composite_output.inputs['Image'])
-    links.new(mix_vignette.outputs['Image'], viewer_output.inputs['Image'])
-
-# --- Main Execution ---
-if __name__ == "__main__":
-    clean_scene()
-    setup_renderer()
+def main():
+    # Create ground
     ground = create_ground()
-    setup_sky_and_lighting()
-    create_rain_system(ground)
-    setup_camera_and_compositing()
     
-    # Update the view layer
+    # Create sky
+    create_sky()
+    
+    # Create rain
+    rain = create_rain()
+    
+    # Create puddles
+    puddle = create_puddles()
+    
+    # Force a final update
     bpy.context.view_layer.update()
+    print("Scene generation complete.")
 
-    print("Somber memorial scene generation complete.")
+if __name__ == "__main__":
+    main()
+```

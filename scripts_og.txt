@@ -1,0 +1,57 @@
+import socket
+import json
+import sys
+import google.generativeai as genai
+from instructions import first_agent, describer_agent, coding_agent
+from utils import convert_text_to_dict, parse_enhancements_to_dict
+from dotenv import load_dotenv
+from groq import Groq
+
+import os
+import re
+
+# Load environment variables (e.g., GEMINI_API_KEY)
+load_dotenv()
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+
+# Configure the Generative AI model with the API key
+if GEMINI_API_KEY:
+    genai.configure(api_key=GEMINI_API_KEY)
+else:
+    print("Error: GEMINI_API_KEY not found. Please set it in your .env file.")
+    sys.exit(1)
+
+# Initialize the Generative AI agents
+agent = genai.GenerativeModel(
+    model_name="gemini-2.0-flash",
+    system_instruction=first_agent,
+)
+
+describer = genai.GenerativeModel(
+    model_name="gemini-2.0-flash",
+    system_instruction=describer_agent
+)
+
+# Initialize Groq client for the coding agent
+client = Groq()
+
+def groq_generate_content(system_instruction, user_prompt):
+    """
+    Generate content using Groq API with system and user prompts.
+    """
+    messages = [
+        {"role": "system", "content": system_instruction},
+        {"role": "user", "content": user_prompt}
+    ]
+    
+    completion = client.chat.completions.create(
+        model="llama-3.3-70b-versatile",
+        messages=messages,
+        temperature=1,
+        max_completion_tokens=5000,
+        top_p=1,
+        stream=False,
+        stop=None
+    )
+    
+    return completion.choices[0].message.content

@@ -573,3 +573,409 @@
 
 ##End of this response
 --------------------------------------------------
+## Prompt: I want to generate a scene where people are paying respects to a public hero in a sad serene rainy environment
+
+## Response: 
+ - Overall impression: A somber and respectful scene unfolds on a rain-soaked day, as people gather to pay their respects to a public hero, creating an atmosphere of shared grief and quiet remembrance.
+
+- Key Elements and Details
+    - People
+        - (Mourners): Approximately 50-100 diverse individuals of varying ages and backgrounds, dressed in dark, muted clothing suitable for a funeral or memorial service; some hold umbrellas, and their faces reflect sadness, respect, and grief.
+        - (Family members): A smaller, more intimate group of the hero's immediate family, standing near the memorial, visibly distraught, with some being comforted by friends and other family members.
+        - (Dignitaries): A select few public figures, dressed in formal attire, standing slightly apart from the general crowd, their expressions conveying solemn respect and loss.
+
+    - Memorial
+        - (Central monument): A statue or plaque dedicated to the hero, possibly made of bronze or stone, adorned with wreaths, flowers, and personal mementos; its design should reflect the hero's achievements and character.
+        - (Floral tributes): Numerous bouquets, wreaths, and individual flowers laid at the base of the monument, adding color and fragrance to the scene.
+        - (Candles): Several lit candles placed around the memorial, their flames flickering in the rain, symbolizing remembrance and hope.
+
+    - Environment
+        - (Street): A wet, reflective street surface, with puddles mirroring the surrounding buildings and sky, enhancing the somber mood.
+        - (Background buildings): Generic urban buildings providing a backdrop, their designs subdued and unremarkable, ensuring the focus remains on the memorial and the people.
+        - (Trees): Several trees with rain-soaked leaves, their branches slightly drooping, adding to the melancholy atmosphere.
+
+- Final specific enhancements and details to enrich the scene.
+    - Rain: Heavy rainfall, with visible raindrops and a general sense of dampness, contributing to the overall feeling of sorrow and cleansing.
+    - Lighting: Overcast and subdued lighting, with soft shadows and highlights reflecting off the wet surfaces, enhancing the somber mood.
+    - Sound: The subtle sound of rain, quiet weeping, and muffled conversations, adding to the emotional depth of the scene.
+
+- Any other information in this final section: Ensure the composition directs the viewer's attention to the memorial and the emotional expressions of the people. The scene should feel authentic and respectful, with attention to detail in the clothing, facial expressions, and placement of objects.
+
+##End of this response
+--------------------------------------------------
+## Prompt: I want to generate a scene where people are paying respects to a public hero in a sad serene rainy environment
+
+## Response: 
+ - Overall impression: A somber and respectful gathering of people paying tribute to a public hero in a rain-soaked environment, with a focus on emotional depth and quiet reverence.
+
+- Key Elements and Details
+    - People
+        - (Mourners): A diverse group of approximately 30-50 individuals, varying in age, ethnicity, and attire, holding umbrellas and wearing dark, muted clothing suitable for a funeral or memorial service. Expressions should range from solemn contemplation to visible grief, with some wiping away tears.
+        - (Family members): A smaller, more intimate group of 5-10 people, presumably close family of the hero, standing near the focal point of the memorial. Their faces show deep sorrow and exhaustion, and they may be embracing or comforting each other.
+        - (Dignitaries/Officials): A small cluster of 3-5 formally dressed individuals, likely local politicians or community leaders, with serious expressions, paying their respects. They may be laying wreaths or offering condolences.
+    - Memorial
+        - (Central monument): A statue, plaque, or symbolic structure honoring the hero, placed in a prominent location. It could be made of bronze, granite, or another durable material, and adorned with inscriptions, wreaths, flowers, and ribbons. The size should be significant enough to be a focal point, but not overly grandiose.
+        - (Floral tributes): An abundance of flowers, bouquets, and wreaths surrounding the memorial, adding color and fragrance to the scene. Include a variety of flower types and arrangements, some with handwritten notes attached.
+        - (Candles/Lights): Numerous small candles or battery-operated lights placed around the memorial, casting a soft, flickering glow in the rain and adding to the atmosphere of remembrance.
+    - Environment
+        - (Public square/Park): The setting should be a public space, such as a city square or park, with paved walkways, benches, and trees providing a backdrop for the memorial. The ground should be wet and reflective from the rain.
+        - (Rain effects): Realistic rain effects, including raindrops on surfaces, puddles forming on the ground, and a subtle mist in the air. The rain should be steady but not torrential, contributing to the somber mood.
+        - (Surrounding buildings): Background buildings, such as government offices, libraries, or apartments, should be visible in the distance, adding context to the urban setting. Their architecture should be realistic and appropriate for the location.
+
+- Final specific enhancements and details to enrich the scene
+    - Lighting: Soft, diffused lighting to emphasize the overcast sky and rainy conditions. Use subtle highlights to draw attention to the memorial and the faces of the mourners.
+    - Sound: The sound of gentle rain, distant traffic, and muffled sobs to enhance the emotional impact.
+    - Weathering: Add subtle weathering effects to the memorial and surrounding structures to convey a sense of age and history.
+    - Color palette: A muted color palette with shades of gray, blue, and green, punctuated by the vibrant colors of the flowers and the flickering light of the candles.
+
+- Any other information in this final section: Consider adding personal touches such as handwritten notes, photographs, or small mementos placed at the memorial. Ensure the composition guides the viewer's eye to the key elements of the scene, emphasizing the emotional weight of the event. The overall goal is to create a believable and moving tribute to the fallen hero, evoking a sense of respect, sorrow, and remembrance.
+
+##End of this response
+--------------------------------------------------
+## Prompt: I want to generate a scene where people are paying respects to a public hero in a sad serene rainy environment
+
+## Response: 
+ - Overall impression: A somber and respectful scene set in a rain-soaked urban environment where citizens are paying their respects to a public hero, creating an atmosphere of collective grief and quiet remembrance.
+
+- Key Elements and Details
+    - People
+        - (Grieving citizens): (Approximately 50-100 diverse individuals of varying ages, ethnicities, and social backgrounds, dressed in dark, respectful attire, holding umbrellas and wearing raincoats. Their faces show sorrow, with some tearful. A few hold flowers or candles.)
+        - (Family members): (A small group of the hero's immediate family, closer to the memorial site, visibly grief-stricken and supported by friends and relatives. Their clothing is slightly more formal.)
+        - (Public Hero): (The hero may be represented through a large portrait/sculpture/hologram of a respectable looking person. The details of the portrait should clearly convey their personality. It could be a happy portrait, or a brave one.)
+    - Memorial
+        - (Central monument): (A statue, plaque, or other symbolic structure dedicated to the hero, adorned with wreaths, flowers, and handwritten messages. The material could be bronze, stone, or a combination, with intricate detailing and weathering effects. The size should be imposing yet respectful.)
+        - (Floral tributes): (An array of flowers, wreaths, bouquets, and individual blossoms laid at the base of the memorial. The flowers should appear fresh but rain-soaked, with a variety of colors and types creating a visually rich display.)
+        - (Candles and lights): (Numerous candles and small electric lights placed around the memorial, flickering in the rain. The light sources add a warm glow to the otherwise somber scene, creating highlights and reflections on the wet surfaces.)
+    - Environment
+        - (Urban backdrop): (A city square or park surrounded by buildings, streetlights, and trees. The architecture should be realistic and slightly aged, with signs of wear and tear. Buildings could be of varied heights with 10-30 structures, some glass and some brick.)
+        - (Rain effects): (Heavy rainfall with puddles forming on the ground, reflecting light and creating a wet sheen on all surfaces. Raindrops should be visible on umbrellas, clothing, and the memorial itself. 10-20 puddles of different sizes.)
+        - (Street elements): (Streetlights casting a soft glow, benches, trash cans, and other urban details adding to the realism. The number of streetlights should be between 5-10.)
+
+- Final specific enhancements and details to enrich the scene
+    - Lighting: (Soft, diffused lighting to emphasize the somber mood, with highlights on the wet surfaces and flickering candlelight adding warmth. The key is low lighting, possibly with a dominant blue hue. The contrast should be minimal. )
+    - Sound: (Subtle ambient sound of rain, distant traffic, and quiet sobbing to enhance the emotional impact. The raindrops should produce some ambient noise, not just pouring rain, but also raindrop sounds on umbrellas and water surfaces.)
+    - Weathering: (Realistic weathering effects on the memorial, buildings, and street elements to add to the sense of authenticity. Everything should look worn, but relatively maintained.)
+
+- Any other information in this final section: The overall composition should guide the viewer's eye towards the memorial and the expressions of the people, emphasizing the emotional weight of the scene. The environment should feel authentic and lived-in, with signs of wear and tear adding to the realism. The hero's portrait should be a highlight, capturing their personality and importance to the people. Consider adding subtle details such as handwritten notes or personal items left at the memorial to add a personal touch.
+
+##End of this response
+--------------------------------------------------
+## Prompt: I want to generate a scene where people are paying respects to a public hero in a sad serene rainy environment
+
+## Response: 
+ - Overall impression: A somber and respectful scene set in a rain-soaked environment, where citizens gather to pay their respects to a public hero. The atmosphere is serene yet melancholic, with a focus on the emotional weight of the event and the quiet dignity of the mourners.
+
+- Key Elements and Details
+    - People
+        - (Grieving citizens): A diverse gathering of approximately 50-100 individuals of varying ages, ethnicities, and social backgrounds, dressed in dark, respectful clothing suitable for the rainy weather, such as raincoats and hats. Their faces should convey a range of emotions, from quiet sorrow to tearful remembrance, with some holding umbrellas.
+        - (Family members): A smaller group of the hero's immediate family, standing closer to the memorial site, visibly grief-stricken and supported by friends and relatives. Their clothing should be slightly more formal, and their expressions should reflect deep personal loss.
+    - Memorial
+        - (Central monument): A statue, plaque, or other symbolic structure dedicated to the hero, adorned with wreaths, flowers, and handwritten messages. The material could be bronze, stone, or a combination, with intricate detailing and weathering effects. The size should be imposing yet respectful, serving as a focal point for the scene.
+        - (Floral tributes): An array of flowers, wreaths, and bouquets placed around the base of the memorial, showing signs of being dampened by the rain. The types of flowers should vary, adding color to the otherwise somber scene. There should be around 20-30 different floral arrangements.
+        - (Candles and mementos): Small candles flickering in the rain, protected by glass or plastic covers, along with personal mementos such as photographs, letters, and small objects that represent the hero's life and achievements. There should be around 10-20 candles.
+    - Environment
+        - (Urban park setting): The scene is set in a public park or plaza, with trees, benches, and pathways visible in the background. The ground is wet and reflective, with puddles forming in low-lying areas.
+        - (Rainy weather effects): A steady downpour of rain, with visible raindrops hitting the ground and surfaces, creating a sense of pervasive dampness. The sky is overcast and gray, contributing to the somber mood.
+    - Props
+        - (Umbrellas): A variety of umbrellas in different colors and styles, held by the grieving citizens, providing partial shelter from the rain. There should be around 30-40 umbrellas.
+        - (Handwritten notes): Small, laminated handwritten notes and messages placed near the memorial, expressing condolences and gratitude for the hero's service. There should be around 10-15 notes.
+
+- Final specific enhancements and details to enrich the scene.
+    - Lighting: Soft, diffused lighting to emphasize the overcast sky and rainy atmosphere. The light should reflect off the wet surfaces, creating subtle highlights and reflections.
+    - Sound: The subtle sound of rain, soft sobbing, and quiet murmurs to enhance the emotional impact of the scene.
+    - Camera angle: A low-angle shot to emphasize the monument's height and importance or an eye-level shot to capture the emotions on the faces of the mourners.
+
+- Any other information in this final section: Ensure the environment feels authentic and lived-in, with signs of wear and tear adding to the realism. The overall composition should guide the viewer's eye towards the memorial and the expressions of the people, emphasizing the emotional weight of the scene. Consider adding subtle details such as handwritten notes or personal items left at the memorial to add a personal touch.
+
+##End of this response
+--------------------------------------------------
+## Prompt: I want to generate a scene where people are paying respects to a public hero in a sad serene rainy environment
+
+## Response: 
+ - Overall impression: A somber and respectful scene set in a rain-soaked environment, where people gather to pay their respects to a public hero, creating an atmosphere of collective mourning and quiet reflection.
+
+- Key Elements and Details
+    - People
+        - (Mourners): A crowd of approximately 30-50 diverse individuals of varying ages and backgrounds, dressed in dark, muted clothing suitable for a rainy day, such as raincoats, jackets, and hats. Their faces should express a range of emotions including sadness, grief, and quiet contemplation. Some hold umbrellas, while others stand bareheaded in the rain.
+        - (Family Members): A smaller group of about 5-7 close family members of the hero, standing near the focal point of the memorial. They appear more visibly grief-stricken, with tearful expressions and body language indicating deep sorrow. They may be embracing or comforting each other.
+        - (Honor Guard): A contingent of 4-6 uniformed members of a military or police force (depending on the hero's background), standing at attention with solemn expressions. Their uniforms should be slightly weathered from the rain, and they may be holding weapons or flags in a respectful manner.
+    - Memorial
+        - (Central Monument): A statue, plaque, or other symbolic structure dedicated to the hero. It could be made of bronze, granite, or another durable material suitable for outdoor display. The design should be dignified and respectful, reflecting the hero's achievements and character. The size should be substantial enough to serve as a focal point but not overly grandiose.
+        - (Floral Tributes): An array of wreaths, bouquets, and individual flowers placed around the base of the monument, creating a colorful contrast against the somber surroundings. The flowers should appear fresh but slightly dampened by the rain.
+        - (Candles and Offerings): Small candles, handwritten notes, and other personal items left by mourners as tokens of remembrance. The candles should be flickering in the rain, and the notes should be legible enough to convey messages of gratitude and sorrow.
+    - Environment
+        - (Urban Park): A public park or plaza serving as the location for the memorial. The ground should be wet and reflective from the rain, with puddles forming in low-lying areas. Trees and benches should be visible in the background, adding to the sense of place.
+        - (Rain Effects): Heavy rainfall creating a sense of atmosphere and drama. Raindrops should be visible on surfaces and in the air, with streaks of water running down the monument and umbrellas. The sound of rain should be palpable in the scene.
+
+- Final specific enhancements and details to enrich the scene.
+    - Lighting: Soft, diffused lighting to enhance the somber mood. Overcast sky with subtle highlights on wet surfaces.
+    - Color Palette: Muted and desaturated colors, with grays, blues, and greens dominating the scene. A few pops of color from the floral tributes.
+    - Camera Angle: A slightly low angle to emphasize the monument and the collective grief of the crowd.
+    - Weather Effects: Subtle fog or mist in the background to add depth and atmosphere.
+
+- Any other information in this final section: Focus on capturing the raw emotion and quiet dignity of the scene. The details should convey a sense of authenticity and respect for the hero and their legacy. Consider adding subtle animations, such as the flickering of candles or the swaying of trees in the wind, to bring the scene to life.
+
+##End of this response
+--------------------------------------------------
+## Prompt: I want to generate a scene where people are paying respects to a public hero in a sad serene rainy environment
+
+## Response: 
+ - Overall impression: A somber and respectful gathering of people paying tribute to a public hero in a rain-soaked environment, with a serene yet melancholic atmosphere, under a gray sky, where the environment conveys a sense of loss and collective mourning.
+
+- Key Elements and Details
+    - People
+        - (Mourners): A crowd of approximately 50-100 diverse individuals of various ages and backgrounds, dressed in dark, muted clothing suitable for a solemn occasion and rainy weather, such as black suits, dark overcoats, and somber dresses. Expressions should range from quiet reflection to visible grief, with some wiping away tears or holding each other for support.
+        - (Family and close friends): A smaller group of around 10-15 people, standing closer to the memorial site, exhibiting more intense emotions such as inconsolable sobbing or blank stares of shock. They may be holding photographs or personal items related to the hero.
+        - (Dignitaries): A group of 5-10 formally dressed officials or representatives, standing slightly apart from the general crowd, maintaining a composed yet respectful demeanor. They may be laying wreaths or giving short speeches.
+    - Memorial
+        - (Central statue): A life-sized or slightly larger statue of the hero, made of bronze or granite, depicting them in a heroic pose or a moment of quiet contemplation. The statue should have realistic detailing, with signs of weathering such as water streaks and moss growth.
+        - (Plaques and inscriptions): Several stone or metal plaques surrounding the statue, bearing inscriptions of the hero's achievements, quotes, and tributes. The text should be legible and appropriately styled, with subtle engravings and ornamental details.
+        - (Floral tributes): An assortment of wreaths, bouquets, and individual flowers placed around the base of the statue and on the surrounding ground. The flowers should be a mix of colors, with an emphasis on white lilies, roses, and other traditional funeral flowers.
+    - Environment
+        - (Rain-soaked ground): The ground should be wet and reflective, with puddles forming in low-lying areas. The texture should show signs of dampness, such as darkened patches on pavement or grass.
+        - (Surrounding buildings): A backdrop of somber, stately buildings such as government offices, museums, or historical landmarks, providing a sense of civic importance and permanence. The architectural style should be classical or neo-classical, with gray or muted color schemes. Approximately 5-10 buildings of varying sizes.
+        - (Trees and foliage): A few mature trees with dense foliage surrounding the memorial, their leaves glistening with rain. The trees should be a mix of deciduous and evergreen varieties, providing a sense of natural beauty and tranquility.
+
+- Final specific enhancements and details to enrich the scene
+    - Rain: A steady, moderate rainfall effect, with visible raindrops hitting surfaces and creating ripples in puddles. The rain should be subtle enough to enhance the somber mood without obscuring the scene.
+    - Lighting: Overcast and diffused lighting, with a gray sky and soft shadows. The lighting should emphasize the somber mood and create a sense of depth and atmosphere.
+    - Sound: Add subtle ambient sounds such as gentle rain, distant thunder, and quiet sobbing to enhance the emotional impact of the scene.
+
+- Any other information in this final section: Consider adding small details such as umbrellas held by some of the mourners, discarded tissues on the ground, and small flags or banners representing the hero's cause or country. The overall composition should focus on the statue and the faces of the mourners, emphasizing the sense of loss and respect.
+
+##End of this response
+--------------------------------------------------
+## Prompt: I want to generate a scene where people are paying respects to a public hero in a sad serene rainy environment
+
+## Response: 
+ - Overall impression: A somber and reflective scene set on a rain-soaked city street, where a crowd of people gathers to pay their respects to a fallen public hero, creating an atmosphere of collective mourning and quiet reverence.
+
+- Key Elements and Details
+    - People
+        - (Mourners): A diverse gathering of approximately 50-100 individuals of varying ages, ethnicities, and social classes, dressed in dark, muted clothing suitable for a funeral or memorial service, holding umbrellas or wearing raincoats to shield themselves from the rain.
+        - (Family members): A smaller, more intimate group of the hero's close relatives and friends, standing near the memorial or gravesite, exhibiting profound grief and supported by others; their attire slightly more formal and somber.
+        - (Public Officials): A select few distinguished figures, such as the mayor or other city representatives, standing slightly apart from the crowd, displaying solemn expressions and wearing formal attire with subtle decorations or badges of office.
+
+    - Memorial
+        - (Central monument): A statue, plaque, or temporary display dedicated to the fallen hero, adorned with flowers, wreaths, candles, and handwritten notes; constructed from durable materials like bronze or stone, designed to withstand the elements, and placed on a raised platform or base.
+        - (Floral tributes): An array of bouquets, wreaths, and individual flowers placed around the base of the monument or on the ground nearby, with a variety of colors and types, reflecting the diverse backgrounds and personal sentiments of the mourners; some arranged neatly, others scattered naturally.
+        - (Candles and lights): Numerous flickering candles, lanterns, or electronic lights placed around the memorial to create a warm, comforting glow amidst the gloom, with varying sizes and designs, some protected by glass or plastic covers to prevent them from being extinguished by the rain.
+
+    - Environment
+        - (City street): A typical urban street setting, with sidewalks, roads, and surrounding buildings, showing signs of wear and tear, such as cracks in the pavement, faded paint, and weathered facades; featuring streetlights, traffic signals, and other common urban fixtures.
+        - (Rain effects): Realistic rain effects, including raindrops on surfaces, puddles forming on the ground, and a hazy, overcast sky, with varying intensity and direction to convey a sense of weather and atmosphere.
+        - (Background buildings): A collection of nondescript buildings in the background, such as offices, apartments, or shops, adding depth and context to the scene without distracting from the main elements; featuring realistic details like windows, doors, and signage, with muted colors and textures.
+
+- Final specific enhancements and details to enrich the scene.
+    - Lighting: Soft, diffused lighting to enhance the somber mood, with subtle reflections on wet surfaces and gentle highlights on faces and objects, creating a sense of depth and realism.
+    - Sound effects: Ambient sound effects, such as the gentle patter of rain, distant traffic noise, and quiet murmurs from the crowd, to enhance the immersive experience and create a sense of presence.
+    - Particle effects: Subtle particle effects, such as mist or fog lingering in the air, to add atmosphere and depth to the scene, with realistic movement and interaction with light and objects.
+
+- Any other information in this final section: Consider adding personal touches, such as handwritten notes or personal items left at the memorial, to add emotional depth to the scene. The overall composition should guide the viewer's eye towards the memorial and the expressions of the people, emphasizing the emotional weight of the scene.
+
+##End of this response
+--------------------------------------------------
+## Prompt: I want to generate a scene where people are paying respects to a public hero in a sad serene rainy environment
+
+## Response: 
+ - Overall impression: A somber and respectful gathering of people paying homage to a public hero in a rain-soaked environment, with a serene yet melancholic atmosphere, the scene should evoke a sense of collective grief and quiet remembrance.
+
+- Key Elements and Details
+    - People
+        - (Mourners): A diverse group of approximately 30-50 individuals of varying ages and backgrounds, dressed in dark, muted clothing suitable for a solemn occasion, holding umbrellas or wearing raincoats. Their facial expressions should convey sadness, respect, and reflection, with some shedding tears or offering comforting gestures to one another.
+        - (Family Members): A smaller group of 5-10 individuals, presumably the hero's immediate family, standing closest to the memorial or grave site. Their grief should appear more profound, with visible signs of weeping and support from close friends or relatives.
+        - (Military Personnel/First Responders): A contingent of 5-10 uniformed personnel (e.g., soldiers, police officers, firefighters) standing at attention or offering a salute, representing the hero's connection to public service. Their presence should add a sense of formality and honor to the scene.
+
+    - Memorial
+        - (Central Monument): A statue, plaque, or headstone dedicated to the hero, serving as the focal point of the scene. The material could be bronze, granite, or marble, with inscriptions detailing the hero's accomplishments and contributions. It should be adorned with wreaths, flowers, and other tokens of remembrance.
+        - (Floral Tributes): An array of bouquets, wreaths, and individual flowers laid at the base of the memorial, adding color and natural beauty to the somber setting. The flowers should appear fresh and rain-soaked, with droplets clinging to the petals.
+        - (Candles/Lanterns): Several flickering candles or lanterns placed around the memorial, providing a soft, warm glow that contrasts with the cool, gray tones of the rainy environment. The light should create a sense of hope and remembrance amidst the sadness.
+
+    - Environment
+        - (Cemetery/Park Setting): A backdrop of a well-maintained cemetery or public park, with lush green grass, mature trees, and winding pathways. The rain should create a sheen on the surfaces, adding depth and texture to the environment.
+        - (Rain Effects): A steady downpour of rain, with visible raindrops falling and accumulating on surfaces. Puddles should form on the ground, reflecting the surrounding light and adding to the atmosphere. Consider adding subtle fog or mist in the background to enhance the sense of melancholy.
+
+- Final specific enhancements and details to enrich the scene.
+    - Lighting: Soft, diffused lighting that emphasizes the somber mood. The scene should be predominantly gray and muted, with subtle highlights from the candles/lanterns and reflections on wet surfaces.
+    - Sound: The ambient sound of rain, with occasional soft sobs or whispered words of comfort from the mourners, should enhance the emotional impact of the scene.
+    - Weathering: Add subtle weathering effects to the memorial and surrounding environment to suggest age and history. This could include moss growth, discoloration, or minor cracks and imperfections.
+
+- Any other information in this final section: Consider adding personal items or handwritten notes left at the memorial to add a personal touch. The overall composition should guide the viewer's eye towards the memorial and the expressions of the people, emphasizing the emotional weight of the scene. The environment should feel authentic and lived-in, with signs of wear and tear adding to the realism.
+
+##End of this response
+--------------------------------------------------
+## Prompt:  I want to generate a scene where people are paying respects to a public hero in a sad serene rainy environment
+
+## Response: 
+ - Overall impression: A somber and respectful scene set in a rain-soaked environment, where people are paying homage to a public hero, creating a melancholic yet serene atmosphere.
+
+- Key Elements and Details
+    - People
+        - (Mourners): A diverse gathering of approximately 30-50 individuals of varying ages, genders, and ethnicities, dressed in dark, subdued clothing suitable for a funeral or memorial service, holding umbrellas.
+        - (Family members): A smaller group of about 5-10 individuals standing closer to the memorial, exhibiting more overt signs of grief, such as tears and embraces.
+        - (Honor guard): A group of 4-6 uniformed officers or veterans standing at attention near the memorial, faces stern and respectful.
+
+    - Memorial
+        - (Central statue): A bronze or stone statue of the hero, approximately 8-10 feet tall, placed on a 3-foot high pedestal, depicting a moment of courage or sacrifice.
+        - (Plaques and inscriptions): Several inscribed plaques around the base of the statue or on nearby walls, detailing the hero's accomplishments and contributions.
+        - (Floral tributes): An assortment of wreaths, bouquets, and individual flowers laid at the base of the statue, with a variety of colors and types, numbering around 20-30.
+
+    - Environment
+        - (Public square): A paved open area, roughly 50x50 feet, surrounded by trees and buildings, with wet cobblestones or pavement reflecting the ambient light.
+        - (Background buildings): 3-5 buildings in the background, such as government buildings, museums, or libraries, with classical or monumental architecture.
+        - (Trees): Deciduous trees with wet leaves, lining the square, approximately 10-15 in total.
+
+- Final specific enhancements and details to enrich the scene
+    - Rain: Heavy rainfall with visible droplets and puddles forming on the ground, creating a sheen on surfaces.
+    - Lighting: Overcast and diffused lighting, with soft shadows and muted colors, enhancing the somber mood.
+    - Sound: Ambient sound of rain and distant traffic, with occasional quiet sobbing or murmuring from the mourners.
+
+- Any other information in this final section: Consider adding details such as handwritten notes or small personal items left at the memorial to add a personal touch. The overall composition should guide the viewer's eye towards the statue and the expressions of the people, emphasizing the emotional weight of the scene.
+
+##End of this response
+--------------------------------------------------
+## Prompt:  I want to generate a scene where people are paying respects to a public hero in a sad serene rainy environment
+
+## Response: 
+ - Overall impression: A somber and respectful gathering of people paying tribute to a public hero in a rain-soaked environment, with a focus on emotional depth and serene atmosphere.
+
+- Key Elements and Details
+    - People
+        - (Mourners): [Approximately 30-50 diverse individuals, including men, women, and children of varying ages and ethnicities, dressed in dark, muted clothing suitable for a rainy day. Expressions should range from quiet contemplation to visible grief, with some holding umbrellas or flowers.]
+        - (Family Members): [A smaller group of 5-10 people standing closer to the memorial, showing more overt signs of grief, such as tears and embraces. They should appear distinguished, reflecting their close relationship to the hero.]
+        - (Military Personnel/First Responders): [A contingent of 5-10 uniformed personnel (police officers, firefighters, or military members) standing at attention, offering a formal salute or somber presence. Their uniforms should be slightly weathered from the rain.]
+    - Memorial
+        - (Central Monument): [A statue, plaque, or obelisk made of stone or bronze, featuring an inscription or portrait of the hero. The design should be dignified and timeless, with subtle details that reflect the hero's achievements or character. The height should be approximately 8-12 feet.]
+        - (Floral Tributes): [An array of wreaths, bouquets, and single flowers placed around the base of the monument, adding color and a sense of personal remembrance. The flowers should appear fresh but dampened by the rain.]
+        - (Candles/Lanterns): [Scattered candles or lanterns, some flickering in the rain, providing soft, warm light and symbolizing remembrance and hope. There should be around 10-15.]
+    - Environment
+        - (Urban Plaza): [A paved public space, possibly a park or square, surrounded by buildings and trees. The pavement should be wet and reflective, with puddles forming in low areas.]
+        - (Background Buildings): [A mix of residential and commercial buildings in the background, providing context to the urban setting. The architectural style should be neutral and subdued, not distracting from the main scene. Around 5-10 buildings of varying heights.]
+        - (Trees): [Several mature trees with dense foliage, their leaves glistening with raindrops. The trees should provide a natural backdrop and a sense of enclosure for the memorial.]
+    - Props
+        - (Umbrellas): [A variety of umbrellas in dark colors (black, navy blue, gray) held by the mourners, adding visual interest and emphasizing the rainy conditions. There should be around 20-30 umbrellas.]
+        - (Flowers): [Individual flowers or small bouquets held by mourners or placed at the memorial, including roses, lilies, and other common memorial flowers. Consider adding 30-40 flowers/bouquets]
+
+- Final specific enhancements and details to enrich the scene.
+    - Rain: [A steady, moderate rainfall with visible droplets and reflections on surfaces. The rain should create a melancholic atmosphere and enhance the sense of serenity.]
+    - Lighting: [Overcast and diffused lighting, with soft shadows and subtle highlights on the wet surfaces. The scene should not be too dark, but rather have a muted, somber tone.]
+    - Sound: [Subtle ambient sounds of rain, distant traffic, and quiet weeping or murmuring, adding to the immersive experience.]
+
+- Any other information in this final section: Focus on capturing the emotional weight of the scene through the expressions and body language of the mourners. The composition should guide the viewer's eye towards the memorial and the expressions of the people, emphasizing the emotional weight of the scene. The environment should feel authentic and lived-in, with signs of wear and tear adding to the realism.
+
+##End of this response
+--------------------------------------------------
+## Prompt: I want to generate a scene where people are paying respects to a public hero in a sad serene rainy environment
+
+## Response: 
+ - Overall impression: A melancholic yet serene scene set in a rain-soaked environment, where people gather to pay their respects to a public hero; the atmosphere is somber and reflective, with a palpable sense of loss and reverence.
+
+- Key Elements and Details
+    - People
+        - (Mourners): A gathering of approximately 30-50 diverse individuals of varying ages and backgrounds, dressed in dark, respectful attire suitable for a rainy day, such as raincoats and umbrellas, exhibiting expressions of grief, sorrow, and quiet reflection.
+        - (Family Members): A smaller, more intimate group of 5-10 immediate family members and close friends of the hero, standing near the focal point, displaying deeper emotions of loss and being comforted by others.
+        - (Honor Guard): A contingent of 4-8 uniformed officers or service members, standing at attention, faces solemn, rendering a silent salute or standing as a symbolic guard of honor.
+    - Memorial
+        - (Central Monument): A statue, bust, or plaque dedicated to the hero, made of durable material like bronze or granite, featuring an inscription or quote, and adorned with wreaths, flowers, and personal mementos left by mourners.
+        - (Floral Tributes): An array of flowers, wreaths, and bouquets surrounding the monument, with a variety of colors and types, showing signs of being dampened by the rain.
+        - (Candles and Lanterns): Several small candles or lanterns placed around the memorial, flickering in the rain, providing a soft, warm light amidst the somber scene.
+    - Environment
+        - (Urban Park): A section of a city park with paved walkways, benches, and trees, showing signs of recent rain, such as puddles on the ground and wet leaves.
+        - (Background Buildings): City buildings in the distance, slightly blurred by the rain and fog, providing a sense of urban context without distracting from the main scene.
+        - (Rain Effects): A consistent, moderate rainfall throughout the scene, with visible raindrops on surfaces, umbrellas, and clothing, and a general sense of dampness and reflection.
+
+- Final specific enhancements and details to enrich the scene
+    - Lighting: Muted and overcast lighting, with soft reflections on wet surfaces and a subtle glow from the candles and lanterns.
+    - Sound: Ambient sound of rain, soft weeping, and quiet murmurs, enhancing the somber and reflective mood.
+    - Atmosphere: A slightly hazy or foggy atmosphere, adding depth and emphasizing the feeling of a rainy day.
+
+- Any other information in this final section: Consider adding small, personal items left by mourners, such as handwritten notes, photographs, or tokens of remembrance, to add a personal touch and deeper emotional resonance to the scene.
+
+##End of this response
+--------------------------------------------------
+## Prompt: I want to generate a scene where people are paying respects to a public hero in a sad serene rainy environment
+
+## Response: 
+ - Overall impression: A somber and respectful scene centered around a public hero's memorial, set on a rain-soaked city square, with grieving citizens paying their respects amidst the serene melancholy of a rainy day.
+
+- Key Elements and Details
+    - People
+        - (Mourners): A crowd of approximately 50-75 diverse individuals of varying ages, ethnicities, and social backgrounds, dressed in dark, respectful attire suitable for a rainy day (e.g., raincoats, dark umbrellas). Their expressions should convey a range of emotions, from quiet sorrow to tearful remembrance.
+        - (Family Members): A smaller, more intimate group of the hero’s immediate family (approximately 5-10 individuals), standing closest to the memorial, visibly grief-stricken and supported by close friends.
+        - (Veterans/Comrades): A small contingent (around 5-10) of uniformed veterans or former colleagues of the hero, standing at attention or offering salutes, their faces etched with respect and loss.
+
+    - Memorial
+        - (Central Monument): A statue, plaque, or other symbolic structure dedicated to the hero. It could be made of bronze, granite, or a combination, with intricate detailing and weathering effects. The size should be imposing yet respectful, serving as a focal point.
+        - (Floral Tributes): An array of wreaths, bouquets, and individual flowers laid at the base of the memorial. Types of flowers could include lilies, roses, and other traditional symbols of mourning.
+        - (Candles and Mementos): Small flickering candles, handwritten notes, photographs, and personal items placed around the memorial, adding a personal and intimate touch.
+
+    - Environment
+        - (City Square): A paved public square with visible signs of wear and tear (cracks, stains, etc.). Include benches, lampposts, and perhaps a few trees providing partial shelter from the rain.
+        - (Rain Effects): Realistic rain effects, including puddles on the ground, raindrops on umbrellas and clothing, and a general sense of dampness and reflection.
+        - (Background Buildings): Several buildings surrounding the square, with architectural styles appropriate to the city's setting (e.g., classical, modern, etc.). Windows should be visible, some lit from within.
+
+- Final specific enhancements and details to enrich the scene.
+    - Lighting: Soft, diffused lighting due to the overcast sky, with reflections off the wet surfaces. Perhaps a few strategically placed streetlights or spotlights illuminating the memorial.
+    - Sound: Subtle ambient sound of rain, distant traffic, and quiet sobbing to enhance the emotional atmosphere.
+    - Weathering: Details such as wet leaves clinging to the pavement, water streaks on the monument, and slightly blurred vision due to the rain.
+
+- Any other information in this final section: The composition should guide the viewer's eye towards the memorial and the expressions of the people, emphasizing the emotional weight of the scene. The environment should feel authentic and lived-in, with signs of wear and tear adding to the realism.
+
+##End of this response
+--------------------------------------------------
+## Prompt: I want to generate a scene where people are paying respects to a public hero in a sad serene rainy environment
+
+## Response: 
+ - Overall impression: A somber and respectful scene set in a rain-soaked environment where people are paying their respects to a public hero, with a generally melancholic and reflective atmosphere.
+
+- Key Elements and Details
+    - People
+        - (Mourners): A gathering of approximately 30-50 diverse individuals, ranging in age and background, dressed in dark, muted clothing suitable for a solemn occasion and rainy weather. They carry umbrellas and wear raincoats, their faces etched with grief, respect, and quiet contemplation.
+        - (Family Members): A smaller, more intimate group of around 5-10 individuals, identified as the hero's immediate family, standing closest to the memorial. Their expressions convey deep sorrow and loss, with some being comforted by others.
+        - (Honor Guard): A small contingent of 2-4 uniformed officers or representatives, standing at attention near the memorial, faces stern and respectful, paying silent tribute.
+    - Memorial
+        - (Central Monument): A dignified statue, plaque, or symbolic structure dedicated to the hero, crafted from materials like bronze or stone. The monument is adorned with wreaths, flowers, and personal mementos left by mourners. The size is imposing yet tasteful, serving as a focal point.
+        - (Floral Tributes): An array of flowers, bouquets, and wreaths placed around the base of the memorial, adding color to the otherwise muted scene and symbolizing respect and remembrance. Aim for about 15-20 floral arrangements.
+        - (Candles and Mementos): Small candles, handwritten notes, and personal items scattered among the flowers, adding a personal and intimate touch to the memorial. Approximately 10-15 such items.
+    - Environment
+        - (Rainy Atmosphere): A persistent, gentle rain falling throughout the scene, creating a reflective sheen on surfaces and adding to the somber mood. Raindrops glisten on umbrellas, clothing, and the memorial itself.
+        - (Park Setting): The scene takes place in a public park, with lush green grass, trees, and pathways serving as a backdrop. The foliage is damp and glistening from the rain. 5-10 trees should be visible in the background.
+        - (Street Elements): Include elements such as park benches (2-3), lampposts (2-3), and distant city buildings (5-7) to provide context and depth to the scene, slightly blurred by the rain and distance.
+
+- Final specific enhancements and details to enrich the scene
+    - Lighting: Soft, diffused lighting to enhance the somber mood, with subtle reflections on wet surfaces.
+    - Sound: The gentle sound of rain and distant city noises create a realistic and immersive soundscape.
+    - Weather Effects: Subtle fog or mist in the background to add depth and atmosphere, blurring the distant city buildings.
+
+- Any other information in this final section: Ensure the composition focuses on the emotional connection between the mourners and the memorial. The rain should be a constant presence, affecting the visuals and creating a sense of shared grief and respect. The color palette should be muted and melancholic, with occasional brighter spots from the flowers and candles.
+
+##End of this response
+--------------------------------------------------
+## Prompt: I want to generate a scene where people are paying respects to a public hero in a sad serene rainy environment
+
+## Response: 
+ - Overall impression: A melancholic and respectful gathering of people paying homage to a public hero amidst a serene, rain-soaked environment, evoking a sense of collective mourning and quiet remembrance.
+
+- Key Elements and Details
+    - People
+        - (Mourners): A diverse assembly of approximately 50-75 individuals of varying ages, ethnicities, and social backgrounds, clad in somber, dark attire, clutching umbrellas and raincoats to shield themselves from the gentle downpour. Their expressions should convey a spectrum of emotions, ranging from subdued sorrow to tearful recollection. Some may hold flowers, candles, or small mementos.
+        - (Family members): A smaller, more intimate group of the hero's immediate family, positioned closer to the memorial site, visibly grief-stricken and supported by friends and relatives. Their clothing should be slightly more formal, and their postures indicative of deep sorrow.
+        - (Honor guard): A contingent of 4-8 uniformed officers or service members standing at attention near the memorial, their presence lending an air of solemnity and respect. Their uniforms should be impeccable, despite the rain.
+    - Memorial
+        - (Central monument): A statue, plaque, or other symbolic structure dedicated to the hero, adorned with wreaths, flowers, and handwritten messages. The material could be bronze, granite, or a combination, with intricate detailing and weathering effects. The size should be imposing yet respectful, serving as a focal point for the scene.
+        - (Floral tributes): An array of bouquets, wreaths, and individual flowers laid at the base of the monument, adding color and vibrancy to the otherwise somber scene. Different types of flowers could represent different sentiments.
+        - (Candles and mementos): Small candles flickering in the rain, along with personal items such as photographs, letters, or tokens of appreciation left by mourners, adding a personal touch to the memorial.
+    - Environment
+        - (City park): The scene is set in a public park or square, with trees, benches, and pathways providing a natural backdrop. The park should appear well-maintained, but with signs of wear and tear, adding to the realism.
+        - (Rain effects): A gentle, persistent rain falling throughout the scene, creating a somber and reflective mood. Puddles on the ground, wet surfaces, and glistening foliage should be visible.
+        - (Atmospheric lighting): Soft, diffused lighting due to the overcast sky, with subtle highlights created by streetlights or nearby buildings. The color palette should be muted and cool, with shades of gray, blue, and green dominating.
+
+- Final specific enhancements and details to enrich the scene.
+    - Rain: Vary the intensity of the rain in different areas of the scene to create depth and visual interest. Add subtle droplets on surfaces and umbrellas.
+    - Lighting: Use soft, diffused lighting to enhance the melancholic mood. Consider adding subtle highlights to the memorial and the faces of the mourners.
+    - Sound: Incorporate ambient sound effects such as rain falling, distant traffic, and quiet sobs to create a more immersive experience.
+
+- Any other information in this final section: Pay attention to the composition of the scene, guiding the viewer's eye towards the memorial and the expressions of the people. Use subtle details such as handwritten notes or personal items left at the memorial to add a personal touch. The overall environment should feel authentic and lived-in, with signs of wear and tear adding to the realism.
+
+##End of this response
+--------------------------------------------------

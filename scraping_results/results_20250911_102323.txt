@@ -1,0 +1,797 @@
+Scraping Results - 2025-09-11 10:23:23
+==================================================
+
+URL: https://docs.blender.org/manual/en/latest/scene_layout/scene/properties.html
+----------------------------------------
+Scene Properties¶:
+  Scene¶:
+    Definitions: ['Panel:', 'Camera', 'Background Scene', 'Active Clip']
+  Units¶:
+    Definitions: ['Panel:', 'Unit System', 'None:', 'Metric:', 'Imperial:', 'Unit Scale', 'Separate Units', 'Rotation', 'Degrees:', 'Radians:', 'Length', 'Adaptive:', 'Meters/Centimeters/Feet:', 'Mass', 'Time', 'Temperature']
+  Gravity¶:
+    Definitions: ['Panel:']
+  Simulation¶:
+    Definitions: ['Simulation Range', 'Start, End']
+  Keying Sets¶:
+    Definitions: ['Panel:']
+  Audio¶:
+    Definitions: ['Panel:', 'Volume', 'Distance Model', 'Doppler Speed', 'Doppler Factor', 'Update Animation Cache']
+  Rigid Body World¶:
+    Definitions: ['Panel:']
+  Animation¶:
+    Definitions: ['Panel:', 'Scene', 'Compositing Node Tree']
+
+==================================================
+
+URL: https://docs.blender.org/manual/en/latest/scene_layout/object/types.html
+----------------------------------------
+Object Types¶:
+  Definitions: ['Mode:', 'Menu:', 'Shortcut:', 'Mesh', 'Curve', 'Surface', 'Metaball', 'Text', 'Volume', 'Grease Pencil', 'Armature', 'Lattice', 'Empty', 'Image', 'Image Plane', 'Light', 'Light Probe', 'Camera', 'Speaker', 'Force Field', 'Collection Instance']
+  Common Options¶:
+    Definitions: ['Type', 'Radius/Size', 'Align', 'World:', 'View:', '3D Cursor:', 'Location', 'Rotation']
+
+==================================================
+
+URL: https://docs.blender.org/manual/en/latest/scene_layout/object/origin.html
+----------------------------------------
+Object Origin¶:
+  Definitions: ['Yellow:', 'Orange:', 'White:', 'Turquoise:', 'Light Turquoise:']
+  Set Origin¶:
+    Definitions: ['Mode:', 'Menu:', 'Type', 'Geometry to Origin', 'Origin to Geometry', 'Origin to 3D Cursor', 'Origin to Center of Mass', 'Center']
+
+==================================================
+
+URL: https://docs.blender.org/manual/en/latest/scene_layout/object/selecting.html
+----------------------------------------
+Selecting Objects¶:
+  Selections and the Active Object¶:
+  Select Menu¶:
+    All¶:
+      Definitions: ['Mode:', 'Menu:', 'Shortcut:']
+    None¶:
+      Definitions: ['Mode:', 'Menu:', 'Shortcut:']
+    Invert¶:
+      Definitions: ['Mode:', 'Menu:', 'Shortcut:']
+    Box Select¶:
+      Definitions: ['Mode:', 'Menu:', 'Shortcut:']
+    Circle Select¶:
+      Definitions: ['Mode:', 'Menu:', 'Shortcut:']
+    Lasso Select¶:
+      Definitions: ['Mode:', 'Menu:', 'Shortcut:']
+    Select Active Camera¶:
+      Definitions: ['Mode:', 'Menu:']
+    Select Mirror¶:
+      Definitions: ['Mode:', 'Menu:']
+    Select Random¶:
+      Definitions: ['Mode:', 'Menu:']
+    Select More/Less¶:
+      Definitions: ['Mode:', 'Menu:', 'Shortcut:', 'More', 'Less', 'Parent', 'Child', 'Extend Parent', 'Extend Child']
+    Select All by Type¶:
+      Definitions: ['Mode:', 'Menu:']
+    Select Grouped¶:
+      Definitions: ['Mode:', 'Menu:', 'Shortcut:', 'Children', 'Immediate Children', 'Parent', 'Siblings', 'Type', 'Collection', 'Object Hooks', 'Pass', 'Color', 'Keying Set', 'Light Type']
+    Select Linked¶:
+      Definitions: ['Mode:', 'Menu:', 'Shortcut:', 'Object Data', 'Material', 'Instanced Collection', 'Texture', 'Particle System', 'Library', 'Library (Object Data)']
+    Select Pattern¶:
+      Definitions: ['Mode:', 'Menu:', 'Case Sensitive', 'Extend']
+
+==================================================
+
+URL: https://docs.blender.org/manual/en/latest/scene_layout/object/editing/transform/control/numeric_input.html
+----------------------------------------
+Numeric Input¶:
+  Definitions: ['MoveG', 'RotationR', 'ScaleS']
+  Simple Mode¶:
+    Definitions: ['DecimalsPeriod', 'NegateMinus', 'InverseSlash', 'ResetBackspace', 'Next/Previous ComponentTab,Ctrl-Tab', 'Non-number Inputs']
+  Advanced Mode¶:
+
+==================================================
+
+URL: https://docs.blender.org/manual/en/latest/scene_layout/object/editing/shading.html
+----------------------------------------
+Shading¶:
+  Shade Smooth¶:
+    Definitions: ['Mode:', 'Menu:', 'Keep Sharp Edges']
+  Shade Auto Smooth¶:
+    Definitions: ['Mode:', 'Menu:', 'Auto Smooth', 'Angle']
+  Shade Flat¶:
+    Definitions: ['Mode:', 'Menu:', 'Keep Sharp Edges']
+
+==================================================
+
+URL: https://docs.blender.org/manual/en/latest/sculpt_paint/selection_visibility.html
+----------------------------------------
+Selection & Visibility¶:
+  Selection Masking¶:
+    Details About Selecting¶:
+    Vertex Selection Masking¶:
+      Definitions: ['Mode:', 'Header:', 'Shortcut:']
+    Face Selection Masking¶:
+      Definitions: ['Mode:', 'Header:', 'Shortcut:']
+    Hide/Unhide Faces¶:
+    Hide/Unhide Vertices¶:
+    The Clipping Region¶:
+  Select Linked¶:
+    Definitions: ['Mode:', 'Menu:', 'Shortcut:']
+
+==================================================
+
+URL: https://docs.blender.org/manual/en/latest/sculpt_paint/brush/texture.html
+----------------------------------------
+Texture & Texture Mask¶:
+  Definitions: ['Texture', 'Mapping & Mask Mapping', 'View Plane:', 'Area Plane:', 'Tiled:', '3D:', 'Random:', 'Stencil:', 'Image Aspect', 'Reset Transform', 'Pressure Masking', 'Off:', 'Ramp:', 'Cutoff:', 'AngleCtrl-F', 'Rake', 'Random', 'Random Angle', 'Offset X, Y, Z', 'Size X, Y, Z', 'Sample BiasSculpt Mode', 'Vector DisplacementSculpt Mode']
+
+==================================================
+
+URL: https://docs.blender.org/manual/en/latest/grease_pencil/materials/properties.html
+----------------------------------------
+Grease Pencil Material Properties¶:
+  Material Slots¶:
+    Definitions: ['/(Show/Hide in Ghosts)', '/(Hide/Show Material)', '/(Lock/Unlock Material)']
+    Specials¶:
+      Definitions: ['Show All', 'Hide Others', 'Lock All', 'Unlock All', 'Lock Unselected', 'Lock Unused', 'Copy Material to Selected', 'Copy All Materials to Selected', 'Remove Unused Slots']
+    Lock & Visibility Controls¶:
+      Definitions: ['(Isolate Material)', '(Isolate Material)']
+  Surface¶:
+    Stroke¶:
+      Definitions: ['Line Type', 'Line:', 'Dots:', 'Squares:', 'Style', 'Solid:', 'Texture:', 'Image', 'Blend', 'UV Factor', 'Base Color', 'Holdout', 'Alignment', 'Path:', 'Object:', 'Fixed:', 'Rotation', 'Self Overlap']
+    Fill¶:
+      Definitions: ['Style', 'Solid:', 'Gradient:', 'Gradient Type', 'Linear:', 'Radial:', 'Texture:', 'Image', 'Base Color', 'Secondary ColorGradient', 'Holdout', 'BlendGradient / Texture', 'Flip ColorsGradient', 'Location X, YGradient / Texture', 'RotationGradient / Texture', 'Scale X, YGradient / Texture', 'Clip ImageTexture']
+  Settings¶:
+    Definitions: ['Pass Index']
+
+==================================================
+
+URL: https://docs.blender.org/manual/en/latest/render/cycles/material_settings.html
+----------------------------------------
+Material Settings¶:
+  Definitions: ['Panel:']
+  Surface¶:
+    Definitions: ['Displacement', 'Displacement Only:', 'Bump Only:', 'Displacement and Bump:', 'Emission Sampling', 'None:', 'Auto:', 'Front:', 'Back:', 'Front and Back:', 'Transparent Shadows', 'Bump Map Correction']
+  Volume¶:
+    Definitions: ['Sampling Method', 'Distance:', 'Equiangular:', 'Multiple Importance:', 'Interpolation', 'Linear:', 'Cubic:', 'Homogeneous', 'Step Rate']
+
+==================================================
+
+URL: https://docs.blender.org/manual/en/latest/render/cycles/optimizations/reducing_noise.html
+----------------------------------------
+Reducing Noise¶:
+  Path Tracing¶:
+  The Source of the Noise¶:
+  Bounces¶:
+  Caustics and Filter Glossy¶:
+  Light Falloff¶:
+  Multiple Importance Sampling¶:
+  Glass and Transparent Shadows¶:
+  Light Portals¶:
+  Denoising¶:
+  Clamp Fireflies¶:
+
+==================================================
+
+URL: https://docs.blender.org/manual/en/latest/render/shader_nodes/input/ao.html
+----------------------------------------
+Ambient Occlusion Node¶:
+  Definitions: ['Cycles Only', 'The Ambient Occlusion node will not produce a valid result when:']
+  Inputs¶:
+    Definitions: ['Color', 'Distance', 'Normal']
+  Properties¶:
+    Definitions: ['Samples', 'Inside', 'Only LocalCycles Only']
+  Outputs¶:
+    Definitions: ['Color', 'AO']
+  Example¶:
+
+==================================================
+
+URL: https://docs.blender.org/manual/en/latest/render/shader_nodes/input/attribute.html
+----------------------------------------
+Attribute Node¶:
+  Inputs¶:
+  Properties¶:
+    Definitions: ['Attribute Type', 'Geometry:', 'Ocean Foam', 'Object:', 'Instancer:', 'View Layer:', 'colororworld.color', 'render.resolution_x,render.resolution_y', 'camera.data.angle_x,camera.data.angle_y,', 'Name']
+  Outputs¶:
+    Definitions: ['Color', 'Vector', 'Factor', 'Alpha']
+
+==================================================
+
+URL: https://docs.blender.org/manual/en/latest/render/shader_nodes/input/bevel.html
+----------------------------------------
+Bevel Node¶:
+  Definitions: ['The object is either aCaustic caster']
+  Inputs¶:
+    Definitions: ['Radius', 'Normal']
+  Properties¶:
+    Definitions: ['Samples']
+  Outputs¶:
+    Definitions: ['Normal']
+  Examples¶:
+
+==================================================
+
+URL: https://docs.blender.org/manual/en/latest/render/shader_nodes/input/camera_data.html
+----------------------------------------
+Camera Data Node¶:
+  Inputs¶:
+  Properties¶:
+  Outputs¶:
+    Definitions: ['View Vector', 'View Z Depth', 'View Distance']
+
+==================================================
+
+URL: https://docs.blender.org/manual/en/latest/render/shader_nodes/input/fresnel.html
+----------------------------------------
+Fresnel Node¶:
+  Inputs¶:
+    Definitions: ['IOR', 'Normal']
+  Properties¶:
+  Outputs¶:
+    Definitions: ['Factor']
+
+==================================================
+
+URL: https://docs.blender.org/manual/en/latest/render/shader_nodes/input/geometry.html
+----------------------------------------
+Geometry Node¶:
+  Inputs¶:
+  Properties¶:
+  Outputs¶:
+    Definitions: ['Position', 'Normal', 'Tangent', 'True Normal', 'Incoming', 'Parametric', 'Backfacing', 'PointinessCycles Only', 'Random per IslandCycles Only']
+
+==================================================
+
+URL: https://docs.blender.org/manual/en/latest/render/shader_nodes/input/layer_weight.html
+----------------------------------------
+Layer Weight Node¶:
+  Inputs¶:
+    Definitions: ['Blend', 'Normal']
+  Properties¶:
+  Outputs¶:
+    Definitions: ['Fresnel', 'Facing']
+
+==================================================
+
+URL: https://docs.blender.org/manual/en/latest/render/shader_nodes/output/aov.html
+----------------------------------------
+AOV Output Node¶:
+  Inputs¶:
+    Definitions: ['Color', 'Value']
+  Properties¶:
+    Definitions: ['Name']
+  Outputs¶:
+
+==================================================
+
+URL: https://docs.blender.org/manual/en/latest/render/shader_nodes/output/material.html
+----------------------------------------
+Material Output Node¶:
+  Inputs¶:
+    Definitions: ['Surface', 'Volume', 'Displacement', 'ThicknessEEVEE']
+  Properties¶:
+    Definitions: ['Target']
+  Outputs¶:
+
+==================================================
+
+URL: https://docs.blender.org/manual/en/latest/render/shader_nodes/output/light.html
+----------------------------------------
+Light Output Node¶:
+  Inputs¶:
+    Definitions: ['Surface']
+  Properties¶:
+    Definitions: ['Target']
+  Outputs¶:
+
+==================================================
+
+URL: https://docs.blender.org/manual/en/latest/render/shader_nodes/output/world.html
+----------------------------------------
+World Output Node¶:
+  Inputs¶:
+    Definitions: ['Surface', 'Volume']
+  Properties¶:
+    Definitions: ['Target']
+  Outputs¶:
+
+==================================================
+
+URL: https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/background.html
+----------------------------------------
+Background¶:
+  Inputs¶:
+    Definitions: ['Color', 'Strength']
+  Properties¶:
+  Outputs¶:
+    Definitions: ['Background']
+
+==================================================
+
+URL: https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/diffuse.html
+----------------------------------------
+Diffuse BSDF¶:
+  Inputs¶:
+    Definitions: ['Color', 'RoughnessCycles Only', 'Normal']
+  Properties¶:
+  Outputs¶:
+    Definitions: ['BSDF']
+  Examples¶:
+
+==================================================
+
+URL: https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/emission.html
+----------------------------------------
+Emission¶:
+  Inputs¶:
+    Definitions: ['Color', 'Strength']
+  Properties¶:
+  Outputs¶:
+    Definitions: ['Emission']
+  Examples¶:
+
+==================================================
+
+URL: https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/glass.html
+----------------------------------------
+Glass BSDF¶:
+  Inputs¶:
+    Definitions: ['Color', 'Roughness', 'IOR', 'Normal']
+  Properties¶:
+    Definitions: ['Distribution', 'GGX:', 'Multiscatter GGX:', 'Beckmann:']
+  Outputs¶:
+    Definitions: ['BSDF']
+  Examples¶:
+
+==================================================
+
+URL: https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/glossy.html
+----------------------------------------
+Glossy BSDF¶:
+  Inputs¶:
+    Definitions: ['Color', 'Roughness', 'AnisotropyCycles Only', 'Rotation', 'Normal', 'Tangent']
+  Properties¶:
+    Definitions: ['Distribution', 'GGX:', 'Multiscatter GGX:', 'Beckmann:']
+  Outputs¶:
+    Definitions: ['BSDF']
+  Examples¶:
+
+==================================================
+
+URL: https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/hair.html
+----------------------------------------
+Hair BSDF¶:
+  Inputs¶:
+    Definitions: ['Color', 'Offset', 'Roughness U/V', 'Tangent']
+  Properties¶:
+    Definitions: ['Component', 'Reflection:', 'Transmission:']
+  Outputs¶:
+    Definitions: ['BSDF']
+
+==================================================
+
+URL: https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/holdout.html
+----------------------------------------
+Holdout¶:
+  Inputs¶:
+  Properties¶:
+  Outputs¶:
+    Definitions: ['Holdout']
+  Examples¶:
+
+==================================================
+
+URL: https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/mix.html
+----------------------------------------
+Mix Shader¶:
+  Inputs¶:
+    Definitions: ['Shader', 'Factor']
+  Properties¶:
+  Outputs¶:
+    Definitions: ['Shader']
+  Examples¶:
+
+==================================================
+
+URL: https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/metallic.html
+----------------------------------------
+Metallic BSDF¶:
+  Inputs¶:
+    F82 Tint¶:
+      Definitions: ['Base Color', 'Edge Tint']
+    Physical Conductor¶:
+      Definitions: ['IOR', 'Extinction']
+    Common¶:
+      Definitions: ['Roughness', 'AnisotropyCycles Only', 'RotationCycles Only', 'Normal', 'Tangent']
+  Properties¶:
+    Definitions: ['Distribution', 'GGX:', 'Multiscatter GGX:', 'Beckmann:', 'Fresnel Type', 'F82 Tint:', 'Physical Conductor:']
+  Outputs¶:
+    Definitions: ['BSDF']
+  Examples¶:
+    F82 Tint¶:
+    Physical Conductor¶:
+
+==================================================
+
+URL: https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/principled.html
+----------------------------------------
+Principled BSDF¶:
+  Layers¶:
+  Inputs¶:
+    Definitions: ['Base Color', 'Roughness', 'Metallic', 'IOR', 'Alpha', 'Normal']
+    Diffuse¶:
+      Definitions: ['RoughnessCycles Only']
+    Subsurface¶:
+      Definitions: ['Method', 'Christensen-Burley:', 'Random Walk:', 'Random Walk (Skin):', 'Weight', 'Radius', 'Scale', 'IORCycles Only', 'AnisotropyCycles Only']
+    Specular¶:
+      Definitions: ['Distribution', 'GGX:', 'Multiscatter GGX:', 'IOR Level', 'Tint', 'AnisotropicCycles Only', 'Anisotropic RotationCycles Only', 'Tangent']
+    Transmission¶:
+      Definitions: ['Weight']
+    Coat¶:
+      Definitions: ['Weight', 'Roughness', 'IOR', 'Tint', 'Normal']
+    Sheen¶:
+      Definitions: ['Weight', 'Roughness', 'Tint']
+    Emission¶:
+      Definitions: ['Color', 'Strength']
+    Thin FilmCycles Only¶:
+      Definitions: ['Thickness', 'IOR']
+  Outputs¶:
+    Definitions: ['BSDF']
+
+==================================================
+
+URL: https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/hair_principled.html
+----------------------------------------
+Principled Hair BSDF¶:
+  Inputs¶:
+    Common¶:
+      Definitions: ['Color', 'Melanin', 'Melanin Redness', 'Tint', 'Absorption Coefficient', 'IOR', 'Offset', 'Random Color', 'Random Roughness', 'Random']
+    Chiang Model¶:
+      Definitions: ['Roughness', 'Radial Roughness', 'Coat']
+    Huang Model¶:
+      Definitions: ['Aspect Ratio', 'Roughness', 'Reflection', 'Transmission', 'Secondary Reflection']
+  Properties¶:
+    Definitions: ['Color Parametrization', 'Direct Coloring:', 'Melanin Concentration:', 'Absorption Coefficient:']
+  Outputs¶:
+    Definitions: ['BSDF']
+  References¶:
+
+==================================================
+
+URL: https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/volume_principled.html
+----------------------------------------
+Principled Volume¶:
+  Inputs¶:
+    Definitions: ['Color', 'Color Attribute', 'Density', 'Density Attribute', 'Anisotropy', 'Absorption Color', 'Emission Strength', 'Emission Color', 'Blackbody Intensity', 'Blackbody Tint', 'Temperature', 'Temperature Attribute']
+  Properties¶:
+  Outputs¶:
+    Definitions: ['Volume']
+  Examples¶:
+
+==================================================
+
+URL: https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/ray_portal.html
+----------------------------------------
+Ray Portal BSDF¶:
+  Inputs¶:
+    Definitions: ['Color', 'Position', 'Direction']
+  Properties¶:
+  Outputs¶:
+    Definitions: ['BSDF']
+  Examples¶:
+    Simple Offset¶:
+    Portal¶:
+    Camera Feed¶:
+
+==================================================
+
+URL: https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/refraction.html
+----------------------------------------
+Refraction BSDF¶:
+  Inputs¶:
+    Definitions: ['Color', 'Roughness', 'Normal']
+  Properties¶:
+    Definitions: ['Distribution', 'GGX:', 'Beckmann:']
+  Outputs¶:
+    Definitions: ['BSDF']
+  Examples¶:
+
+==================================================
+
+URL: https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/specular_bsdf.html
+----------------------------------------
+Specular BSDF¶:
+  Inputs¶:
+    Definitions: ['Base Color', 'Specular', 'Roughness', 'Emissive Color', 'Transparency', 'Normal', 'Clear Coat', 'Clear Coat Roughness:', 'Clear Coat Normal', 'Ambient Occlusion']
+  Properties¶:
+  Outputs¶:
+    Definitions: ['BSDF']
+
+==================================================
+
+URL: https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/sss.html
+----------------------------------------
+Subsurface Scattering¶:
+  Inputs¶:
+    Definitions: ['Color', 'Scale', 'Radius', 'IORCycles Only', 'AnisotropyCycles Only', 'RoughnessCycles Only', 'Normal']
+  Properties¶:
+    Definitions: ['Subsurface Method', 'Christensen-Burley:', 'Random Walk (Fixed Radius):', 'Random Walk:']
+  Outputs¶:
+    Definitions: ['BSSRDF']
+  Examples¶:
+
+==================================================
+
+URL: https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/toon.html
+----------------------------------------
+Toon BSDF¶:
+  Inputs¶:
+    Definitions: ['Color', 'Size', 'Smooth', 'Normal']
+  Properties¶:
+    Definitions: ['Component', 'Diffuse:', 'Glossy:']
+  Outputs¶:
+    Definitions: ['BSDF']
+  Examples¶:
+
+==================================================
+
+URL: https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/translucent.html
+----------------------------------------
+Translucent BSDF¶:
+  Inputs¶:
+    Definitions: ['Color', 'Normal']
+  Properties¶:
+  Outputs¶:
+    Definitions: ['BSDF']
+  Examples¶:
+
+==================================================
+
+URL: https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/transparent.html
+----------------------------------------
+Transparent BSDF¶:
+  Inputs¶:
+    Definitions: ['Color']
+  Properties¶:
+  Outputs¶:
+    Definitions: ['BSDF']
+  Examples¶:
+
+==================================================
+
+URL: https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/sheen.html
+----------------------------------------
+Sheen BSDF¶:
+  Inputs¶:
+    Definitions: ['Color', 'Roughness', 'Normal']
+  Properties¶:
+    Definitions: ['Distribution', 'Ashikhmin:', 'Microfiber:']
+  Outputs¶:
+    Definitions: ['BSDF']
+  Examples¶:
+
+==================================================
+
+URL: https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/volume_absorption.html
+----------------------------------------
+Volume Absorption¶:
+  Inputs¶:
+    Definitions: ['Color', 'Density']
+  Properties¶:
+  Outputs¶:
+    Definitions: ['Volume']
+  Examples¶:
+
+==================================================
+
+URL: https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/volume_scatter.html
+----------------------------------------
+Volume Scatter¶:
+  Inputs¶:
+    Definitions: ['Color', 'Density', 'AnisotropyHenyey-GreensteinDraine', 'IORFournier-Forand', 'BackscatterFournier-Forand', 'AlphaDraine', 'DiameterMie']
+  Properties¶:
+    Definitions: ['Phase', 'Henyey-Greenstein:', 'Fournier-Forand:', 'Draine:', 'Rayleigh:', 'Mie:']
+  Outputs¶:
+    Definitions: ['Volume']
+  Examples¶:
+
+==================================================
+
+URL: https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/volume_coefficients.html
+----------------------------------------
+Volume Coefficients¶:
+  Inputs¶:
+    Absorption¶:
+      Definitions: ['Coefficients']
+    Scatter¶:
+      Definitions: ['Coefficients', 'AnisotropyHenyey-GreensteinDraine', 'IORFournier-Forand', 'BackscatterFournier-Forand', 'AlphaDraine', 'DiameterMie']
+    Emission¶:
+      Definitions: ['Coefficients']
+  Properties¶:
+    Definitions: ['Phase', 'Henyey-Greenstein:', 'Fournier-Forand:', 'Draine:', 'Rayleigh:', 'Mie:']
+  Outputs¶:
+    Definitions: ['Volume']
+
+==================================================
+
+URL: https://docs.blender.org/manual/en/latest/render/shader_nodes/textures/brick.html
+----------------------------------------
+Brick Texture Node¶:
+  Inputs¶:
+    Definitions: ['Color 1/2', 'Mortar', 'Scale', 'Mortar Size', 'Mortar Smooth', 'Bias', 'Brick Width', 'Row Height']
+  Properties¶:
+    Definitions: ['Offset', 'Frequency', 'Squash', 'Frequency']
+  Outputs¶:
+    Definitions: ['Color', 'Factor']
+  Examples¶:
+
+==================================================
+
+URL: https://docs.blender.org/manual/en/latest/render/shader_nodes/textures/checker.html
+----------------------------------------
+Checker Texture Node¶:
+  Inputs¶:
+    Definitions: ['Vector', 'Color1, Color 2', 'Scale']
+  Properties¶:
+  Outputs¶:
+    Definitions: ['Color', 'Factor']
+  Examples¶:
+
+==================================================
+
+URL: https://docs.blender.org/manual/en/latest/render/shader_nodes/textures/environment.html
+----------------------------------------
+Environment Texture Node¶:
+  Inputs¶:
+    Definitions: ['Vector']
+  Properties¶:
+    Definitions: ['Image', 'Color Space', 'Texture Interpolation', 'Linear:', 'Closest:', 'Cubic:', 'Smart:', 'Projection Method', 'Equirectangular:', 'Mirror Ball:']
+  Outputs¶:
+    Definitions: ['Color']
+  Examples¶:
+
+==================================================
+
+URL: https://docs.blender.org/manual/en/latest/render/shader_nodes/textures/gabor.html
+----------------------------------------
+Gabor Texture Node¶:
+  Inputs¶:
+    Definitions: ['Vector', 'Scale', 'Frequency', 'Anisotropy', 'Orientation']
+  Properties¶:
+    Definitions: ['Type', '2D:', '3D:']
+  Outputs¶:
+    Definitions: ['Value', 'Phase', 'Intensity']
+  Examples¶:
+
+==================================================
+
+URL: https://docs.blender.org/manual/en/latest/render/shader_nodes/textures/gradient.html
+----------------------------------------
+Gradient Texture Node¶:
+  Inputs¶:
+    Definitions: ['Vector']
+  Properties¶:
+    Definitions: ['Gradient Type', 'Linear:', 'Quadratic:', 'Easing:', 'Diagonal:', 'Spherical:', 'Quadratic Sphere:', 'Radial:']
+  Outputs¶:
+    Definitions: ['Color', 'Factor']
+  Examples¶:
+
+==================================================
+
+URL: https://docs.blender.org/manual/en/latest/render/shader_nodes/textures/ies.html
+----------------------------------------
+IES Texture Node¶:
+  Inputs¶:
+    Definitions: ['Vector', 'Strength']
+  Properties¶:
+    Definitions: ['Mode', 'Internal:', 'External:']
+  Outputs¶:
+    Definitions: ['Factor']
+  Examples¶:
+
+==================================================
+
+URL: https://docs.blender.org/manual/en/latest/render/shader_nodes/textures/image.html
+----------------------------------------
+Image Texture Node¶:
+  Inputs¶:
+    Definitions: ['Vector']
+  Properties¶:
+    Definitions: ['Image', 'Interpolation', 'Linear:', 'Cubic:', 'Closest:', 'Smart:', 'Projection', 'Flat:', 'Box:', 'Blend', 'Sphere:', 'Tube:', 'Extension', 'Repeat:', 'Extend:', 'Clip:', 'Mirror:', 'Source', 'Frames', 'Start Frame', 'Offset', 'Cyclic', 'Auto Refresh', 'Color Space', 'Alpha']
+  Outputs¶:
+    Definitions: ['Color', 'Alpha']
+  Examples¶:
+
+==================================================
+
+URL: https://docs.blender.org/manual/en/latest/render/shader_nodes/textures/magic.html
+----------------------------------------
+Magic Texture Node¶:
+  Inputs¶:
+    Definitions: ['Vector', 'Scale', 'Distortion']
+  Properties¶:
+    Definitions: ['Depth']
+  Outputs¶:
+    Definitions: ['Color', 'Factor']
+  Examples¶:
+
+==================================================
+
+URL: https://docs.blender.org/manual/en/latest/render/shader_nodes/textures/noise.html
+----------------------------------------
+Noise Texture Node¶:
+  Inputs¶:
+    Definitions: ['Vector', 'W', 'Scale', 'Detail', 'Roughness', 'Lacunarity', 'Offset', 'Gain', 'Distortion']
+  Properties¶:
+    Definitions: ['Dimensions', '1D:', '2D:', '3D:', '4D:', 'Type', 'fBM:', 'Multifractal:', 'Hybrid Multifractal:', 'Ridged Multifractal:', 'Hetero Terrain:', 'NormalizefBM']
+  Outputs¶:
+    Definitions: ['Factor', 'Color']
+  Examples¶:
+  Notes¶:
+
+==================================================
+
+URL: https://docs.blender.org/manual/en/latest/render/shader_nodes/textures/point_density.html
+----------------------------------------
+Point Density Node¶:
+  Inputs¶:
+    Definitions: ['Vector']
+  Properties¶:
+    Definitions: ['Point Data', 'Particle System', 'Object Vertices', 'Object', 'Particle System', 'Space', 'World Space:', 'Object Space:', 'Radius', 'Interpolation', 'Closest:', 'Linear:', 'Cubic:', 'Resolution', 'Color Source', 'Particle Color Sources', 'Particle Age:', 'Particle Speed:', 'Particle Velocity:', 'Vertex Color Sources', 'Vertex Color:', 'Vertex Weight:', 'Vertex Normals:']
+  Outputs¶:
+    Definitions: ['Color', 'Density']
+  Examples¶:
+
+==================================================
+
+URL: https://docs.blender.org/manual/en/latest/render/shader_nodes/textures/sky.html
+----------------------------------------
+Sky Texture Node¶:
+  Inputs¶:
+    Definitions: ['Vector']
+  Properties¶:
+    Definitions: ['Sky Type', 'Preetham', 'Hosek/Wilkie', 'Nishita', 'Sun Direction', 'Turbidity', 'Ground Albedo', 'Sun DiscCycles Only', 'Sun Size', 'Sun Intensity', 'Sun Elevation', 'Sun Rotation', 'Altitude', 'Air', 'Dust', 'Ozone']
+  Outputs¶:
+    Definitions: ['Color']
+  Examples¶:
+
+==================================================
+
+URL: https://docs.blender.org/manual/en/latest/render/shader_nodes/textures/voronoi.html
+----------------------------------------
+Voronoi Texture Node¶:
+  Inputs¶:
+    Definitions: ['Vector', 'W', 'Scale', 'Detail', 'Roughness', 'Lacunarity', 'Smoothness', 'Exponent', 'Randomness']
+  Properties¶:
+    Definitions: ['Dimensions', '1D:', '2D:', '3D:', '4D:', 'Feature', 'F1:', 'F2:', 'Smooth F1:', 'Distance to Edge:', 'N-Sphere Radius:', 'Distance Metric', 'Euclidean:', 'Manhattan:', 'Chebychev:', 'Minkowski:', 'Normalize']
+  Outputs¶:
+    Definitions: ['Distance', 'Color', 'Position', 'W', 'Radius']
+  Notes¶:
+  Examples¶:
+
+==================================================
+
+URL: https://docs.blender.org/manual/en/latest/render/shader_nodes/textures/wave.html
+----------------------------------------
+Wave Texture Node¶:
+  Inputs¶:
+    Definitions: ['Vector', 'Scale', 'Distortion', 'Detail', 'Detail Scale', 'Roughness', 'Phase Offset']
+  Properties¶:
+    Definitions: ['Type', 'Bands/Rings Direction', 'Wave Profile', 'Saw:', 'Sine:']
+  Outputs¶:
+    Definitions: ['Color', 'Factor']
+  Examples¶:
+
+==================================================
+
+URL: https://docs.blender.org/manual/en/latest/render/shader_nodes/textures/white_noise.html
+----------------------------------------
+White Noise Texture Node¶:
+  Inputs¶:
+    Definitions: ['Vector', 'W']
+  Properties¶:
+    Definitions: ['Dimensions', '1D:', '2D:', '3D:', '4D:']
+  Outputs¶:
+    Definitions: ['Value', 'Color']
+  Notes¶:
+  Examples¶:
+
+==================================================
+

@@ -1,0 +1,1792 @@
+{
+  "https://docs.blender.org/manual/en/latest/scene_layout/scene/properties.html": {
+    "Scene Properties¶": {
+      "Scene¶": {
+        "_definitions": [
+          "Panel:",
+          "Camera",
+          "Background Scene",
+          "Active Clip"
+        ]
+      },
+      "Units¶": {
+        "_definitions": [
+          "Panel:",
+          "Unit System",
+          "None:",
+          "Metric:",
+          "Imperial:",
+          "Unit Scale",
+          "Separate Units",
+          "Rotation",
+          "Degrees:",
+          "Radians:",
+          "Length",
+          "Adaptive:",
+          "Meters/Centimeters/Feet:",
+          "Mass",
+          "Time",
+          "Temperature"
+        ]
+      },
+      "Gravity¶": {
+        "_definitions": [
+          "Panel:"
+        ]
+      },
+      "Simulation¶": {
+        "_definitions": [
+          "Simulation Range",
+          "Start, End"
+        ]
+      },
+      "Keying Sets¶": {
+        "_definitions": [
+          "Panel:"
+        ]
+      },
+      "Audio¶": {
+        "_definitions": [
+          "Panel:",
+          "Volume",
+          "Distance Model",
+          "Doppler Speed",
+          "Doppler Factor",
+          "Update Animation Cache"
+        ]
+      },
+      "Rigid Body World¶": {
+        "_definitions": [
+          "Panel:"
+        ]
+      },
+      "Animation¶": {
+        "_definitions": [
+          "Panel:",
+          "Scene",
+          "Compositing Node Tree"
+        ]
+      }
+    }
+  },
+  "https://docs.blender.org/manual/en/latest/scene_layout/object/types.html": {
+    "Object Types¶": {
+      "_definitions": [
+        "Mode:",
+        "Menu:",
+        "Shortcut:",
+        "Mesh",
+        "Curve",
+        "Surface",
+        "Metaball",
+        "Text",
+        "Volume",
+        "Grease Pencil",
+        "Armature",
+        "Lattice",
+        "Empty",
+        "Image",
+        "Image Plane",
+        "Light",
+        "Light Probe",
+        "Camera",
+        "Speaker",
+        "Force Field",
+        "Collection Instance"
+      ],
+      "Common Options¶": {
+        "_definitions": [
+          "Type",
+          "Radius/Size",
+          "Align",
+          "World:",
+          "View:",
+          "3D Cursor:",
+          "Location",
+          "Rotation"
+        ]
+      }
+    }
+  },
+  "https://docs.blender.org/manual/en/latest/scene_layout/object/origin.html": {
+    "Object Origin¶": {
+      "_definitions": [
+        "Yellow:",
+        "Orange:",
+        "White:",
+        "Turquoise:",
+        "Light Turquoise:"
+      ],
+      "Set Origin¶": {
+        "_definitions": [
+          "Mode:",
+          "Menu:",
+          "Type",
+          "Geometry to Origin",
+          "Origin to Geometry",
+          "Origin to 3D Cursor",
+          "Origin to Center of Mass",
+          "Center"
+        ]
+      }
+    }
+  },
+  "https://docs.blender.org/manual/en/latest/scene_layout/object/selecting.html": {
+    "Selecting Objects¶": {
+      "Selections and the Active Object¶": {},
+      "Select Menu¶": {
+        "All¶": {
+          "_definitions": [
+            "Mode:",
+            "Menu:",
+            "Shortcut:"
+          ]
+        },
+        "None¶": {
+          "_definitions": [
+            "Mode:",
+            "Menu:",
+            "Shortcut:"
+          ]
+        },
+        "Invert¶": {
+          "_definitions": [
+            "Mode:",
+            "Menu:",
+            "Shortcut:"
+          ]
+        },
+        "Box Select¶": {
+          "_definitions": [
+            "Mode:",
+            "Menu:",
+            "Shortcut:"
+          ]
+        },
+        "Circle Select¶": {
+          "_definitions": [
+            "Mode:",
+            "Menu:",
+            "Shortcut:"
+          ]
+        },
+        "Lasso Select¶": {
+          "_definitions": [
+            "Mode:",
+            "Menu:",
+            "Shortcut:"
+          ]
+        },
+        "Select Active Camera¶": {
+          "_definitions": [
+            "Mode:",
+            "Menu:"
+          ]
+        },
+        "Select Mirror¶": {
+          "_definitions": [
+            "Mode:",
+            "Menu:"
+          ]
+        },
+        "Select Random¶": {
+          "_definitions": [
+            "Mode:",
+            "Menu:"
+          ]
+        },
+        "Select More/Less¶": {
+          "_definitions": [
+            "Mode:",
+            "Menu:",
+            "Shortcut:",
+            "More",
+            "Less",
+            "Parent",
+            "Child",
+            "Extend Parent",
+            "Extend Child"
+          ]
+        },
+        "Select All by Type¶": {
+          "_definitions": [
+            "Mode:",
+            "Menu:"
+          ]
+        },
+        "Select Grouped¶": {
+          "_definitions": [
+            "Mode:",
+            "Menu:",
+            "Shortcut:",
+            "Children",
+            "Immediate Children",
+            "Parent",
+            "Siblings",
+            "Type",
+            "Collection",
+            "Object Hooks",
+            "Pass",
+            "Color",
+            "Keying Set",
+            "Light Type"
+          ]
+        },
+        "Select Linked¶": {
+          "_definitions": [
+            "Mode:",
+            "Menu:",
+            "Shortcut:",
+            "Object Data",
+            "Material",
+            "Instanced Collection",
+            "Texture",
+            "Particle System",
+            "Library",
+            "Library (Object Data)"
+          ]
+        },
+        "Select Pattern¶": {
+          "_definitions": [
+            "Mode:",
+            "Menu:",
+            "Case Sensitive",
+            "Extend"
+          ]
+        }
+      }
+    }
+  },
+  "https://docs.blender.org/manual/en/latest/scene_layout/object/editing/transform/control/numeric_input.html": {
+    "Numeric Input¶": {
+      "_definitions": [
+        "MoveG",
+        "RotationR",
+        "ScaleS"
+      ],
+      "Simple Mode¶": {
+        "_definitions": [
+          "DecimalsPeriod",
+          "NegateMinus",
+          "InverseSlash",
+          "ResetBackspace",
+          "Next/Previous ComponentTab,Ctrl-Tab",
+          "Non-number Inputs"
+        ]
+      },
+      "Advanced Mode¶": {}
+    }
+  },
+  "https://docs.blender.org/manual/en/latest/scene_layout/object/editing/shading.html": {
+    "Shading¶": {
+      "Shade Smooth¶": {
+        "_definitions": [
+          "Mode:",
+          "Menu:",
+          "Keep Sharp Edges"
+        ]
+      },
+      "Shade Auto Smooth¶": {
+        "_definitions": [
+          "Mode:",
+          "Menu:",
+          "Auto Smooth",
+          "Angle"
+        ]
+      },
+      "Shade Flat¶": {
+        "_definitions": [
+          "Mode:",
+          "Menu:",
+          "Keep Sharp Edges"
+        ]
+      }
+    }
+  },
+  "https://docs.blender.org/manual/en/latest/sculpt_paint/selection_visibility.html": {
+    "Selection & Visibility¶": {
+      "Selection Masking¶": {
+        "Details About Selecting¶": {},
+        "Vertex Selection Masking¶": {
+          "_definitions": [
+            "Mode:",
+            "Header:",
+            "Shortcut:"
+          ]
+        },
+        "Face Selection Masking¶": {
+          "_definitions": [
+            "Mode:",
+            "Header:",
+            "Shortcut:"
+          ]
+        },
+        "Hide/Unhide Faces¶": {},
+        "Hide/Unhide Vertices¶": {},
+        "The Clipping Region¶": {}
+      },
+      "Select Linked¶": {
+        "_definitions": [
+          "Mode:",
+          "Menu:",
+          "Shortcut:"
+        ]
+      }
+    }
+  },
+  "https://docs.blender.org/manual/en/latest/sculpt_paint/brush/texture.html": {
+    "Texture & Texture Mask¶": {
+      "_definitions": [
+        "Texture",
+        "Mapping & Mask Mapping",
+        "View Plane:",
+        "Area Plane:",
+        "Tiled:",
+        "3D:",
+        "Random:",
+        "Stencil:",
+        "Image Aspect",
+        "Reset Transform",
+        "Pressure Masking",
+        "Off:",
+        "Ramp:",
+        "Cutoff:",
+        "AngleCtrl-F",
+        "Rake",
+        "Random",
+        "Random Angle",
+        "Offset X, Y, Z",
+        "Size X, Y, Z",
+        "Sample BiasSculpt Mode",
+        "Vector DisplacementSculpt Mode"
+      ]
+    }
+  },
+  "https://docs.blender.org/manual/en/latest/grease_pencil/materials/properties.html": {
+    "Grease Pencil Material Properties¶": {
+      "Material Slots¶": {
+        "_definitions": [
+          "/(Show/Hide in Ghosts)",
+          "/(Hide/Show Material)",
+          "/(Lock/Unlock Material)"
+        ],
+        "Specials¶": {
+          "_definitions": [
+            "Show All",
+            "Hide Others",
+            "Lock All",
+            "Unlock All",
+            "Lock Unselected",
+            "Lock Unused",
+            "Copy Material to Selected",
+            "Copy All Materials to Selected",
+            "Remove Unused Slots"
+          ]
+        },
+        "Lock & Visibility Controls¶": {
+          "_definitions": [
+            "(Isolate Material)",
+            "(Isolate Material)"
+          ]
+        }
+      },
+      "Surface¶": {
+        "Stroke¶": {
+          "_definitions": [
+            "Line Type",
+            "Line:",
+            "Dots:",
+            "Squares:",
+            "Style",
+            "Solid:",
+            "Texture:",
+            "Image",
+            "Blend",
+            "UV Factor",
+            "Base Color",
+            "Holdout",
+            "Alignment",
+            "Path:",
+            "Object:",
+            "Fixed:",
+            "Rotation",
+            "Self Overlap"
+          ]
+        },
+        "Fill¶": {
+          "_definitions": [
+            "Style",
+            "Solid:",
+            "Gradient:",
+            "Gradient Type",
+            "Linear:",
+            "Radial:",
+            "Texture:",
+            "Image",
+            "Base Color",
+            "Secondary ColorGradient",
+            "Holdout",
+            "BlendGradient / Texture",
+            "Flip ColorsGradient",
+            "Location X, YGradient / Texture",
+            "RotationGradient / Texture",
+            "Scale X, YGradient / Texture",
+            "Clip ImageTexture"
+          ]
+        }
+      },
+      "Settings¶": {
+        "_definitions": [
+          "Pass Index"
+        ]
+      }
+    }
+  },
+  "https://docs.blender.org/manual/en/latest/render/cycles/material_settings.html": {
+    "Material Settings¶": {
+      "_definitions": [
+        "Panel:"
+      ],
+      "Surface¶": {
+        "_definitions": [
+          "Displacement",
+          "Displacement Only:",
+          "Bump Only:",
+          "Displacement and Bump:",
+          "Emission Sampling",
+          "None:",
+          "Auto:",
+          "Front:",
+          "Back:",
+          "Front and Back:",
+          "Transparent Shadows",
+          "Bump Map Correction"
+        ]
+      },
+      "Volume¶": {
+        "_definitions": [
+          "Sampling Method",
+          "Distance:",
+          "Equiangular:",
+          "Multiple Importance:",
+          "Interpolation",
+          "Linear:",
+          "Cubic:",
+          "Homogeneous",
+          "Step Rate"
+        ]
+      }
+    }
+  },
+  "https://docs.blender.org/manual/en/latest/render/cycles/optimizations/reducing_noise.html": {
+    "Reducing Noise¶": {
+      "Path Tracing¶": {},
+      "The Source of the Noise¶": {},
+      "Bounces¶": {},
+      "Caustics and Filter Glossy¶": {},
+      "Light Falloff¶": {},
+      "Multiple Importance Sampling¶": {},
+      "Glass and Transparent Shadows¶": {},
+      "Light Portals¶": {},
+      "Denoising¶": {},
+      "Clamp Fireflies¶": {}
+    }
+  },
+  "https://docs.blender.org/manual/en/latest/render/shader_nodes/input/ao.html": {
+    "Ambient Occlusion Node¶": {
+      "_definitions": [
+        "Cycles Only",
+        "The Ambient Occlusion node will not produce a valid result when:"
+      ],
+      "Inputs¶": {
+        "_definitions": [
+          "Color",
+          "Distance",
+          "Normal"
+        ]
+      },
+      "Properties¶": {
+        "_definitions": [
+          "Samples",
+          "Inside",
+          "Only LocalCycles Only"
+        ]
+      },
+      "Outputs¶": {
+        "_definitions": [
+          "Color",
+          "AO"
+        ]
+      },
+      "Example¶": {}
+    }
+  },
+  "https://docs.blender.org/manual/en/latest/render/shader_nodes/input/attribute.html": {
+    "Attribute Node¶": {
+      "Inputs¶": {},
+      "Properties¶": {
+        "_definitions": [
+          "Attribute Type",
+          "Geometry:",
+          "Ocean Foam",
+          "Object:",
+          "Instancer:",
+          "View Layer:",
+          "colororworld.color",
+          "render.resolution_x,render.resolution_y",
+          "camera.data.angle_x,camera.data.angle_y,",
+          "Name"
+        ]
+      },
+      "Outputs¶": {
+        "_definitions": [
+          "Color",
+          "Vector",
+          "Factor",
+          "Alpha"
+        ]
+      }
+    }
+  },
+  "https://docs.blender.org/manual/en/latest/render/shader_nodes/input/bevel.html": {
+    "Bevel Node¶": {
+      "_definitions": [
+        "The object is either aCaustic caster"
+      ],
+      "Inputs¶": {
+        "_definitions": [
+          "Radius",
+          "Normal"
+        ]
+      },
+      "Properties¶": {
+        "_definitions": [
+          "Samples"
+        ]
+      },
+      "Outputs¶": {
+        "_definitions": [
+          "Normal"
+        ]
+      },
+      "Examples¶": {}
+    }
+  },
+  "https://docs.blender.org/manual/en/latest/render/shader_nodes/input/camera_data.html": {
+    "Camera Data Node¶": {
+      "Inputs¶": {},
+      "Properties¶": {},
+      "Outputs¶": {
+        "_definitions": [
+          "View Vector",
+          "View Z Depth",
+          "View Distance"
+        ]
+      }
+    }
+  },
+  "https://docs.blender.org/manual/en/latest/render/shader_nodes/input/fresnel.html": {
+    "Fresnel Node¶": {
+      "Inputs¶": {
+        "_definitions": [
+          "IOR",
+          "Normal"
+        ]
+      },
+      "Properties¶": {},
+      "Outputs¶": {
+        "_definitions": [
+          "Factor"
+        ]
+      }
+    }
+  },
+  "https://docs.blender.org/manual/en/latest/render/shader_nodes/input/geometry.html": {
+    "Geometry Node¶": {
+      "Inputs¶": {},
+      "Properties¶": {},
+      "Outputs¶": {
+        "_definitions": [
+          "Position",
+          "Normal",
+          "Tangent",
+          "True Normal",
+          "Incoming",
+          "Parametric",
+          "Backfacing",
+          "PointinessCycles Only",
+          "Random per IslandCycles Only"
+        ]
+      }
+    }
+  },
+  "https://docs.blender.org/manual/en/latest/render/shader_nodes/input/layer_weight.html": {
+    "Layer Weight Node¶": {
+      "Inputs¶": {
+        "_definitions": [
+          "Blend",
+          "Normal"
+        ]
+      },
+      "Properties¶": {},
+      "Outputs¶": {
+        "_definitions": [
+          "Fresnel",
+          "Facing"
+        ]
+      }
+    }
+  },
+  "https://docs.blender.org/manual/en/latest/render/shader_nodes/output/aov.html": {
+    "AOV Output Node¶": {
+      "Inputs¶": {
+        "_definitions": [
+          "Color",
+          "Value"
+        ]
+      },
+      "Properties¶": {
+        "_definitions": [
+          "Name"
+        ]
+      },
+      "Outputs¶": {}
+    }
+  },
+  "https://docs.blender.org/manual/en/latest/render/shader_nodes/output/material.html": {
+    "Material Output Node¶": {
+      "Inputs¶": {
+        "_definitions": [
+          "Surface",
+          "Volume",
+          "Displacement",
+          "ThicknessEEVEE"
+        ]
+      },
+      "Properties¶": {
+        "_definitions": [
+          "Target"
+        ]
+      },
+      "Outputs¶": {}
+    }
+  },
+  "https://docs.blender.org/manual/en/latest/render/shader_nodes/output/light.html": {
+    "Light Output Node¶": {
+      "Inputs¶": {
+        "_definitions": [
+          "Surface"
+        ]
+      },
+      "Properties¶": {
+        "_definitions": [
+          "Target"
+        ]
+      },
+      "Outputs¶": {}
+    }
+  },
+  "https://docs.blender.org/manual/en/latest/render/shader_nodes/output/world.html": {
+    "World Output Node¶": {
+      "Inputs¶": {
+        "_definitions": [
+          "Surface",
+          "Volume"
+        ]
+      },
+      "Properties¶": {
+        "_definitions": [
+          "Target"
+        ]
+      },
+      "Outputs¶": {}
+    }
+  },
+  "https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/background.html": {
+    "Background¶": {
+      "Inputs¶": {
+        "_definitions": [
+          "Color",
+          "Strength"
+        ]
+      },
+      "Properties¶": {},
+      "Outputs¶": {
+        "_definitions": [
+          "Background"
+        ]
+      }
+    }
+  },
+  "https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/diffuse.html": {
+    "Diffuse BSDF¶": {
+      "Inputs¶": {
+        "_definitions": [
+          "Color",
+          "RoughnessCycles Only",
+          "Normal"
+        ]
+      },
+      "Properties¶": {},
+      "Outputs¶": {
+        "_definitions": [
+          "BSDF"
+        ]
+      },
+      "Examples¶": {}
+    }
+  },
+  "https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/emission.html": {
+    "Emission¶": {
+      "Inputs¶": {
+        "_definitions": [
+          "Color",
+          "Strength"
+        ]
+      },
+      "Properties¶": {},
+      "Outputs¶": {
+        "_definitions": [
+          "Emission"
+        ]
+      },
+      "Examples¶": {}
+    }
+  },
+  "https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/glass.html": {
+    "Glass BSDF¶": {
+      "Inputs¶": {
+        "_definitions": [
+          "Color",
+          "Roughness",
+          "IOR",
+          "Normal"
+        ]
+      },
+      "Properties¶": {
+        "_definitions": [
+          "Distribution",
+          "GGX:",
+          "Multiscatter GGX:",
+          "Beckmann:"
+        ]
+      },
+      "Outputs¶": {
+        "_definitions": [
+          "BSDF"
+        ]
+      },
+      "Examples¶": {}
+    }
+  },
+  "https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/glossy.html": {
+    "Glossy BSDF¶": {
+      "Inputs¶": {
+        "_definitions": [
+          "Color",
+          "Roughness",
+          "AnisotropyCycles Only",
+          "Rotation",
+          "Normal",
+          "Tangent"
+        ]
+      },
+      "Properties¶": {
+        "_definitions": [
+          "Distribution",
+          "GGX:",
+          "Multiscatter GGX:",
+          "Beckmann:"
+        ]
+      },
+      "Outputs¶": {
+        "_definitions": [
+          "BSDF"
+        ]
+      },
+      "Examples¶": {}
+    }
+  },
+  "https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/hair.html": {
+    "Hair BSDF¶": {
+      "Inputs¶": {
+        "_definitions": [
+          "Color",
+          "Offset",
+          "Roughness U/V",
+          "Tangent"
+        ]
+      },
+      "Properties¶": {
+        "_definitions": [
+          "Component",
+          "Reflection:",
+          "Transmission:"
+        ]
+      },
+      "Outputs¶": {
+        "_definitions": [
+          "BSDF"
+        ]
+      }
+    }
+  },
+  "https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/holdout.html": {
+    "Holdout¶": {
+      "Inputs¶": {},
+      "Properties¶": {},
+      "Outputs¶": {
+        "_definitions": [
+          "Holdout"
+        ]
+      },
+      "Examples¶": {}
+    }
+  },
+  "https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/mix.html": {
+    "Mix Shader¶": {
+      "Inputs¶": {
+        "_definitions": [
+          "Shader",
+          "Factor"
+        ]
+      },
+      "Properties¶": {},
+      "Outputs¶": {
+        "_definitions": [
+          "Shader"
+        ]
+      },
+      "Examples¶": {}
+    }
+  },
+  "https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/metallic.html": {
+    "Metallic BSDF¶": {
+      "Inputs¶": {
+        "F82 Tint¶": {
+          "_definitions": [
+            "Base Color",
+            "Edge Tint"
+          ]
+        },
+        "Physical Conductor¶": {
+          "_definitions": [
+            "IOR",
+            "Extinction"
+          ]
+        },
+        "Common¶": {
+          "_definitions": [
+            "Roughness",
+            "AnisotropyCycles Only",
+            "RotationCycles Only",
+            "Normal",
+            "Tangent"
+          ]
+        }
+      },
+      "Properties¶": {
+        "_definitions": [
+          "Distribution",
+          "GGX:",
+          "Multiscatter GGX:",
+          "Beckmann:",
+          "Fresnel Type",
+          "F82 Tint:",
+          "Physical Conductor:"
+        ]
+      },
+      "Outputs¶": {
+        "_definitions": [
+          "BSDF"
+        ]
+      },
+      "Examples¶": {
+        "F82 Tint¶": {},
+        "Physical Conductor¶": {}
+      }
+    }
+  },
+  "https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/principled.html": {
+    "Principled BSDF¶": {
+      "Layers¶": {},
+      "Inputs¶": {
+        "_definitions": [
+          "Base Color",
+          "Roughness",
+          "Metallic",
+          "IOR",
+          "Alpha",
+          "Normal"
+        ],
+        "Diffuse¶": {
+          "_definitions": [
+            "RoughnessCycles Only"
+          ]
+        },
+        "Subsurface¶": {
+          "_definitions": [
+            "Method",
+            "Christensen-Burley:",
+            "Random Walk:",
+            "Random Walk (Skin):",
+            "Weight",
+            "Radius",
+            "Scale",
+            "IORCycles Only",
+            "AnisotropyCycles Only"
+          ]
+        },
+        "Specular¶": {
+          "_definitions": [
+            "Distribution",
+            "GGX:",
+            "Multiscatter GGX:",
+            "IOR Level",
+            "Tint",
+            "AnisotropicCycles Only",
+            "Anisotropic RotationCycles Only",
+            "Tangent"
+          ]
+        },
+        "Transmission¶": {
+          "_definitions": [
+            "Weight"
+          ]
+        },
+        "Coat¶": {
+          "_definitions": [
+            "Weight",
+            "Roughness",
+            "IOR",
+            "Tint",
+            "Normal"
+          ]
+        },
+        "Sheen¶": {
+          "_definitions": [
+            "Weight",
+            "Roughness",
+            "Tint"
+          ]
+        },
+        "Emission¶": {
+          "_definitions": [
+            "Color",
+            "Strength"
+          ]
+        },
+        "Thin FilmCycles Only¶": {
+          "_definitions": [
+            "Thickness",
+            "IOR"
+          ]
+        }
+      },
+      "Outputs¶": {
+        "_definitions": [
+          "BSDF"
+        ]
+      }
+    }
+  },
+  "https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/hair_principled.html": {
+    "Principled Hair BSDF¶": {
+      "Inputs¶": {
+        "Common¶": {
+          "_definitions": [
+            "Color",
+            "Melanin",
+            "Melanin Redness",
+            "Tint",
+            "Absorption Coefficient",
+            "IOR",
+            "Offset",
+            "Random Color",
+            "Random Roughness",
+            "Random"
+          ]
+        },
+        "Chiang Model¶": {
+          "_definitions": [
+            "Roughness",
+            "Radial Roughness",
+            "Coat"
+          ]
+        },
+        "Huang Model¶": {
+          "_definitions": [
+            "Aspect Ratio",
+            "Roughness",
+            "Reflection",
+            "Transmission",
+            "Secondary Reflection"
+          ]
+        }
+      },
+      "Properties¶": {
+        "_definitions": [
+          "Color Parametrization",
+          "Direct Coloring:",
+          "Melanin Concentration:",
+          "Absorption Coefficient:"
+        ]
+      },
+      "Outputs¶": {
+        "_definitions": [
+          "BSDF"
+        ]
+      },
+      "References¶": {}
+    }
+  },
+  "https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/volume_principled.html": {
+    "Principled Volume¶": {
+      "Inputs¶": {
+        "_definitions": [
+          "Color",
+          "Color Attribute",
+          "Density",
+          "Density Attribute",
+          "Anisotropy",
+          "Absorption Color",
+          "Emission Strength",
+          "Emission Color",
+          "Blackbody Intensity",
+          "Blackbody Tint",
+          "Temperature",
+          "Temperature Attribute"
+        ]
+      },
+      "Properties¶": {},
+      "Outputs¶": {
+        "_definitions": [
+          "Volume"
+        ]
+      },
+      "Examples¶": {}
+    }
+  },
+  "https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/ray_portal.html": {
+    "Ray Portal BSDF¶": {
+      "Inputs¶": {
+        "_definitions": [
+          "Color",
+          "Position",
+          "Direction"
+        ]
+      },
+      "Properties¶": {},
+      "Outputs¶": {
+        "_definitions": [
+          "BSDF"
+        ]
+      },
+      "Examples¶": {
+        "Simple Offset¶": {},
+        "Portal¶": {},
+        "Camera Feed¶": {}
+      }
+    }
+  },
+  "https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/refraction.html": {
+    "Refraction BSDF¶": {
+      "Inputs¶": {
+        "_definitions": [
+          "Color",
+          "Roughness",
+          "Normal"
+        ]
+      },
+      "Properties¶": {
+        "_definitions": [
+          "Distribution",
+          "GGX:",
+          "Beckmann:"
+        ]
+      },
+      "Outputs¶": {
+        "_definitions": [
+          "BSDF"
+        ]
+      },
+      "Examples¶": {}
+    }
+  },
+  "https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/specular_bsdf.html": {
+    "Specular BSDF¶": {
+      "Inputs¶": {
+        "_definitions": [
+          "Base Color",
+          "Specular",
+          "Roughness",
+          "Emissive Color",
+          "Transparency",
+          "Normal",
+          "Clear Coat",
+          "Clear Coat Roughness:",
+          "Clear Coat Normal",
+          "Ambient Occlusion"
+        ]
+      },
+      "Properties¶": {},
+      "Outputs¶": {
+        "_definitions": [
+          "BSDF"
+        ]
+      }
+    }
+  },
+  "https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/sss.html": {
+    "Subsurface Scattering¶": {
+      "Inputs¶": {
+        "_definitions": [
+          "Color",
+          "Scale",
+          "Radius",
+          "IORCycles Only",
+          "AnisotropyCycles Only",
+          "RoughnessCycles Only",
+          "Normal"
+        ]
+      },
+      "Properties¶": {
+        "_definitions": [
+          "Subsurface Method",
+          "Christensen-Burley:",
+          "Random Walk (Fixed Radius):",
+          "Random Walk:"
+        ]
+      },
+      "Outputs¶": {
+        "_definitions": [
+          "BSSRDF"
+        ]
+      },
+      "Examples¶": {}
+    }
+  },
+  "https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/toon.html": {
+    "Toon BSDF¶": {
+      "Inputs¶": {
+        "_definitions": [
+          "Color",
+          "Size",
+          "Smooth",
+          "Normal"
+        ]
+      },
+      "Properties¶": {
+        "_definitions": [
+          "Component",
+          "Diffuse:",
+          "Glossy:"
+        ]
+      },
+      "Outputs¶": {
+        "_definitions": [
+          "BSDF"
+        ]
+      },
+      "Examples¶": {}
+    }
+  },
+  "https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/translucent.html": {
+    "Translucent BSDF¶": {
+      "Inputs¶": {
+        "_definitions": [
+          "Color",
+          "Normal"
+        ]
+      },
+      "Properties¶": {},
+      "Outputs¶": {
+        "_definitions": [
+          "BSDF"
+        ]
+      },
+      "Examples¶": {}
+    }
+  },
+  "https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/transparent.html": {
+    "Transparent BSDF¶": {
+      "Inputs¶": {
+        "_definitions": [
+          "Color"
+        ]
+      },
+      "Properties¶": {},
+      "Outputs¶": {
+        "_definitions": [
+          "BSDF"
+        ]
+      },
+      "Examples¶": {}
+    }
+  },
+  "https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/sheen.html": {
+    "Sheen BSDF¶": {
+      "Inputs¶": {
+        "_definitions": [
+          "Color",
+          "Roughness",
+          "Normal"
+        ]
+      },
+      "Properties¶": {
+        "_definitions": [
+          "Distribution",
+          "Ashikhmin:",
+          "Microfiber:"
+        ]
+      },
+      "Outputs¶": {
+        "_definitions": [
+          "BSDF"
+        ]
+      },
+      "Examples¶": {}
+    }
+  },
+  "https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/volume_absorption.html": {
+    "Volume Absorption¶": {
+      "Inputs¶": {
+        "_definitions": [
+          "Color",
+          "Density"
+        ]
+      },
+      "Properties¶": {},
+      "Outputs¶": {
+        "_definitions": [
+          "Volume"
+        ]
+      },
+      "Examples¶": {}
+    }
+  },
+  "https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/volume_scatter.html": {
+    "Volume Scatter¶": {
+      "Inputs¶": {
+        "_definitions": [
+          "Color",
+          "Density",
+          "AnisotropyHenyey-GreensteinDraine",
+          "IORFournier-Forand",
+          "BackscatterFournier-Forand",
+          "AlphaDraine",
+          "DiameterMie"
+        ]
+      },
+      "Properties¶": {
+        "_definitions": [
+          "Phase",
+          "Henyey-Greenstein:",
+          "Fournier-Forand:",
+          "Draine:",
+          "Rayleigh:",
+          "Mie:"
+        ]
+      },
+      "Outputs¶": {
+        "_definitions": [
+          "Volume"
+        ]
+      },
+      "Examples¶": {}
+    }
+  },
+  "https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/volume_coefficients.html": {
+    "Volume Coefficients¶": {
+      "Inputs¶": {
+        "Absorption¶": {
+          "_definitions": [
+            "Coefficients"
+          ]
+        },
+        "Scatter¶": {
+          "_definitions": [
+            "Coefficients",
+            "AnisotropyHenyey-GreensteinDraine",
+            "IORFournier-Forand",
+            "BackscatterFournier-Forand",
+            "AlphaDraine",
+            "DiameterMie"
+          ]
+        },
+        "Emission¶": {
+          "_definitions": [
+            "Coefficients"
+          ]
+        }
+      },
+      "Properties¶": {
+        "_definitions": [
+          "Phase",
+          "Henyey-Greenstein:",
+          "Fournier-Forand:",
+          "Draine:",
+          "Rayleigh:",
+          "Mie:"
+        ]
+      },
+      "Outputs¶": {
+        "_definitions": [
+          "Volume"
+        ]
+      }
+    }
+  },
+  "https://docs.blender.org/manual/en/latest/render/shader_nodes/textures/brick.html": {
+    "Brick Texture Node¶": {
+      "Inputs¶": {
+        "_definitions": [
+          "Color 1/2",
+          "Mortar",
+          "Scale",
+          "Mortar Size",
+          "Mortar Smooth",
+          "Bias",
+          "Brick Width",
+          "Row Height"
+        ]
+      },
+      "Properties¶": {
+        "_definitions": [
+          "Offset",
+          "Frequency",
+          "Squash",
+          "Frequency"
+        ]
+      },
+      "Outputs¶": {
+        "_definitions": [
+          "Color",
+          "Factor"
+        ]
+      },
+      "Examples¶": {}
+    }
+  },
+  "https://docs.blender.org/manual/en/latest/render/shader_nodes/textures/checker.html": {
+    "Checker Texture Node¶": {
+      "Inputs¶": {
+        "_definitions": [
+          "Vector",
+          "Color1, Color 2",
+          "Scale"
+        ]
+      },
+      "Properties¶": {},
+      "Outputs¶": {
+        "_definitions": [
+          "Color",
+          "Factor"
+        ]
+      },
+      "Examples¶": {}
+    }
+  },
+  "https://docs.blender.org/manual/en/latest/render/shader_nodes/textures/environment.html": {
+    "Environment Texture Node¶": {
+      "Inputs¶": {
+        "_definitions": [
+          "Vector"
+        ]
+      },
+      "Properties¶": {
+        "_definitions": [
+          "Image",
+          "Color Space",
+          "Texture Interpolation",
+          "Linear:",
+          "Closest:",
+          "Cubic:",
+          "Smart:",
+          "Projection Method",
+          "Equirectangular:",
+          "Mirror Ball:"
+        ]
+      },
+      "Outputs¶": {
+        "_definitions": [
+          "Color"
+        ]
+      },
+      "Examples¶": {}
+    }
+  },
+  "https://docs.blender.org/manual/en/latest/render/shader_nodes/textures/gabor.html": {
+    "Gabor Texture Node¶": {
+      "Inputs¶": {
+        "_definitions": [
+          "Vector",
+          "Scale",
+          "Frequency",
+          "Anisotropy",
+          "Orientation"
+        ]
+      },
+      "Properties¶": {
+        "_definitions": [
+          "Type",
+          "2D:",
+          "3D:"
+        ]
+      },
+      "Outputs¶": {
+        "_definitions": [
+          "Value",
+          "Phase",
+          "Intensity"
+        ]
+      },
+      "Examples¶": {}
+    }
+  },
+  "https://docs.blender.org/manual/en/latest/render/shader_nodes/textures/gradient.html": {
+    "Gradient Texture Node¶": {
+      "Inputs¶": {
+        "_definitions": [
+          "Vector"
+        ]
+      },
+      "Properties¶": {
+        "_definitions": [
+          "Gradient Type",
+          "Linear:",
+          "Quadratic:",
+          "Easing:",
+          "Diagonal:",
+          "Spherical:",
+          "Quadratic Sphere:",
+          "Radial:"
+        ]
+      },
+      "Outputs¶": {
+        "_definitions": [
+          "Color",
+          "Factor"
+        ]
+      },
+      "Examples¶": {}
+    }
+  },
+  "https://docs.blender.org/manual/en/latest/render/shader_nodes/textures/ies.html": {
+    "IES Texture Node¶": {
+      "Inputs¶": {
+        "_definitions": [
+          "Vector",
+          "Strength"
+        ]
+      },
+      "Properties¶": {
+        "_definitions": [
+          "Mode",
+          "Internal:",
+          "External:"
+        ]
+      },
+      "Outputs¶": {
+        "_definitions": [
+          "Factor"
+        ]
+      },
+      "Examples¶": {}
+    }
+  },
+  "https://docs.blender.org/manual/en/latest/render/shader_nodes/textures/image.html": {
+    "Image Texture Node¶": {
+      "Inputs¶": {
+        "_definitions": [
+          "Vector"
+        ]
+      },
+      "Properties¶": {
+        "_definitions": [
+          "Image",
+          "Interpolation",
+          "Linear:",
+          "Cubic:",
+          "Closest:",
+          "Smart:",
+          "Projection",
+          "Flat:",
+          "Box:",
+          "Blend",
+          "Sphere:",
+          "Tube:",
+          "Extension",
+          "Repeat:",
+          "Extend:",
+          "Clip:",
+          "Mirror:",
+          "Source",
+          "Frames",
+          "Start Frame",
+          "Offset",
+          "Cyclic",
+          "Auto Refresh",
+          "Color Space",
+          "Alpha"
+        ]
+      },
+      "Outputs¶": {
+        "_definitions": [
+          "Color",
+          "Alpha"
+        ]
+      },
+      "Examples¶": {}
+    }
+  },
+  "https://docs.blender.org/manual/en/latest/render/shader_nodes/textures/magic.html": {
+    "Magic Texture Node¶": {
+      "Inputs¶": {
+        "_definitions": [
+          "Vector",
+          "Scale",
+          "Distortion"
+        ]
+      },
+      "Properties¶": {
+        "_definitions": [
+          "Depth"
+        ]
+      },
+      "Outputs¶": {
+        "_definitions": [
+          "Color",
+          "Factor"
+        ]
+      },
+      "Examples¶": {}
+    }
+  },
+  "https://docs.blender.org/manual/en/latest/render/shader_nodes/textures/noise.html": {
+    "Noise Texture Node¶": {
+      "Inputs¶": {
+        "_definitions": [
+          "Vector",
+          "W",
+          "Scale",
+          "Detail",
+          "Roughness",
+          "Lacunarity",
+          "Offset",
+          "Gain",
+          "Distortion"
+        ]
+      },
+      "Properties¶": {
+        "_definitions": [
+          "Dimensions",
+          "1D:",
+          "2D:",
+          "3D:",
+          "4D:",
+          "Type",
+          "fBM:",
+          "Multifractal:",
+          "Hybrid Multifractal:",
+          "Ridged Multifractal:",
+          "Hetero Terrain:",
+          "NormalizefBM"
+        ]
+      },
+      "Outputs¶": {
+        "_definitions": [
+          "Factor",
+          "Color"
+        ]
+      },
+      "Examples¶": {},
+      "Notes¶": {}
+    }
+  },
+  "https://docs.blender.org/manual/en/latest/render/shader_nodes/textures/point_density.html": {
+    "Point Density Node¶": {
+      "Inputs¶": {
+        "_definitions": [
+          "Vector"
+        ]
+      },
+      "Properties¶": {
+        "_definitions": [
+          "Point Data",
+          "Particle System",
+          "Object Vertices",
+          "Object",
+          "Particle System",
+          "Space",
+          "World Space:",
+          "Object Space:",
+          "Radius",
+          "Interpolation",
+          "Closest:",
+          "Linear:",
+          "Cubic:",
+          "Resolution",
+          "Color Source",
+          "Particle Color Sources",
+          "Particle Age:",
+          "Particle Speed:",
+          "Particle Velocity:",
+          "Vertex Color Sources",
+          "Vertex Color:",
+          "Vertex Weight:",
+          "Vertex Normals:"
+        ]
+      },
+      "Outputs¶": {
+        "_definitions": [
+          "Color",
+          "Density"
+        ]
+      },
+      "Examples¶": {}
+    }
+  },
+  "https://docs.blender.org/manual/en/latest/render/shader_nodes/textures/sky.html": {
+    "Sky Texture Node¶": {
+      "Inputs¶": {
+        "_definitions": [
+          "Vector"
+        ]
+      },
+      "Properties¶": {
+        "_definitions": [
+          "Sky Type",
+          "Preetham",
+          "Hosek/Wilkie",
+          "Nishita",
+          "Sun Direction",
+          "Turbidity",
+          "Ground Albedo",
+          "Sun DiscCycles Only",
+          "Sun Size",
+          "Sun Intensity",
+          "Sun Elevation",
+          "Sun Rotation",
+          "Altitude",
+          "Air",
+          "Dust",
+          "Ozone"
+        ]
+      },
+      "Outputs¶": {
+        "_definitions": [
+          "Color"
+        ]
+      },
+      "Examples¶": {}
+    }
+  },
+  "https://docs.blender.org/manual/en/latest/render/shader_nodes/textures/voronoi.html": {
+    "Voronoi Texture Node¶": {
+      "Inputs¶": {
+        "_definitions": [
+          "Vector",
+          "W",
+          "Scale",
+          "Detail",
+          "Roughness",
+          "Lacunarity",
+          "Smoothness",
+          "Exponent",
+          "Randomness"
+        ]
+      },
+      "Properties¶": {
+        "_definitions": [
+          "Dimensions",
+          "1D:",
+          "2D:",
+          "3D:",
+          "4D:",
+          "Feature",
+          "F1:",
+          "F2:",
+          "Smooth F1:",
+          "Distance to Edge:",
+          "N-Sphere Radius:",
+          "Distance Metric",
+          "Euclidean:",
+          "Manhattan:",
+          "Chebychev:",
+          "Minkowski:",
+          "Normalize"
+        ]
+      },
+      "Outputs¶": {
+        "_definitions": [
+          "Distance",
+          "Color",
+          "Position",
+          "W",
+          "Radius"
+        ]
+      },
+      "Notes¶": {},
+      "Examples¶": {}
+    }
+  },
+  "https://docs.blender.org/manual/en/latest/render/shader_nodes/textures/wave.html": {
+    "Wave Texture Node¶": {
+      "Inputs¶": {
+        "_definitions": [
+          "Vector",
+          "Scale",
+          "Distortion",
+          "Detail",
+          "Detail Scale",
+          "Roughness",
+          "Phase Offset"
+        ]
+      },
+      "Properties¶": {
+        "_definitions": [
+          "Type",
+          "Bands/Rings Direction",
+          "Wave Profile",
+          "Saw:",
+          "Sine:"
+        ]
+      },
+      "Outputs¶": {
+        "_definitions": [
+          "Color",
+          "Factor"
+        ]
+      },
+      "Examples¶": {}
+    }
+  },
+  "https://docs.blender.org/manual/en/latest/render/shader_nodes/textures/white_noise.html": {
+    "White Noise Texture Node¶": {
+      "Inputs¶": {
+        "_definitions": [
+          "Vector",
+          "W"
+        ]
+      },
+      "Properties¶": {
+        "_definitions": [
+          "Dimensions",
+          "1D:",
+          "2D:",
+          "3D:",
+          "4D:"
+        ]
+      },
+      "Outputs¶": {
+        "_definitions": [
+          "Value",
+          "Color"
+        ]
+      },
+      "Notes¶": {},
+      "Examples¶": {}
+    }
+  }
+}
