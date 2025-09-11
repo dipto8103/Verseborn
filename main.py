@@ -159,6 +159,30 @@ def extract_sections_by_roman_numerals(text):
     
     return sections
 
+def get_error_details(blender_response):
+    """Extract error details from blender response for logging."""
+    if not blender_response:
+        return "No response received."
+    
+    if isinstance(blender_response.get('result'), dict):
+        stderr = blender_response['result'].get('stderr', '')
+        message = blender_response.get('message', '')
+        return f"STDERR: {stderr}, MESSAGE: {message}"
+    else:
+        stderr = blender_response.get('stderr', '')
+        message = blender_response.get('message', '')
+        return f"STDERR: {stderr}, MESSAGE: {message}"
+
+def log_final_error(blender_response):
+    """Log final error details when all retries are exhausted."""
+    if blender_response:
+        if isinstance(blender_response.get('result'), dict):
+            print(f"Final failed attempt details:\nSTDOUT:\n{blender_response['result'].get('stdout','')}\nSTDERR:\n{blender_response['result'].get('stderr','')}\nMESSAGE:\n{blender_response.get('message','')}")
+        else:
+            print(f"Final failed attempt details:\nSTDOUT:\n{blender_response.get('stdout','')}\nSTDERR:\n{blender_response.get('stderr','')}\nMESSAGE:\n{blender_response.get('message','')}")
+    else:
+        print("Final failed attempt: No response received.")
+
 if __name__ == "__main__":
     prompt = input("What do you want to generate?")
     response = agent.generate_content(prompt)
@@ -187,58 +211,70 @@ if __name__ == "__main__":
     # Give all the details, do not give anything other than the details, make sure you include numbers whenever necessary, so that it is easier to forward it to the coding agent.
     """
     setting = describer.generate_content(settings_prompt)
-
+    
     with open("setting.txt", "w") as f:
         f.write(f"{setting.text}")
     print("got the setting description")
     coding_prompt = f"{setting.text}"
     print("Generating Blender script...")
-    
+    print(setting.text)
     settings = extract_sections_by_roman_numerals(setting.text)
     print(len(settings), settings)
 
     print('\n\n\n\n\n')
 
-    for scene_desc in settings:
-        
+    max_retries=3
+    for i, scene_desc in enumerate(settings, 1):
+        print(f"\n--- Processing Scene {i}/{len(settings)} ---")
         print(scene_desc)
-        generated_code = generate(coding_agent, scene_desc)
+        
+        retries = 0
+        while retries <= max_retries:
+            try:
+                # Generate code
+                generated_code = generate(coding_agent, scene_desc)
+                generated_code = generated_code[10:-4]  # Trim the response as in original code
 
-        generated_code = generated_code
+                print(generated_code)
 
-        print(generated_code)
+                with open("scripts_og.txt", "w", encoding="utf-8") as f:
+                    f.write(generated_code)
 
-        with open("scripts_og.txt", "w", encoding="utf-8") as f:
-            f.write(generated_code)
+                print("\n--- Generated Blender Script ---")
+                print("------------------------------\n")
 
-        print("\n--- Generated Blender Script ---")
-        print("------------------------------\n")
+                # Send to Blender
+                blender_response = send_to_blender(generated_code)
+                print(blender_response)
 
-        blender_response = send_to_blender(generated_code)
+                # Check if successful
+                is_successful = False
+                stdout = ""
 
-        print(blender_response)
-    
-        is_successful = False
-        stdout = ""
+                if blender_response and blender_response.get("status") == "success":
+                    is_successful = True
 
-        if blender_response and blender_response.get("status") == "success":
-            if isinstance(blender_response.get('result'), dict):
-                stdout = blender_response['result'].get('stdout', '') or blender_response['result'].get('result', '')
-            else:
-                stdout = blender_response.get('stdout', '') or blender_response.get('result', '')
-            if "Scene generation complete." in (stdout or ""):
-                is_successful = True
-            else:
-                blender_response['message'] = "The script ran without error but did not print the final 'Scene generation complete.' message, indicating an incomplete execution."
-
-        if is_successful:
-            print("✅ Script executed successfully and completely in Blender!")
-
-        else:
-            if blender_response:
-                if isinstance(blender_response.get('result'), dict):
-                    print(f"❌ Script failed or was incomplete.\nSTDOUT:\n{blender_response['result'].get('stdout','')}\nSTDERR:\n{blender_response['result'].get('stderr','')}\nMESSAGE:\n{blender_response.get('message','')}")
+                if is_successful:
+                    print("✅ Script executed successfully and completely in Blender!")
+                    break  # Exit retry loop when successful
                 else:
-                    print(f"❌ Script failed or was incomplete.\nSTDOUT:\n{blender_response.get('stdout','')}\nSTDERR:\n{blender_response.get('stderr','')}\nMESSAGE:\n{blender_response.get('message','')}")
-            else:
-                print(f"❌ Script failed or was incomplete. No response received.")
+                    retries += 1
+                    if retries <= max_retries:
+                        print(f"❌ Script failed or was incomplete. Attempt {retries}/{max_retries + 1}. Retrying...\n")
+                        # Log the error for debugging
+                        error_details = get_error_details(blender_response)
+                        print(f"Error details: {error_details}")
+                    else:
+                        print(f"❌ Reached maximum retry limit ({max_retries + 1} attempts). Moving to next scene description.")
+                        log_final_error(blender_response)
+
+            except Exception as e:
+                retries += 1
+                print(f"❌ Exception occurred: {str(e)}")
+                if retries <= max_retries:
+                    print(f"Retrying... Attempt {retries}/{max_retries + 1}\n")
+                else:
+                    print(f"❌ Reached maximum retry limit due to exceptions. Moving to next scene description.")
+                    break
+
+    print("\n🎬 All scene descriptions processed.")

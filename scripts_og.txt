@@ -1,91 +1,118 @@
-```python
 import bpy
+import math
 
-bpy.ops.mesh.primitive_plane_add(size=100, enter_editmode=False, align='WORLD', location=(0, 0, 0))
-ground_plane = bpy.context.object
-ground_plane.name = "Ground"
+world = bpy.context.scene.world
+if world and world.use_nodes:
+    nodes = world.node_tree.nodes
+    links = world.node_tree.links
+    
+    for node in nodes:
+        nodes.remove(node)
 
-ground_mat = bpy.data.materials.new(name="GroundMaterial")
-ground_mat.use_nodes = True
-ground_plane.data.materials.append(ground_mat)
+    sky_texture_node = nodes.new(type='ShaderNodeTexSky')
+    sky_texture_node.location = (-200, 300)
+    sky_texture_node.sky_type = 'NISHITA'
+    sky_texture_node.sun_disc = True
+    sky_texture_node.sun_size = math.radians(0.526)
+    sky_texture_node.sun_intensity = 1.0
+    sky_texture_node.sun_elevation = math.radians(25.0)
+    sky_texture_node.sun_rotation = math.radians(150.0)
+    sky_texture_node.altitude = 1000.0
+    sky_texture_node.air_density = 1.0
+    sky_texture_node.dust_density = 0.2
+    sky_texture_node.ozone_density = 1.0
 
-nodes = ground_mat.node_tree.nodes
-links = ground_mat.node_tree.links
+    world_output_node = nodes.new(type='ShaderNodeOutputWorld')
+    world_output_node.location = (200, 300)
 
-for node in nodes:
-    nodes.remove(node)
+    links.new(sky_texture_node.outputs['Color'], world_output_node.inputs['Surface'])
 
-output_node = nodes.new(type='ShaderNodeOutputMaterial')
-output_node.location = (400, 0)
+    background_node = nodes.new(type='ShaderNodeBackground')
+    background_node.location = (-200, 100)
+    background_node.inputs['Strength'].default_value = 0.5
+    
+    volume_scatter_node = nodes.new(type='ShaderNodeVolumeScatter')
+    volume_scatter_node.location = (0, 100)
+    volume_scatter_node.inputs['Density'].default_value = 0.02
+    volume_scatter_node.inputs['Anisotropy'].default_value = 0.2
+    
+    links.new(background_node.outputs['Background'], world_output_node.inputs['Volume'])
+    links.new(volume_scatter_node.outputs['Volume'], background_node.inputs['Color'])
 
-principled_bsdf = nodes.new(type='ShaderNodeBsdfPrincipled')
-principled_bsdf.location = (200, 0)
-principled_bsdf.inputs['Roughness'].default_value = 0.8
-principled_bsdf.inputs['Metallic'].default_value = 0.1
+elif not world:
+    new_world = bpy.data.worlds.new("New World")
+    bpy.context.scene.world = new_world
+    new_world.use_nodes = True
+    nodes = new_world.node_tree.nodes
+    links = new_world.node_tree.links
 
-links.new(principled_bsdf.outputs['BSDF'], output_node.inputs['Surface'])
+    for node in nodes:
+        nodes.remove(node)
+        
+    sky_texture_node = nodes.new(type='ShaderNodeTexSky')
+    sky_texture_node.location = (-200, 300)
+    sky_texture_node.sky_type = 'NISHITA'
+    sky_texture_node.sun_disc = True
+    sky_texture_node.sun_size = math.radians(0.526)
+    sky_texture_node.sun_intensity = 1.0
+    sky_texture_node.sun_elevation = math.radians(25.0)
+    sky_texture_node.sun_rotation = math.radians(150.0)
+    sky_texture_node.altitude = 1000.0
+    sky_texture_node.air_density = 1.0
+    sky_texture_node.dust_density = 0.2
+    sky_texture_node.ozone_density = 1.0
+    
+    world_output_node = nodes.new(type='ShaderNodeOutputWorld')
+    world_output_node.location = (200, 300)
 
-noise_texture_1 = nodes.new(type='ShaderNodeTexNoise')
-noise_texture_1.location = (-600, 200)
-noise_texture_1.inputs['Scale'].default_value = 5.0
-noise_texture_1.inputs['Detail'].default_value = 10.0
-noise_texture_1.inputs['Roughness'].default_value = 0.6
-noise_texture_1.inputs['Distortion'].default_value = 0.5
+    links.new(sky_texture_node.outputs['Color'], world_output_node.inputs['Surface'])
+    
+    background_node = nodes.new(type='ShaderNodeBackground')
+    background_node.location = (-200, 100)
+    background_node.inputs['Strength'].default_value = 0.5
+    
+    volume_scatter_node = nodes.new(type='ShaderNodeVolumeScatter')
+    volume_scatter_node.location = (0, 100)
+    volume_scatter_node.inputs['Density'].default_value = 0.02
+    volume_scatter_node.inputs['Anisotropy'].default_value = 0.2
+    
+    links.new(background_node.outputs['Background'], world_output_node.inputs['Volume'])
+    links.new(volume_scatter_node.outputs['Volume'], background_node.inputs['Color'])
 
-color_ramp_1 = nodes.new(type='ShaderNodeValToRGB')
-color_ramp_1.location = (-400, 200)
-color_ramp_1.color_ramp.elements.new(0.4)
-color_ramp_1.color_ramp.elements[0].color = (0.03, 0.02, 0.01, 1)
-color_ramp_1.color_ramp.elements[1].color = (0.1, 0.08, 0.05, 1)
-color_ramp_1.color_ramp.elements[2].color = (0.05, 0.06, 0.04, 1)
+else:
+    world.use_nodes = True
+    nodes = world.node_tree.nodes
+    links = world.node_tree.links
+    
+    for node in nodes:
+        nodes.remove(node)
+        
+    sky_texture_node = nodes.new(type='ShaderNodeTexSky')
+    sky_texture_node.location = (-200, 300)
+    sky_texture_node.sky_type = 'NISHITA'
+    sky_texture_node.sun_disc = True
+    sky_texture_node.sun_size = math.radians(0.526)
+    sky_texture_node.sun_intensity = 1.0
+    sky_texture_node.sun_elevation = math.radians(25.0)
+    sky_texture_node.sun_rotation = math.radians(150.0)
+    sky_texture_node.altitude = 1000.0
+    sky_texture_node.air_density = 1.0
+    sky_texture_node.dust_density = 0.2
+    sky_texture_node.ozone_density = 1.0
+    
+    world_output_node = nodes.new(type='ShaderNodeOutputWorld')
+    world_output_node.location = (200, 300)
 
-links.new(noise_texture_1.outputs['Fac'], color_ramp_1.inputs['Fac'])
-
-noise_texture_2 = nodes.new(type='ShaderNodeTexNoise')
-noise_texture_2.location = (-600, -200)
-noise_texture_2.inputs['Scale'].default_value = 25.0
-noise_texture_2.inputs['Detail'].default_value = 12.0
-noise_texture_2.inputs['Roughness'].default_value = 0.7
-
-color_ramp_2 = nodes.new(type='ShaderNodeValToRGB')
-color_ramp_2.location = (-400, -200)
-color_ramp_2.color_ramp.elements.new(0.55)
-color_ramp_2.color_ramp.elements[0].color = (0.1, 0.1, 0.1, 1)
-color_ramp_2.color_ramp.elements[1].color = (0.2, 0.18, 0.15, 1)
-color_ramp_2.color_ramp.elements[2].color = (0.02, 0.02, 0.02, 1)
-
-links.new(noise_texture_2.outputs['Fac'], color_ramp_2.inputs['Fac'])
-
-mix_rgb_node = nodes.new(type='ShaderNodeMix')
-mix_rgb_node.data_type = 'RGBA'
-mix_rgb_node.location = (-100, 0)
-mix_rgb_node.blend_type = 'MIX'
-
-noise_texture_3_for_mix = nodes.new(type='ShaderNodeTexNoise')
-noise_texture_3_for_mix.location = (-300, -400)
-noise_texture_3_for_mix.inputs['Scale'].default_value = 1.5
-
-links.new(noise_texture_3_for_mix.outputs['Fac'], mix_rgb_node.inputs['Factor'])
-links.new(color_ramp_1.outputs['Color'], mix_rgb_node.inputs[6])
-links.new(color_ramp_2.outputs['Color'], mix_rgb_node.inputs[7])
-
-links.new(mix_rgb_node.outputs[2], principled_bsdf.inputs['Base Color'])
-
-bump_node = nodes.new(type='ShaderNodeBump')
-bump_node.location = (0, -200)
-bump_node.inputs['Strength'].default_value = 0.35
-
-links.new(noise_texture_1.outputs['Fac'], bump_node.inputs['Height'])
-links.new(bump_node.outputs['Normal'], principled_bsdf.inputs['Normal'])
-
-tex_coord = nodes.new(type='ShaderNodeTexCoord')
-tex_coord.location = (-1000, 0)
-
-mapping = nodes.new(type='ShaderNodeMapping')
-mapping.location = (-800, 0)
-
-links.new(tex_coord.outputs['Generated'], mapping.inputs['Vector'])
-links.new(mapping.outputs['Vector'], noise_texture_1.inputs['Vector'])
-links.new(mapping.outputs['Vector'], noise_texture_2.inputs['Vector'])
-links.new(mapping.outputs['Vector'], noise_texture_3_for_mix.inputs['Vector'])
-```
+    links.new(sky_texture_node.outputs['Color'], world_output_node.inputs['Surface'])
+    
+    background_node = nodes.new(type='ShaderNodeBackground')
+    background_node.location = (-200, 100)
+    background_node.inputs['Strength'].default_value = 0.5
+    
+    volume_scatter_node = nodes.new(type='ShaderNodeVolumeScatter')
+    volume_scatter_node.location = (0, 100)
+    volume_scatter_node.inputs['Density'].default_value = 0.02
+    volume_scatter_node.inputs['Anisotropy'].default_value = 0.2
+    
+    links.new(background_node.outputs['Background'], world_output_node.inputs['Volume'])
+    links.new(volume_scatter_node.outputs['Volume'], background_node.inputs['Color'])

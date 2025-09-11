@@ -91,7 +91,8 @@ When generating note a few things:
 - Do not use any functionality or attributes that were present in previous versions but not in this version. For example: ShaderNodeTexMusgrave is present in version 2.9.x but not in 4.5.2. However, this shouldn't ignore details to be added, just use the 4.5.x version of bpy.
 - Use the attached text file for allowed Input values for various fields. Do not use anything not mentioned in the text file.
 - Do not do camera manipulations (for example culling)
+- Do not use Factor for bpy_prop_collection[key] with key=Factor. Please absolutely do not use this.
 - Do not add turbulence anywhere. 
-- Create all the components close to the origin, if something is meant to be in the background, keep it away from origin, but not too far away.\
+- Create all the components close to the origin, if something is meant to be in the background, keep it away from origin, but not too far away.
 - Do not have any doc strings or comments, no backticks either in the response.
 """
