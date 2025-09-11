@@ -183,6 +183,7 @@ def log_final_error(blender_response):
     else:
         print("Final failed attempt: No response received.")
 
+
 if __name__ == "__main__":
     prompt = input("What do you want to generate?")
     response = agent.generate_content(prompt)
@@ -219,15 +220,16 @@ if __name__ == "__main__":
     print("Generating Blender script...")
     print(setting.text)
     settings = extract_sections_by_roman_numerals(setting.text)
-    print(len(settings), settings)
-
+    print(len(settings), settings, type(settings))
+    # print(type(settings[0]))
     print('\n\n\n\n\n')
-
+    
     max_retries=3
-    for i, scene_desc in enumerate(settings, 1):
+    for i, scene in enumerate(settings.keys(), 1):
         print(f"\n--- Processing Scene {i}/{len(settings)} ---")
-        print(scene_desc)
-        
+        scene_desc = settings[scene]
+        print(scene_desc, type(scene_desc))
+
         retries = 0
         while retries <= max_retries:
             try:

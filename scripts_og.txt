@@ -1,118 +1,230 @@
 import bpy
-import math
+import random
+from math import radians
 
-world = bpy.context.scene.world
-if world and world.use_nodes:
-    nodes = world.node_tree.nodes
-    links = world.node_tree.links
+def create_flying_car(location):
+    bpy.ops.mesh.primitive_cube_add(size=1, location=location)
+    car_body = bpy.context.object
+    car_body.name = "FlyingCar_Body"
+    car_body.scale = (4, 2, 0.8)
+    bpy.ops.object.transform_apply(scale=True)
+
+    bpy.ops.mesh.primitive_cube_add(size=1, location=(location[0] + 0.8, location[1], location[2] + 0.6))
+    cockpit = bpy.context.object
+    cockpit.name = "FlyingCar_Cockpit"
+    cockpit.scale = (1.5, 1.8, 0.7)
     
-    for node in nodes:
-        nodes.remove(node)
-
-    sky_texture_node = nodes.new(type='ShaderNodeTexSky')
-    sky_texture_node.location = (-200, 300)
-    sky_texture_node.sky_type = 'NISHITA'
-    sky_texture_node.sun_disc = True
-    sky_texture_node.sun_size = math.radians(0.526)
-    sky_texture_node.sun_intensity = 1.0
-    sky_texture_node.sun_elevation = math.radians(25.0)
-    sky_texture_node.sun_rotation = math.radians(150.0)
-    sky_texture_node.altitude = 1000.0
-    sky_texture_node.air_density = 1.0
-    sky_texture_node.dust_density = 0.2
-    sky_texture_node.ozone_density = 1.0
-
-    world_output_node = nodes.new(type='ShaderNodeOutputWorld')
-    world_output_node.location = (200, 300)
-
-    links.new(sky_texture_node.outputs['Color'], world_output_node.inputs['Surface'])
-
-    background_node = nodes.new(type='ShaderNodeBackground')
-    background_node.location = (-200, 100)
-    background_node.inputs['Strength'].default_value = 0.5
+    cockpit.parent = car_body
     
-    volume_scatter_node = nodes.new(type='ShaderNodeVolumeScatter')
-    volume_scatter_node.location = (0, 100)
-    volume_scatter_node.inputs['Density'].default_value = 0.02
-    volume_scatter_node.inputs['Anisotropy'].default_value = 0.2
+    bpy.ops.mesh.primitive_cylinder_add(radius=0.3, depth=0.5, location=(location[0] - 2.2, location[1] + 0.7, location[2] - 0.2))
+    thruster_l = bpy.context.object
+    thruster_l.name = "FlyingCar_Thruster_L"
+    thruster_l.rotation_euler[0] = radians(90)
+    thruster_l.parent = car_body
+
+    bpy.ops.mesh.primitive_cylinder_add(radius=0.3, depth=0.5, location=(location[0] - 2.2, location[1] - 0.7, location[2] - 0.2))
+    thruster_r = bpy.context.object
+    thruster_r.name = "FlyingCar_Thruster_R"
+    thruster_r.rotation_euler[0] = radians(90)
+    thruster_r.parent = car_body
+
+    body_mat = bpy.data.materials.new(name="CarBodyMaterial")
+    body_mat.use_nodes = True
+    principled_bsdf = body_mat.node_tree.nodes.get('Principled BSDF')
+    if principled_bsdf:
+        principled_bsdf.inputs['Base Color'].default_value = (0.1, 0.1, 0.1, 1)
+        principled_bsdf.inputs['Metallic'].default_value = 1.0
+        principled_bsdf.inputs['Roughness'].default_value = 0.2
+    car_body.data.materials.append(body_mat)
+
+    cockpit_mat = bpy.data.materials.new(name="CockpitMaterial")
+    cockpit_mat.use_nodes = True
+    principled_bsdf_cockpit = cockpit_mat.node_tree.nodes.get('Principled BSDF')
+    if principled_bsdf_cockpit:
+        principled_bsdf_cockpit.inputs['Base Color'].default_value = (0.05, 0.05, 0.15, 1)
+        principled_bsdf_cockpit.inputs['Roughness'].default_value = 0.1
+        principled_bsdf_cockpit.inputs['Transmission Weight'].default_value = 1.0
+        principled_bsdf_cockpit.inputs['IOR'].default_value = 1.45
+    cockpit.data.materials.append(cockpit_mat)
+
+    thruster_mat = bpy.data.materials.new(name="ThrusterGlow")
+    thruster_mat.use_nodes = True
+    principled_bsdf_thruster = thruster_mat.node_tree.nodes.get('Principled BSDF')
+    if principled_bsdf_thruster:
+        principled_bsdf_thruster.inputs['Emission Color'].default_value = (0.1, 0.5, 1, 1)
+        principled_bsdf_thruster.inputs['Emission Strength'].default_value = 15.0
+    thruster_l.data.materials.append(thruster_mat)
+    thruster_r.data.materials.append(thruster_mat)
+
+    car_body.rotation_euler[2] = radians(random.uniform(-45, 45))
+    return car_body
+
+def create_automated_bus(location):
+    bpy.ops.mesh.primitive_cube_add(size=1, location=location)
+    bus_body = bpy.context.object
+    bus_body.name = "AutomatedBus_Body"
+    bus_body.scale = (12, 3, 2.5)
     
-    links.new(background_node.outputs['Background'], world_output_node.inputs['Volume'])
-    links.new(volume_scatter_node.outputs['Volume'], background_node.inputs['Color'])
+    bus_mat = bpy.data.materials.new(name="BusBodyMaterial")
+    bus_mat.use_nodes = True
+    bsdf = bus_mat.node_tree.nodes.get('Principled BSDF')
+    if bsdf:
+        bsdf.inputs['Base Color'].default_value = (0.8, 0.8, 0.85, 1)
+        bsdf.inputs['Metallic'].default_value = 0.8
+        bsdf.inputs['Roughness'].default_value = 0.25
+    bus_body.data.materials.append(bus_mat)
+    
+    bpy.ops.mesh.primitive_cube_add(location=(location[0], location[1], location[2]))
+    window = bpy.context.object
+    window.name = "Bus_Window"
+    window.scale = (11, 3.05, 1.5)
+    window.parent = bus_body
+    
+    window_mat = bpy.data.materials.new(name="BusWindowMaterial")
+    window_mat.use_nodes = True
+    bsdf_win = window_mat.node_tree.nodes.get('Principled BSDF')
+    if bsdf_win:
+        bsdf_win.inputs['Base Color'].default_value = (0.01, 0.01, 0.02, 1)
+        bsdf_win.inputs['Roughness'].default_value = 0.05
+        bsdf_win.inputs['Transmission Weight'].default_value = 1.0
+        bsdf_win.inputs['IOR'].default_value = 1.52
+    window.data.materials.append(window_mat)
 
-elif not world:
-    new_world = bpy.data.worlds.new("New World")
-    bpy.context.scene.world = new_world
-    new_world.use_nodes = True
-    nodes = new_world.node_tree.nodes
-    links = new_world.node_tree.links
+    return bus_body
 
-    for node in nodes:
-        nodes.remove(node)
+def create_stylized_pedestrian(location):
+    
+    bpy.ops.mesh.primitive_ico_sphere_add(radius=0.25, subdivisions=2, location=(location[0], location[1], location[2] + 1.5))
+    head = bpy.context.object
+
+    bpy.ops.mesh.primitive_cylinder_add(radius=0.3, depth=1.2, location=(location[0], location[1], location[2] + 0.6))
+    torso = bpy.context.object
+    
+    bpy.ops.mesh.primitive_cylinder_add(radius=0.1, depth=1.0, location=(location[0], location[1] + 0.4, location[2] + 0.7))
+    arm_l = bpy.context.object
+    arm_l.rotation_euler[0] = radians(15)
+
+    bpy.ops.mesh.primitive_cylinder_add(radius=0.1, depth=1.0, location=(location[0], location[1] - 0.4, location[2] + 0.7))
+    arm_r = bpy.context.object
+    arm_r.rotation_euler[0] = radians(-15)
+
+    bpy.ops.mesh.primitive_cylinder_add(radius=0.15, depth=1.0, location=(location[0], location[1] + 0.15, location[2] - 0.5))
+    leg_l = bpy.context.object
+
+    bpy.ops.mesh.primitive_cylinder_add(radius=0.15, depth=1.0, location=(location[0], location[1] - 0.15, location[2] - 0.5))
+    leg_r = bpy.context.object
+    
+    ped_mat = bpy.data.materials.new(name="PedestrianMaterial")
+    ped_mat.use_nodes = True
+    bsdf = ped_mat.node_tree.nodes.get('Principled BSDF')
+    if bsdf:
+        bsdf.inputs['Base Color'].default_value = (random.random(), random.random(), random.random(), 1)
+        bsdf.inputs['Roughness'].default_value = 0.8
+    
+    for obj in [head, torso, arm_l, arm_r, leg_l, leg_r]:
+        obj.data.materials.append(ped_mat)
+
+    bpy.ops.object.empty_add(type='PLAIN_AXES', location=location)
+    parent_empty = bpy.context.object
+    parent_empty.name = "Pedestrian"
+
+    for obj in [head, torso, arm_l, arm_r, leg_l, leg_r]:
+        obj.parent = parent_empty
         
-    sky_texture_node = nodes.new(type='ShaderNodeTexSky')
-    sky_texture_node.location = (-200, 300)
-    sky_texture_node.sky_type = 'NISHITA'
-    sky_texture_node.sun_disc = True
-    sky_texture_node.sun_size = math.radians(0.526)
-    sky_texture_node.sun_intensity = 1.0
-    sky_texture_node.sun_elevation = math.radians(25.0)
-    sky_texture_node.sun_rotation = math.radians(150.0)
-    sky_texture_node.altitude = 1000.0
-    sky_texture_node.air_density = 1.0
-    sky_texture_node.dust_density = 0.2
-    sky_texture_node.ozone_density = 1.0
-    
-    world_output_node = nodes.new(type='ShaderNodeOutputWorld')
-    world_output_node.location = (200, 300)
+    return parent_empty
 
-    links.new(sky_texture_node.outputs['Color'], world_output_node.inputs['Surface'])
-    
-    background_node = nodes.new(type='ShaderNodeBackground')
-    background_node.location = (-200, 100)
-    background_node.inputs['Strength'].default_value = 0.5
-    
-    volume_scatter_node = nodes.new(type='ShaderNodeVolumeScatter')
-    volume_scatter_node.location = (0, 100)
-    volume_scatter_node.inputs['Density'].default_value = 0.02
-    volume_scatter_node.inputs['Anisotropy'].default_value = 0.2
-    
-    links.new(background_node.outputs['Background'], world_output_node.inputs['Volume'])
-    links.new(volume_scatter_node.outputs['Volume'], background_node.inputs['Color'])
+def create_futuristic_tree(location):
+    bpy.ops.mesh.primitive_cylinder_add(vertices=8, radius=0.3, depth=5, location=(location[0], location[1], location[2] + 2.5))
+    trunk = bpy.context.object
+    trunk.name = "Tree_Trunk"
 
-else:
-    world.use_nodes = True
-    nodes = world.node_tree.nodes
-    links = world.node_tree.links
+    trunk_mat = bpy.data.materials.new(name="TrunkMaterial")
+    trunk_mat.use_nodes = True
+    bsdf_trunk = trunk_mat.node_tree.nodes.get('Principled BSDF')
+    if bsdf_trunk:
+        bsdf_trunk.inputs['Base Color'].default_value = (0.05, 0.04, 0.03, 1)
+        bsdf_trunk.inputs['Roughness'].default_value = 0.9
+
+    trunk.data.materials.append(trunk_mat)
+
+    foliage_mat = bpy.data.materials.new(name="FoliageMaterial")
+    foliage_mat.use_nodes = True
+    bsdf_foliage = foliage_mat.node_tree.nodes.get('Principled BSDF')
+    if bsdf_foliage:
+        bsdf_foliage.inputs['Emission Color'].default_value = (0.8, 0.1, 1.0, 1)
+        bsdf_foliage.inputs['Emission Strength'].default_value = 10.0
     
-    for node in nodes:
-        nodes.remove(node)
+    for i in range(15):
+        x_offset = random.uniform(-1.5, 1.5)
+        y_offset = random.uniform(-1.5, 1.5)
+        z_offset = random.uniform(4.5, 6.0)
         
-    sky_texture_node = nodes.new(type='ShaderNodeTexSky')
-    sky_texture_node.location = (-200, 300)
-    sky_texture_node.sky_type = 'NISHITA'
-    sky_texture_node.sun_disc = True
-    sky_texture_node.sun_size = math.radians(0.526)
-    sky_texture_node.sun_intensity = 1.0
-    sky_texture_node.sun_elevation = math.radians(25.0)
-    sky_texture_node.sun_rotation = math.radians(150.0)
-    sky_texture_node.altitude = 1000.0
-    sky_texture_node.air_density = 1.0
-    sky_texture_node.dust_density = 0.2
-    sky_texture_node.ozone_density = 1.0
-    
-    world_output_node = nodes.new(type='ShaderNodeOutputWorld')
-    world_output_node.location = (200, 300)
+        bpy.ops.mesh.primitive_ico_sphere_add(subdivisions=2, radius=random.uniform(0.3, 0.6), location=(location[0] + x_offset, location[1] + y_offset, location[2] + z_offset))
+        leaf = bpy.context.object
+        leaf.name = f"Tree_Leaf_{i}"
+        leaf.parent = trunk
+        leaf.data.materials.append(foliage_mat)
+        
+    return trunk
 
-    links.new(sky_texture_node.outputs['Color'], world_output_node.inputs['Surface'])
+def create_futuristic_shrub(location):
+    bpy.ops.object.empty_add(type='PLAIN_AXES', location=location)
+    parent_empty = bpy.context.object
+    parent_empty.name = "Shrub"
+
+    shrub_mat = bpy.data.materials.new(name="ShrubMaterial")
+    shrub_mat.use_nodes = True
+    nodes = shrub_mat.node_tree.nodes
+    bsdf_shrub = nodes.get('Principled BSDF')
     
-    background_node = nodes.new(type='ShaderNodeBackground')
-    background_node.location = (-200, 100)
-    background_node.inputs['Strength'].default_value = 0.5
+    tex_coord = nodes.new(type='ShaderNodeTexCoord')
+    voronoi = nodes.new(type='ShaderNodeTexVoronoi')
+    voronoi.feature = 'DISTANCE_TO_EDGE'
     
-    volume_scatter_node = nodes.new(type='ShaderNodeVolumeScatter')
-    volume_scatter_node.location = (0, 100)
-    volume_scatter_node.inputs['Density'].default_value = 0.02
-    volume_scatter_node.inputs['Anisotropy'].default_value = 0.2
+    shrub_mat.node_tree.links.new(tex_coord.outputs['Object'], voronoi.inputs['Vector'])
+    shrub_mat.node_tree.links.new(voronoi.outputs['Distance'], bsdf_shrub.inputs['Emission Strength'])
     
-    links.new(background_node.outputs['Background'], world_output_node.inputs['Volume'])
-    links.new(volume_scatter_node.outputs['Volume'], background_node.inputs['Color'])
+    if bsdf_shrub:
+        bsdf_shrub.inputs['Base Color'].default_value = (0.0, 0.0, 0.0, 1)
+        bsdf_shrub.inputs['Emission Color'].default_value = (0.1, 1.0, 0.7, 1)
+    
+    for i in range(10):
+        x = location[0] + random.uniform(-0.8, 0.8)
+        y = location[1] + random.uniform(-0.8, 0.8)
+        z = location[2] + random.uniform(0, 0.5)
+        
+        bpy.ops.mesh.primitive_cube_add(size=random.uniform(0.3, 0.7), location=(x,y,z))
+        cube = bpy.context.object
+        cube.name = f"Shrub_Cube_{i}"
+        cube.parent = parent_empty
+        cube.data.materials.append(shrub_mat)
+        
+    return parent_empty
+
+for i in range(3):
+    x = random.uniform(-15, 15)
+    y = random.uniform(-15, 15)
+    z = random.uniform(5, 10)
+    create_flying_car((x, y, z))
+
+create_automated_bus((0, 12, 1.25))
+
+for i in range(10):
+    x = random.uniform(-20, 20)
+    y = random.uniform(-20, 20)
+    ped = create_stylized_pedestrian((x, y, 0))
+    ped.rotation_euler[2] = radians(random.uniform(0, 360))
+
+for i in range(5):
+    x = random.uniform(-25, 25)
+    y = random.uniform(-25, 25)
+    if abs(x) < 5 and abs(y) < 5: 
+        x += 10
+    create_futuristic_tree((x, y, 0))
+    
+for i in range(8):
+    x = random.uniform(-25, 25)
+    y = random.uniform(-25, 25)
+    if abs(x) < 5 and abs(y) < 5: 
+        y += 10
+    create_futuristic_shrub((x,y,0))
