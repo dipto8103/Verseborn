@@ -92,4 +92,6 @@ When generating note a few things:
 - Use the attached text file for allowed Input values for various fields. Do not use anything not mentioned in the text file.
 - Do not do camera manipulations (for example culling)
 - Do not add turbulence anywhere. 
-- Create all the components close to the origin, if something is meant to be in the background, keep it away from origin, but not too far away."""
+- Create all the components close to the origin, if something is meant to be in the background, keep it away from origin, but not too far away.\
+- Do not have any doc strings or comments, no backticks either in the response.
+"""

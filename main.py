@@ -1,7 +1,7 @@
 import socket
 import json
 import sys
-import google.generativeai as genai
+import google.generativeai as genai2
 from google.genai import types
 from google import genai
 from instructions import first_agent, describer_agent, coding_agent
@@ -14,26 +14,15 @@ import re
 # Load environment variables (e.g., GEMINI_API_KEY)
 load_dotenv()
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
-
-
-client = genai.Client(
-    api_key=os.environ.get("GEMINI_API_KEY"),
-)
-
-# Configure the Generative AI model with the API key
-if GEMINI_API_KEY:
-    genai.configure(api_key=GEMINI_API_KEY)
-else:
-    print("Error: GEMINI_API_KEY not found. Please set it in your .env file.")
-    sys.exit(1)
+genai2.configure(api_key=GEMINI_API_KEY)
 
 # Initialize the Generative AI agents
-agent = genai.GenerativeModel(
+agent = genai2.GenerativeModel(
     model_name="gemini-2.0-flash",
     system_instruction=first_agent,
 )
 
-describer = genai.GenerativeModel(
+describer = genai2.GenerativeModel(
     model_name="gemini-2.0-flash",
     system_instruction=describer_agent
 )
@@ -45,11 +34,12 @@ def generate(coding_agent, prompt):
 
     model = "gemini-2.5-pro"
     uploaded_file = client.files.upload(file="scraping_results/results_20250911_102323.txt")
-    parts=[
+    
+    # Create parts correctly - the uploaded file needs to be converted to a Part
+    parts = [
         types.Part.from_text(text=prompt),
-    ],
-    parts.append(uploaded_file)
-
+        types.Part(file_data=types.FileData(file_uri=uploaded_file.uri))  # Fixed this line
+    ]
 
     contents = [
         types.Content(
@@ -57,13 +47,13 @@ def generate(coding_agent, prompt):
             parts=parts,
         ),
     ]
+    
     tools = [
-        types.Tool(googleSearch=types.GoogleSearch(
-        )),
+        types.Tool(googleSearch=types.GoogleSearch()),
     ]
 
     generate_content_config = types.GenerateContentConfig(
-        thinking_config = types.ThinkingConfig(
+        thinking_config=types.ThinkingConfig(
             thinking_budget=-1,
         ),
         tools=tools,
@@ -78,8 +68,7 @@ def generate(coding_agent, prompt):
         config=generate_content_config,
     )
 
-    return response
-        
+    return response.text        
 
 def send_to_blender(script_code):
     """
@@ -123,6 +112,53 @@ def send_to_blender(script_code):
         print(f"\nAn unexpected error occurred: {e}")
         return {"status": "error", "message": str(e)}
 
+def extract_sections_by_roman_numerals(text):
+    """
+    Extracts content under each Roman numeral section from the input text.
+    Handles format: **I. Section Name:**
+    
+    Args:
+        text (str): Input text with Roman numeral sections
+        
+    Returns:
+        dict: Dictionary with Roman numeral sections as keys and content as values
+    """
+    # Pattern to match **I. Section Name:** format
+    pattern = r'\*\*([IVXLCDM]+)\.\s*([^*]+)\*\*'
+    
+    # Find all section headers
+    sections = {}
+    current_section = None
+    current_content = []
+    
+    lines = text.split('\n')
+    
+    for line in lines:
+        line = line.strip()
+        
+        # Check if this line is a section header
+        match = re.match(pattern, line)
+        if match:
+            # If we were already processing a section, save it
+            if current_section and current_content:
+                sections[current_section] = '\n'.join(current_content).strip()
+            
+            # Start new section
+            roman_num = match.group(1)
+            section_name = match.group(2).strip()
+            current_section = f"{roman_num}. {section_name}"
+            current_content = []
+        elif current_section:
+            # Add content to current section (skip empty lines at beginning)
+            if line or current_content:  # Allow empty lines only if we already have content
+                current_content.append(line)
+    
+    # Add the last section
+    if current_section and current_content:
+        sections[current_section] = '\n'.join(current_content).strip()
+    
+    return sections
+
 if __name__ == "__main__":
     prompt = input("What do you want to generate?")
     response = agent.generate_content(prompt)
@@ -155,49 +191,54 @@ if __name__ == "__main__":
     with open("setting.txt", "w") as f:
         f.write(f"{setting.text}")
     print("got the setting description")
-
-    
     coding_prompt = f"{setting.text}"
     print("Generating Blender script...")
     
-    generated_code = generate(coding_agent, coding_prompt)
+    settings = extract_sections_by_roman_numerals(setting.text)
+    print(len(settings), settings)
 
-    generated_code = generated_code
+    print('\n\n\n\n\n')
 
-    print(generated_code)
+    for scene_desc in settings:
+        
+        print(scene_desc)
+        generated_code = generate(coding_agent, scene_desc)
 
-    with open("scripts_og.txt", "w", encoding="utf-8") as f:
-        f.write(generated_code)
+        generated_code = generated_code
 
+        print(generated_code)
 
-    print("\n--- Generated Blender Script ---")
-    print("------------------------------\n")
+        with open("scripts_og.txt", "w", encoding="utf-8") as f:
+            f.write(generated_code)
 
-    blender_response = send_to_blender(generated_code)
+        print("\n--- Generated Blender Script ---")
+        print("------------------------------\n")
 
-    print(blender_response)
- 
-    is_successful = False
-    stdout = ""
+        blender_response = send_to_blender(generated_code)
 
-    if blender_response and blender_response.get("status") == "success":
-        if isinstance(blender_response.get('result'), dict):
-            stdout = blender_response['result'].get('stdout', '') or blender_response['result'].get('result', '')
-        else:
-            stdout = blender_response.get('stdout', '') or blender_response.get('result', '')
-        if "Scene generation complete." in (stdout or ""):
-            is_successful = True
-        else:
-            blender_response['message'] = "The script ran without error but did not print the final 'Scene generation complete.' message, indicating an incomplete execution."
+        print(blender_response)
+    
+        is_successful = False
+        stdout = ""
 
-    if is_successful:
-        print("✅ Script executed successfully and completely in Blender!")
-
-    else:
-        if blender_response:
+        if blender_response and blender_response.get("status") == "success":
             if isinstance(blender_response.get('result'), dict):
-                print(f"❌ Script failed or was incomplete.\nSTDOUT:\n{blender_response['result'].get('stdout','')}\nSTDERR:\n{blender_response['result'].get('stderr','')}\nMESSAGE:\n{blender_response.get('message','')}")
+                stdout = blender_response['result'].get('stdout', '') or blender_response['result'].get('result', '')
             else:
-                print(f"❌ Script failed or was incomplete.\nSTDOUT:\n{blender_response.get('stdout','')}\nSTDERR:\n{blender_response.get('stderr','')}\nMESSAGE:\n{blender_response.get('message','')}")
+                stdout = blender_response.get('stdout', '') or blender_response.get('result', '')
+            if "Scene generation complete." in (stdout or ""):
+                is_successful = True
+            else:
+                blender_response['message'] = "The script ran without error but did not print the final 'Scene generation complete.' message, indicating an incomplete execution."
+
+        if is_successful:
+            print("✅ Script executed successfully and completely in Blender!")
+
         else:
-            print(f"❌ Script failed or was incomplete. No response received.")
+            if blender_response:
+                if isinstance(blender_response.get('result'), dict):
+                    print(f"❌ Script failed or was incomplete.\nSTDOUT:\n{blender_response['result'].get('stdout','')}\nSTDERR:\n{blender_response['result'].get('stderr','')}\nMESSAGE:\n{blender_response.get('message','')}")
+                else:
+                    print(f"❌ Script failed or was incomplete.\nSTDOUT:\n{blender_response.get('stdout','')}\nSTDERR:\n{blender_response.get('stderr','')}\nMESSAGE:\n{blender_response.get('message','')}")
+            else:
+                print(f"❌ Script failed or was incomplete. No response received.")
