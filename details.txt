@@ -2299,3 +2299,833 @@ Consider adding details such as graffiti on walls, posters in windows, and steam
 
 ##End of this response
 --------------------------------------------------
+## Prompt: create a riverside in a bright light with  many animals, in a positive theme
+
+## Response: 
+ - Overall impression: A sun-drenched, vibrant riverside teeming with diverse animal life, set against a backdrop of lush greenery and clear, flowing water, evoking a sense of peace, harmony, and abundant natural beauty.
+
+- Key Elements and Details
+    - Animals
+        - (Birds): A variety of colorful birds including (parrots), (kingfishers), and (songbirds), perched on trees and soaring across the sky, exhibiting vibrant plumage and lively behavior, with approximately 20-30 birds in total.
+        - (Mammals): Several species of mammals such as (capybaras) lounging on the riverbank, (monkeys) swinging from trees, and (otters) swimming in the river, displaying playful and relaxed attitudes, with around 10-15 mammals.
+        - (Reptiles): (Iguanas) basking on rocks, (turtles) swimming in the water, and a (caiman) resting near the river's edge, showcasing natural textures and serene postures, with 5-7 reptiles scattered throughout the scene.
+        - (Fish): Schools of brightly colored fish like (tetras) and (guppies) swimming in the clear river water, creating a sense of underwater activity and biodiversity, with numerous schools of varying sizes.
+        - (Insects): Butterflies fluttering around flowers and dragonflies hovering over the water, adding delicate movement and visual interest, with several swarms of insects.
+    - Vegetation
+        - (Trees): A mix of tall trees with broad leaves, such as (tropical hardwoods) and (palms), providing shade and structure to the riverside, with 20-35 trees of varying heights and species.
+        - (Bushes and Shrubs): Dense bushes and shrubs along the riverbank, adding depth and layers to the landscape, featuring flowering plants with vibrant colors, with numerous patches of bushes and shrubs.
+        - (Aquatic Plants): Water lilies and other aquatic plants floating on the river's surface, contributing to the serene and natural feel, with patches of various aquatic plants.
+    - River
+        - (Water surface): Clear, gently flowing water reflecting the sunlight, with subtle ripples and refractions, enhancing the sense of realism and tranquility.
+        - (Riverbank): Natural banks with a mix of sand, rocks, and vegetation, providing a realistic transition between the water and the land, with varying textures and details.
+    - Background
+        - (Sky): A bright, clear sky with a few fluffy clouds, enhancing the overall positive and cheerful atmosphere.
+        - (Distant Landscape): Rolling hills and lush forests in the background, adding depth and context to the scene.
+
+- Final specific enhancements and details to enrich the scene.
+    - Lighting: Warm, golden sunlight illuminating the scene, creating highlights and shadows that enhance the textures and colors of the animals and vegetation.
+    - Sound effects: Ambient sounds of nature, such as birds chirping, water flowing, and insects buzzing, adding to the immersive experience.
+    - Particle effects: Dust particles floating in the air and subtle water spray from the river, enhancing the realism and dynamism of the scene.
+
+- Any other information in this final section: Consider adding subtle animations to the animals and plants to bring the scene to life. Pay attention to the details of the textures and materials to ensure a high level of realism. The overall composition should emphasize the abundance and harmony of nature.
+
+##End of this response
+--------------------------------------------------
+## Prompt: create a riverside in a bright light with many animals, in a positive theme
+
+## Response: 
+ - Overall impression: A dark nighttime riverside teeming with diverse wildlife, reflecting a sense of harmony and natural abundance under a clear, bright sky.
+
+- Key Elements and Details
+    - Animals
+        - (Birds): A variety of colorful birds, including (kingfishers diving into the water), (herons standing gracefully along the bank), and (songbirds perched on tree branches), numbering around 20-30 in total.
+        - (Mammals): Several mammals such as (a family of playful otters swimming in the river), (deer grazing peacefully in the meadows), and (squirrels scampering up trees) . Around 10-15 mammals.
+        - (Fish): Schools of (silver fish darting beneath the water's surface), with occasional (larger fish leaping out of the water). Estimate around 50-100 individual fish.
+        - (Insects): (Butterflies flitting among the wildflowers) and (dragonflies hovering over the water), with about 20-30 visible insects.
+    - Vegetation
+        - (Trees): Lush, green trees with (willows leaning gracefully over the river), (oaks standing strong on the banks), and (birches adding a touch of elegance). Around 15-20 trees.
+        - (Flowers): A vibrant array of wildflowers in bloom, including (daisies, lilies, and sunflowers populating the meadows alongside the river). Multiple patches of different flowers, each containing around 20-30 individual flowers.
+        - (Aquatic plants): (Lily pads floating on the water's surface), and (reeds growing along the riverbank). Suggest 10-15 clusters of aquatic plants.
+    - River Details
+        - (Water): Clear, sparkling water reflecting the sunlight, with gentle ripples and small waves.
+        - (Riverbank): Natural, earthy banks with a mix of (sand, pebbles, and grassy areas). The bank should gradually slope into the water.
+        - (Rocks): Smooth, rounded rocks of varying sizes scattered along the riverbed and bank, with 10-15 visible rocks.
+
+- Final specific enhancements and details to enrich the scene.
+    - Lighting: Warm, golden sunlight casting a cheerful glow over the entire scene, with soft shadows adding depth.
+    - Sound: The gentle sounds of flowing water, birds chirping, and insects buzzing to create a sense of tranquility.
+    - Atmosphere: A slight mist rising from the water in the early morning to add a touch of ethereal beauty.
+
+- Any other information in this final section: The overall composition should emphasize the interconnectedness of the various elements, creating a harmonious and inviting scene. The color palette should be bright and cheerful, with a focus on natural greens, blues, and yellows. Consider adding subtle animations to the animals and plants to bring the scene to life.
+
+##End of this response
+--------------------------------------------------
+## Prompt: create a riverside in a bright light with many animals, in a positive theme
+
+## Response: 
+ - Overall impression: A sun-drenched, vibrant riverside teeming with diverse wildlife and lush vegetation, reflecting a harmonious and joyful coexistence of nature.
+
+- Key Elements and Details
+    - Animals
+        - (Birds): A flock of approximately 20-30 colorful birds, such as toucans, parrots, and macaws, perched on trees or soaring through the air, exhibiting a variety of plumage and sizes.
+        - (Mammals): A group of 5-7 capybaras resting on the riverbank, along with a family of 3-4 playful otters swimming in the river, showcasing their sleek bodies and curious expressions.
+        - (Reptiles): 2-3 basking caimans or iguanas lying on rocks near the water's edge, displaying their textured skin and relaxed postures, with varying sizes and coloration.
+        - (Insects): A swarm of 10-15 butterflies flitting around the flowers and plants, exhibiting a kaleidoscope of colors and patterns, adding a sense of liveliness and vibrancy.
+        - (Fish): Schools of small, brightly colored fish visible through the clear water, darting among the aquatic plants and rocks, adding movement and depth to the scene.
+
+    - Vegetation
+        - (Trees): A variety of lush, tropical trees lining the riverbank, including palms, willows, and flowering trees, with varying heights, shapes, and foliage density, numbering around 15-20.
+        - (Plants): A diverse array of plants and flowers covering the ground and riverbanks, such as orchids, lilies, and ferns, adding color and texture to the landscape, in dense clusters.
+        - (Aquatic plants): Patches of water lilies, reeds, and other aquatic plants floating on the river's surface, providing habitats for the animals and adding visual interest to the water, covering approximately 20-30% of the water's surface.
+
+    - Environment
+        - (River): A wide, gently flowing river with clear, reflective water, showcasing the surrounding landscape and wildlife, with subtle ripples and currents visible on the surface.
+        - (Riverbank): Natural-looking riverbanks with sandy or grassy areas, with some exposed rocks and roots, providing resting spots for the animals and adding texture to the scene.
+        - (Sky): A bright blue sky with fluffy white clouds, contributing to the overall sense of cheerfulness and tranquility, with the sun positioned to create warm, inviting light.
+
+- Final specific enhancements and details to enrich the scene.
+    - Lighting: Warm, golden sunlight filtering through the trees, creating dappled shadows and highlights on the animals and vegetation, enhancing the sense of depth and realism.
+    - Sound: Add ambient sounds of birds chirping, water flowing, and insects buzzing to enhance the immersive experience.
+    - Color Palette: Use a vibrant and saturated color palette, with bright greens, blues, yellows, and reds, to create a cheerful and inviting atmosphere.
+
+- Any other information in this final section: Focus on creating a sense of harmony and balance between the different elements, ensuring that the animals and vegetation appear natural and integrated into the environment. The overall composition should be visually appealing and evoke a sense of joy and wonder, highlighting the beauty and diversity of the riverside ecosystem. Consider adding subtle details like animal tracks in the sand or insects crawling on leaves to enhance the realism and believability of the scene.
+
+##End of this response
+--------------------------------------------------
+## Prompt: create a riverside in a bright light with many animals, in a positive theme
+
+## Response: 
+ - Overall impression: A sun-drenched, vibrant riverside teeming with diverse wildlife and lush vegetation, evoking a sense of harmony and natural abundance under a clear, bright sky.
+
+- Key Elements and Details
+    - Animals
+        - (Birds): A multitude of colourful birds, including (kingfishers), (herons), (ducks), and (songbirds), perched on branches, soaring overhead, and wading in the shallows, showcasing a variety of plumages and behaviours with some taking flight, others preening. (Quantity: 30-50)
+        - (Mammals): Several mammal species along the riverbank, such as (otters) playing in the water, (deer) grazing peacefully in the meadow, (beavers) constructing a dam, and (rabbits) darting through the undergrowth, all exhibiting natural, non-aggressive behaviours. (Quantity: 10-20)
+        - (Reptiles and Amphibians): Various reptiles and amphibians inhabiting the area, including (turtles) basking on rocks, (frogs) leaping among lily pads, (salamanders) hiding under logs, and (snakes) sunning themselves on the warm earth, each detailed with realistic textures and colours. (Quantity: 15-25)
+        - (Fish): Schools of fish visible beneath the clear water's surface, including (salmon) swimming upstream, (trout) leaping for insects, and (minnows) darting among the rocks, with shimmering scales and fluid movements. (Quantity: Schools of 50-100 each)
+    - Vegetation
+        - (Trees): A variety of trees lining the riverbank, including (willows) with drooping branches, (oaks) with sturdy trunks, (birches) with white bark, and (maples) with vibrant green leaves, providing shade and habitat for the animals. (Quantity: 20-30, various sizes)
+        - (Bushes and Shrubs): Dense bushes and shrubs along the river's edge, such as (berry bushes) with ripe fruit, (flowering shrubs) with colourful blossoms, and (ferns) with delicate fronds, creating a layered and textured environment. (Quantity: 30-40 clumps)
+        - (Aquatic Plants): Various aquatic plants floating in the river, including (lily pads) with broad leaves and delicate flowers, (reeds) swaying in the current, and (algae) providing food for aquatic life, adding depth and visual interest to the water's surface. (Quantity: Dense patches of each type)
+    - River Details
+        - (Water Surface): Clear, flowing water reflecting the sunlight, with gentle ripples and currents, showcasing the movement and vitality of the river.
+        - (Riverbed): A detailed riverbed with rocks, pebbles, sand, and silt, providing a natural and varied substrate for aquatic life, with varying depths and textures.
+        - (Banks): Natural riverbanks with varying levels of elevation, composed of soil, grass, and exposed roots, providing a transition between the water and the surrounding landscape.
+
+- Final specific enhancements and details to enrich the scene
+    - Lighting: A warm, golden sunlight illuminating the scene, with soft shadows and highlights accentuating the textures and colours of the environment.
+    - Atmosphere: A clear, bright atmosphere with a gentle breeze, carrying the sounds of birdsong and flowing water, enhancing the sense of tranquility and natural beauty.
+    - Effects: Subtle visual effects, such as sunbeams filtering through the trees, butterflies fluttering among the flowers, and dragonflies hovering over the water, adding life and dynamism to the scene.
+
+- Any other information in this final section: Consider adding small details such as animal tracks in the mud, scattered feathers, and fallen leaves to enhance the realism and sense of immersion. The overall composition should emphasize the interconnectedness of the various elements, creating a harmonious and balanced ecosystem. The colour palette should be vibrant and natural, reflecting the diversity and vitality of the riverside environment.
+
+##End of this response
+--------------------------------------------------
+## Prompt: create a riverside in a bright light with many animals, in a positive theme
+
+## Response: 
+ - Overall impression: A sun-drenched, vibrant riverside teeming with diverse wildlife, reflecting a scene of natural harmony and joyful coexistence, under a clear, bright sky.
+
+- Key Elements and Details
+    - Environment
+        - (River): A wide, gently flowing river with crystal-clear water, reflecting the bright sunlight and surrounding flora. The riverbed should be visible in shallower areas, with smooth, colorful stones and patches of sand.
+        - (Riverbanks): Lush, green riverbanks densely populated with a variety of plant life, including tall grasses, flowering bushes, and mature trees with broad canopies. The banks should vary in height and texture, with some areas sloping gently to the water's edge and others forming steeper, rocky cliffs.
+        - (Vegetation): A diverse array of plants, including water lilies floating on the river surface, reeds swaying in the breeze, and colorful wildflowers dotting the riverbanks. The vegetation should appear healthy and vibrant, with a mix of textures and shades of green.
+
+    - Animals
+        - (Birds): A variety of colorful birds, such as kingfishers diving into the water, herons wading in the shallows, and songbirds perched on tree branches. There should be approximately 20-30 birds of varying sizes and species.
+        - (Mammals): Playful otters swimming in the river, deer grazing peacefully on the riverbanks, and squirrels scampering through the trees. Include about 5-10 mammals, showcasing their natural behaviors and interactions with the environment.
+        - (Fish): Schools of brightly colored fish swimming in the river, visible through the clear water. The fish should vary in size and species, adding movement and life to the underwater environment. Aim for around 50-100 fish.
+        - (Insects): Butterflies flitting among the flowers, dragonflies hovering over the water, and bees buzzing around the blossoms. These insects should add a sense of vibrancy and activity to the scene.
+
+    - Lighting and Atmosphere
+        - (Sunlight): Warm, bright sunlight casting a golden glow over the entire scene, creating long shadows and highlighting the textures of the landscape and wildlife.
+        - (Sky): A clear, blue sky with a few fluffy white clouds, enhancing the sense of serenity and natural beauty.
+        - (Water Reflection): The river surface should reflect the sky, trees, and sunlight, creating a mirror-like effect that doubles the visual impact of the scene.
+
+- Final specific enhancements and details to enrich the scene.
+    - Water Effects: Add subtle ripples and reflections on the water surface to enhance the sense of movement and realism.
+    - Sound Effects: Incorporate ambient sounds such as birdsong, flowing water, and rustling leaves to create an immersive auditory experience.
+    - Color Palette: Use a vibrant and saturated color palette to emphasize the positive theme and natural beauty of the riverside scene.
+
+- Any other information in this final section: The overall composition should guide the viewer's eye through the scene, highlighting the interactions between the animals and their environment. The scene should feel alive and dynamic, with every element contributing to the sense of natural harmony and joyful coexistence.
+
+##End of this response
+--------------------------------------------------
+## Prompt: create a futuristic city set in 2100
+
+## Response: 
+ - Overall impression: A vibrant, bustling metropolis in 2100, blending advanced technology with green spaces, featuring towering skyscrapers, sleek vehicles, and interconnected networks of infrastructure, all under a clean, energy-efficient atmosphere.
+
+- Key Elements and Details
+    - Buildings
+        - (Skyscrapers): Approximately 30-50 structures of varying heights, with sleek, aerodynamic designs, constructed from advanced materials like self-healing concrete and transparent aluminum, some featuring vertical farms and integrated solar panels.
+        - (Residential complexes): Around 20-30 mid-rise buildings with modular designs, incorporating green roofs, communal gardens, and automated waste management systems, providing sustainable and efficient living spaces.
+        - (Specialized structures): 5-10 unique buildings such as research labs with bioluminescent facades, data centers with holographic displays, and cultural centers with interactive art installations, showcasing the city's innovation and creativity.
+
+    - Vehicles
+        - (Flying vehicles): 50-100 autonomous aerial vehicles of different sizes and functions, including passenger drones, cargo carriers, and emergency response units, navigating through designated air corridors with glowing trails.
+        - (Ground vehicles): 30-50 electric and self-driving cars, buses, and trucks, utilizing magnetic levitation or advanced tire technology for smooth and silent transportation on smart roads with embedded sensors.
+        - (Personal transportation): A variety of personal mobility devices such as hoverboards, electric scooters, and exoskeletons, used by pedestrians for quick and efficient movement within the city.
+
+    - Infrastructure
+        - (Elevated walkways): Interconnected networks of transparent walkways and sky bridges, lined with trees and gardens, providing pedestrian access between buildings and offering panoramic views of the city.
+        - (Public transportation hubs): 5-10 integrated transportation hubs with automated platforms, holographic information displays, and comfortable waiting areas, seamlessly connecting various modes of transportation.
+        - (Energy infrastructure): Wind turbines, solar farms, and fusion reactors integrated into the cityscape, providing clean and sustainable energy for the city, with glowing energy conduits and distribution nodes.
+
+    - Green Spaces
+        - (Vertical farms): Integrated into skyscrapers and residential buildings, providing fresh produce for the city's inhabitants, with hydroponic and aeroponic systems visible through transparent facades.
+        - (Parks and gardens): 10-20 green spaces of varying sizes, featuring exotic plants, artificial waterfalls, and interactive sculptures, providing recreational areas for citizens to relax and connect with nature.
+        - (Green corridors): Tree-lined streets and green belts connecting parks and gardens, promoting biodiversity and providing habitats for local wildlife, creating a harmonious balance between urban development and nature.
+
+- Final specific enhancements and details to enrich the scene.
+    - Holographic Projections: Dynamic holographic advertisements, interactive displays, and augmented reality interfaces projected onto buildings and public spaces, providing information, entertainment, and wayfinding assistance.
+    - Lighting: Advanced lighting systems with adaptive brightness and color temperature, adjusting to the time of day and weather conditions, creating a vibrant and energy-efficient urban environment with dynamic light shows.
+    - Weather Effects: Realistic weather effects such as rain, fog, and sunlight, interacting with the city's architecture and infrastructure, creating a dynamic and immersive atmosphere with reflections and refractions.
+
+- Any other information in this final section: Consider adding details such as futuristic street furniture, advanced surveillance systems, and diverse crowds of people to enhance the realism and depth of the scene. Focus on creating a balance between technological advancements and human elements to portray a believable and engaging vision of the future.
+
+##End of this response
+--------------------------------------------------
+## Prompt: a filled university classroom
+
+## Response: 
+ - Overall impression: A bustling university classroom filled with students engaged in a lecture, creating an atmosphere of academic pursuit and intellectual curiosity, with natural light filtering through large windows and illuminating rows of desks and attentive faces.
+
+- Key Elements and Details
+    - People
+        - (Students): Approximately 30-50 diverse students of varying ages and ethnicities, seated at desks, with a mix of laptops, notebooks, and textbooks, some taking notes diligently, others listening attentively, and a few exchanging subtle glances or whispers.
+        - (Professor): A single professor standing at the front of the classroom near a lectern or whiteboard, dressed in professional attire (e.g., blazer, button-down shirt), gesturing while lecturing, with a warm and engaging expression and posture.
+
+    - Furniture
+        - (Desks): 30-50 individual or connected desks arranged in neat rows, made of wood or composite materials, showing signs of wear and tear from years of use, some cluttered with books and personal items.
+        - (Chairs): Matching chairs for each desk, with ergonomic designs or simple plastic/metal frames, some slightly askew or pushed back from students getting up.
+        - (Lectern): A wooden or metal lectern at the front of the classroom, with a microphone and space for notes, showing signs of use and perhaps some minor scratches or dents.
+
+    - Environment
+        - (Whiteboard/Blackboard): A large whiteboard or blackboard at the front of the classroom, covered in equations, diagrams, or notes from the lecture, partially erased or smudged in places.
+        - (Windows): Large windows along one or more walls, allowing natural light to flood the room, with views of trees, campus buildings, or a courtyard outside.
+        - (Walls): Painted cinder block or plaster walls, possibly with posters, academic announcements, or artwork displayed, showing signs of wear and tear from student traffic.
+
+    - Props
+        - (Books): Various textbooks stacked on desks or held by students, with different sizes, colors, and titles related to the course subject (e.g., calculus, history, literature).
+        - (Laptops): Open laptops on many desks, displaying note-taking applications, research materials, or web browsers, with some featuring stickers or personalized backgrounds.
+        - (Notebooks): Spiral-bound or hardcover notebooks filled with handwritten notes, doodles, and diagrams, some with pens or pencils clipped to the cover.
+        - (Coffee cups/Water bottles): A few disposable coffee cups or reusable water bottles scattered on desks, indicating students staying hydrated and caffeinated during the lecture.
+        - (Backpacks/Bags): Several backpacks or bags slung over the backs of chairs or placed on the floor near desks, containing books, electronics, and personal items.
+
+- Final specific enhancements and details to enrich the scene.
+    - Lighting: Natural sunlight streaming through the windows, casting shadows and highlights across the room, combined with soft fluorescent or LED lighting from ceiling fixtures.
+    - Sound: Ambient sounds of students shuffling papers, whispering, and the professor's voice echoing through the classroom, creating a realistic auditory atmosphere.
+    - Texture: Detailed textures on desks, chairs, walls, and books, showing signs of wear, use, and age, adding depth and realism to the scene.
+
+- Any other information in this final section: Consider adding small details such as a forgotten umbrella near the door, a student stifling a yawn, or sunlight glinting off a laptop screen to further enhance the sense of realism and immersion. The overall composition should convey a sense of organized chaos and intellectual energy, capturing the essence of a typical university classroom in session.
+
+##End of this response
+--------------------------------------------------
+## Prompt: a filled university classroom
+
+## Response: 
+ - Overall impression: A bustling university classroom filled with students engaged in learning, characterized by a mix of traditional and modern elements, bathed in natural light, and reflecting an atmosphere of academic pursuit and collaborative energy.
+
+- Key Elements and Details
+    - Students
+        - (Diverse students): Approximately 30-50 students of varying ages, ethnicities, and genders, seated at desks, some taking notes, others listening attentively, and a few engaging in quiet discussions.
+        - (Attentive students): Several students focused on the lecturer, with open notebooks and pens in hand, displaying expressions of interest and concentration.
+        - (Engaged students): Small clusters of students involved in group discussions, gesturing and sharing ideas, fostering a collaborative learning environment.
+
+    - Lecturer
+        - (Professor): A distinguished professor standing at the front of the classroom, dressed in professional attire, gesturing towards a whiteboard or screen, exuding authority and knowledge.
+
+    - Furniture
+        - (Desks): Individual or shared desks arranged in neat rows, some cluttered with textbooks, notebooks, and stationery, others more organized and minimalist. Aim for around 30-50 desks.
+        - (Chairs): Ergonomic chairs designed for comfort and support, some slightly askew or pushed back, indicating recent movement and activity. Aim for around 30-50 chairs.
+        - (Lectern): A sturdy lectern at the front of the classroom, equipped with a microphone and space for notes, serving as the professor's command center.
+        - (Whiteboard/Screen): A large whiteboard or projection screen at the front of the classroom, displaying lecture notes, diagrams, or multimedia presentations, conveying information and engaging students visually.
+
+    - Decor
+        - (Academic posters): Educational posters and charts adorning the walls, showcasing scientific principles, historical timelines, or literary excerpts, reinforcing learning and stimulating intellectual curiosity. Aim for around 5-10 posters.
+        - (Bookshelves): Bookshelves lining the back or side walls, filled with textbooks, reference materials, and scholarly journals, symbolizing the pursuit of knowledge and academic rigor. Aim for around 2-3 bookshelves.
+        - (Plants): Potted plants placed strategically around the classroom, adding a touch of greenery and freshness, improving air quality and creating a more inviting atmosphere. Aim for around 3-5 plants.
+
+- Final specific enhancements and details to enrich the scene.
+    - Lighting: Natural light streaming in through large windows, supplemented by overhead fluorescent lights, creating a bright and welcoming environment conducive to learning.
+    - Sound: Ambient sounds of rustling papers, quiet murmurs, and the professor's voice, immersing the viewer in the classroom atmosphere and enhancing realism.
+    - Details: Small details such as coffee cups, water bottles, and personal items scattered on desks, adding a touch of realism and personality to the scene.
+
+- Any other information in this final section: Consider adding architectural details like high ceilings, large windows, and decorative molding to create a sense of grandeur and tradition. The overall composition should guide the viewer's eye towards the professor and the students, emphasizing the dynamic between teaching and learning. The environment should feel authentic and lived-in, with signs of wear and tear adding to the realism.
+
+##End of this response
+--------------------------------------------------
+## Prompt: a filled university classroom
+
+## Response: 
+ - Overall impression: A bustling university classroom filled with students engaged in learning, characterized by rows of desks, a whiteboard or projector screen, and an academic atmosphere.
+
+- Key Elements and Details
+    - Students
+        - (Diverse student body): Approximately 30-50 students of varying ages, ethnicities, and genders, seated at desks and actively participating in the class. Some are taking notes, others are listening attentively, and a few may be engaged in quiet discussions with their neighbors.
+        - (Student attire): Casual and comfortable clothing suitable for a university setting, such as jeans, t-shirts, sweaters, and hoodies. Backpacks and bags are placed on the floor beside or behind their chairs.
+    - Furniture
+        - (Desks): Individual or shared desks arranged in neat rows facing the front of the classroom. The desks are made of wood or plastic and have a surface area for writing and placing books or laptops.
+        - (Chairs): Ergonomic chairs with back support, designed for extended periods of sitting. They are made of plastic or upholstered material and are adjustable for height.
+        - (Lectern): A wooden or metal lectern at the front of the classroom for the professor to stand behind. It has a flat surface for holding notes and a built-in microphone.
+    - Teaching Equipment
+        - (Whiteboard/Projector screen): A large whiteboard or projector screen mounted on the front wall of the classroom. The whiteboard is covered in handwritten notes, diagrams, or equations, while the projector screen displays a presentation slide.
+        - (Projector): A digital projector mounted on the ceiling or placed on a table, used to display images and videos on the projector screen.
+    - Academic Environment
+        - (Books and notebooks): Textbooks, notebooks, and folders scattered on the desks, indicating the course material being studied.
+        - (Writing utensils): Pens, pencils, highlighters, and erasers placed on the desks, used for note-taking and completing assignments.
+        - (Laptops/Tablets): Some students have laptops or tablets open on their desks, used for taking notes, accessing online resources, or working on assignments.
+    - Classroom Decor
+        - (Posters/Charts): Educational posters or charts displayed on the walls, illustrating key concepts or historical events.
+        - (Clock): A clock mounted on the wall, indicating the time remaining in the class period.
+        - (Windows): Windows along one or more walls, providing natural light and a view of the campus outside.
+        - (Lighting): Overhead fluorescent lights illuminating the classroom.
+
+- Final specific enhancements and details to enrich the scene
+    - Lighting: Natural light streaming through the windows, combined with the soft glow of the overhead fluorescent lights.
+    - Atmosphere: A palpable sense of intellectual curiosity and engagement, with students actively participating in the learning process.
+    - Details: Subtle details such as coffee cups, water bottles, and personal items on the desks to add a touch of realism.
+
+- Any other information in this final section: Consider adding a professor standing at the front of the classroom, lecturing or leading a discussion. The overall composition should guide the viewer's eye towards the front of the classroom, emphasizing the interaction between the professor and the students. The environment should feel authentic and lived-in, with signs of wear and tear adding to the realism.
+
+##End of this response
+--------------------------------------------------
+## Prompt: a filled university classroom
+
+## Response: 
+ - Overall impression: A bustling university classroom filled with students engaged in a lecture, showcasing a mix of attentiveness, note-taking, and subtle distractions, under the soft glow of overhead lights and the natural light filtering through the windows.
+
+- Key Elements and Details
+    - Students
+        - (Attentive students): Approximately 20-30 students in various casual attire, facing forward, with pens in hand, focused on the lecturer. They should exhibit a range of reactions from nodding in agreement to furrowing brows in concentration.
+        - (Note-taking students): Around 15-20 students diligently taking notes in notebooks or on laptops. Vary their posture and facial expressions to show different levels of engagement and comprehension.
+        - (Distracted students): About 5-10 students exhibiting subtle signs of distraction, such as glancing at their phones, doodling, or gazing out the window.
+    - Lecturer
+        - (Professor): A middle-aged lecturer dressed in smart-casual attire, standing at the front of the classroom, gesturing and speaking with enthusiasm. The professor's facial expression should convey knowledge, passion, and engagement with the subject matter.
+    - Furniture
+        - (Desks): 30-40 individual or connected desks arranged in neat rows, varying in condition with some showing signs of wear and tear, each equipped with a chair.
+        - (Lectern): A wooden or metal lectern at the front of the classroom, holding notes, a laptop, and a glass of water.
+        - (Whiteboard/Blackboard): A large whiteboard or blackboard behind the lecturer, covered in equations, diagrams, or notes related to the lecture topic.
+    - Classroom Environment
+        - (Books and Bags): Scattered textbooks, notebooks, and backpacks on desks and on the floor, adding to the lived-in feel of the classroom.
+        - (Educational Materials): Posters, maps, or charts relevant to the subject matter displayed on the walls.
+        - (Windows): Several large windows allowing natural light to illuminate the room, with views of the campus outside.
+
+- Final specific enhancements and details to enrich the scene.
+    - Lighting: Soft, diffused overhead lighting combined with natural light streaming through the windows to create a warm and inviting atmosphere.
+    - Sound: Subtle ambient sounds of shuffling papers, pen scratching, and the lecturer's voice to enhance the immersive experience.
+    - Details: Add personal items such as coffee cups, water bottles, and small trinkets on desks to give each student a unique identity.
+
+- Any other information in this final section: The overall composition should balance the elements of the students, lecturer, and classroom environment, creating a realistic and engaging scene that captures the essence of a university lecture. The level of detail in the textures and materials should convey the age and use of the classroom.
+
+##End of this response
+--------------------------------------------------
+## Prompt: a filled university classroom
+
+## Response: 
+ - Overall impression: A bustling university classroom filled with students, natural light streaming through large windows, creating an atmosphere of academic engagement and collaborative learning.
+
+- Key Elements and Details
+    - People
+        - (Students): Approximately 30-40 students of diverse ages, ethnicities, and backgrounds seated at desks, some attentively listening, others taking notes, and a few engaged in quiet discussions. Varying levels of focus and engagement should be visible.
+        - (Professor): A professor standing at the front of the classroom near a whiteboard or projection screen, gesturing and speaking with authority, wearing professional but approachable attire, such as a blazer or sweater.
+    - Furniture
+        - (Desks): Individual or shared desks arranged in rows or a semi-circular layout, made of wood or laminate, showing signs of wear and tear from years of use. Some desks have textbooks, notebooks, and laptops on them. Suggest approximately 35 desks.
+        - (Chairs): Ergonomic or standard chairs with fabric or plastic seats, some slightly misaligned or pushed back, indicating recent use. Suggest approximately 35 chairs.
+        - (Whiteboard/Projection Screen): A large whiteboard covered in handwritten notes, diagrams, or equations, or a projection screen displaying a presentation slide with relevant information.
+        - (Lectern/Podium): A wooden or metal lectern or podium at the front of the classroom, holding the professor's notes or a laptop.
+    - Environment
+        - (Windows): Large windows allowing natural light to flood the room, with views of the campus grounds, trees, or other buildings. Curtains or blinds may be partially drawn. Suggest around 3-5 windows.
+        - (Walls): Walls painted in a neutral color, such as beige or light gray, with posters, academic calendars, or artwork displayed.
+        - (Floor): Tiled or carpeted floor with signs of foot traffic and wear, possibly with scattered papers or small items.
+    - Props
+        - (Textbooks): Various textbooks related to the course subject matter, stacked on desks or held by students. Suggest around 20-30 textbooks.
+        - (Notebooks): Spiral-bound or hardcover notebooks with handwritten notes, some open and some closed. Suggest around 30-40 notebooks.
+        - (Laptops/Tablets): Laptops or tablets open on desks, displaying documents, web pages, or note-taking applications. Suggest around 15-20 laptops/tablets.
+        - (Pens/Pencils): Pens, pencils, and highlighters scattered on desks, some in pencil cases or holders. Suggest around 50-70 pens/pencils.
+        - (Water Bottles/Coffee Cups): Reusable water bottles or coffee cups placed on desks, indicating students staying hydrated or caffeinated during the lecture. Suggest around 10-15 water bottles/coffee cups.
+
+- Final specific enhancements and details to enrich the scene
+    - Lighting: Natural light streaming through the windows, supplemented by overhead fluorescent or LED lights, casting soft shadows and highlights throughout the room.
+    - Sound: Ambient sounds of students shuffling papers, whispering, and the professor's voice, creating a realistic classroom atmosphere.
+    - Details: Add subtle details such as backpacks slung over chairs, discarded coffee cups, and small personal items on desks to enhance the lived-in feel of the classroom.
+
+- Any other information in this final section: The overall composition should convey a sense of intellectual curiosity and engagement, with the arrangement of desks and the professor's position guiding the viewer's eye towards the front of the classroom. The environment should feel authentic and relatable, with signs of everyday use adding to the realism.
+
+##End of this response
+--------------------------------------------------
+## Prompt: a filled university classroom
+
+## Response: 
+ - Overall impression: A bustling university classroom filled with students engrossed in a lecture, characterized by warm lighting, academic clutter, and an atmosphere of intellectual curiosity.
+
+- Key Elements and Details
+    - People
+        - (Students): A diverse group of approximately 30-50 students of varying ages, ethnicities, and genders, seated at desks, some actively taking notes, others listening intently, and a few with subtle expressions of confusion or contemplation. Clothing should range from casual to slightly formal, reflecting typical student attire.
+        - (Professor): An individual, likely in their late 30s to 60s, standing at the front of the classroom near a whiteboard or projection screen, gesturing or speaking with an engaging expression. Their attire should be professional but approachable, such as a button-down shirt, blouse, or sweater.
+    - Furniture
+        - (Desks): Individual or shared desks arranged in neat rows, facing the front of the classroom. The desks should appear well-used, with minor scratches, doodles, and possibly textbooks or notebooks. Aim for 30-50 desks.
+        - (Chairs): Simple, functional chairs, some slightly mismatched or showing signs of wear. One chair per desk, potentially with a few extra chairs stacked in a corner.
+        - (Lectern/Podium): A wooden or metal lectern at the front of the classroom for the professor's notes and presentation materials. The lectern should have a slightly worn appearance.
+        - (Whiteboard/Projection Screen): A large whiteboard or projection screen at the front of the classroom, covered in writing, diagrams, or projected images relevant to the lecture.
+    - Environment
+        - (Walls): Painted cinder block or plaster walls, possibly with posters, academic notices, or framed artwork. The walls should show minor imperfections and signs of wear.
+        - (Lighting): Fluorescent or LED lighting fixtures on the ceiling, casting a warm, slightly yellowish light. There should be some variation in brightness across the room.
+        - (Windows): Several windows along one side of the classroom, allowing natural light to filter in. The view outside could be of a campus lawn or building.
+    - Props
+        - (Books and Notebooks): Scattered textbooks, notebooks, and folders on the desks, some open, some closed. Aim for a variety of colors and sizes, showing signs of use. Approximately 50-75 books and notebooks in total.
+        - (Pens and Pencils): Pens, pencils, highlighters, and erasers on the desks, some rolling around, others neatly organized. Each desk should have at least 2-3 writing utensils.
+        - (Water Bottles/Coffee Cups): A few water bottles or coffee cups on desks or near students, some partially empty.
+        - (Backpacks/Bags): Several backpacks or bags on the floor near the desks or hanging on the backs of chairs. Vary the styles and colors. Approximately 10-15 backpacks/bags.
+
+- Final specific enhancements and details to enrich the scene.
+    - Lighting: Add subtle light rays streaming in through the windows to enhance the atmosphere.
+    - Sound: Incorporate ambient sounds of shuffling papers, quiet murmuring, and the professor's voice to create a more immersive experience.
+    - Details: Include small details such as discarded coffee cups, crumpled papers, and personalized items on desks to add a sense of realism.
+    - Texture: Add texture to the walls and desks to create depth and realism.
+
+- Any other information in this final section: Ensure the composition guides the viewer's eye towards the professor and the active students, emphasizing the learning environment. Add subtle animations, such as students occasionally shifting in their seats or taking notes, to bring the scene to life. The overall environment should feel authentic and lived-in, with signs of wear and tear adding to the realism.
+
+##End of this response
+--------------------------------------------------
+## Prompt: a filled university classroom
+
+## Response: 
+ - Overall impression: A bustling university classroom filled with students engaged in learning, characterized by an atmosphere of academic pursuit and intellectual curiosity.
+
+- Key Elements and Details
+    - Students
+        - (Attentive students): Approximately 30-40 students of diverse ages, ethnicities, and backgrounds, seated at desks or tables, actively listening to the lecturer. They should exhibit various levels of engagement, with some taking notes, others pondering, and a few exchanging glances or whispering quietly.
+        - (Distracted students): A few students (around 3-5) discreetly using laptops, phones, or doodling in notebooks, conveying a sense of divided attention or mild disinterest.
+    - Lecturer
+        - (Professor): A middle-aged professor standing at the front of the classroom, dressed in professional attire, delivering a lecture with enthusiasm and gesturing to emphasize key points. Facial expressions should convey knowledge, passion, and engagement.
+    - Furniture
+        - (Desks): Individual student desks arranged in rows or a semi-circular formation, made of wood or laminate, showing signs of wear and tear from years of use. Some desks should have textbooks, notebooks, and writing utensils scattered on them.
+        - (Lectern): A wooden or metal lectern at the front of the classroom for the professor to place notes and lecture materials. It may have a microphone attached.
+        - (Chairs): A variety of chairs, some with armrests, others without, showing signs of use and occasional scuffs.
+    - Teaching Aids
+        - (Whiteboard/Blackboard): A large whiteboard or blackboard at the front of the classroom covered in equations, diagrams, or notes related to the lecture topic. Some markings should be partially erased or smudged.
+        - (Projector Screen): A retractable projector screen hanging from the ceiling, displaying a presentation slide or a relevant image. The screen should appear slightly worn.
+        - (Projector): A digital projector mounted on the ceiling or placed on a stand, casting an image onto the projector screen.
+    - Classroom Details
+        - (Bookshelves): Several bookshelves lining the walls, filled with textbooks, reference materials, and academic journals. Some books should be slightly askew or dog-eared. (Around 3-4 bookshelves)
+        - (Windows): Large windows allowing natural light to flood the classroom, with blinds or curtains partially drawn to control glare. (Around 3-5 windows)
+        - (Posters/Notices): Academic posters, announcements, and informational notices displayed on the walls, adding visual interest and providing context to the learning environment. (Around 5-7 posters)
+        - (Clock): A clock mounted on the wall, indicating the time of the lecture.
+
+- Final specific enhancements and details to enrich the scene.
+    - Lighting: Natural light streaming through the windows, supplemented by fluorescent or LED lighting fixtures on the ceiling.
+    - Atmosphere: A sense of intellectual energy and engagement, with subtle background noise of rustling papers, murmuring voices, and the professor's voice.
+    - Textures: Realistic textures for all surfaces, including wood grain, fabric, metal, and paper, with subtle variations and imperfections to enhance realism.
+
+- Any other information in this final section: Consider adding personal touches such as coffee cups, water bottles, and backpacks to further enhance the sense of realism and create a lived-in environment. The overall composition should guide the viewer's eye towards the professor and the students, emphasizing the dynamic interaction between them. The environment should feel authentic and conducive to learning, with subtle details adding depth and character to the scene.
+
+##End of this response
+--------------------------------------------------
+## Prompt: a filled university classroom
+
+## Response: 
+ - Overall impression: A bustling university classroom filled with students engaged in learning, characterized by rows of desks, academic paraphernalia, and an atmosphere of intellectual curiosity and concentration.
+
+- Key Elements and Details
+    - People
+        - (Students): A diverse group of approximately 30-50 students of various ages, ethnicities, and genders, seated at desks, some taking notes, others listening attentively, and a few engaged in quiet discussions. Their attire should be casual but appropriate for an academic setting, with backpacks and personal items scattered around their desks.
+        - (Professor): An individual, either male or female, standing at the front of the classroom near a whiteboard or projection screen, dressed in professional attire, gesturing or speaking, and holding notes or a pointer. Their expression should be engaging and knowledgeable.
+
+    - Furniture
+        - (Desks): Individual desks arranged in neat rows, each with a chair, and varying levels of clutter including notebooks, textbooks, pens, and laptops. The desks could be made of wood, metal, or a combination of materials, showing signs of wear and tear. Aim for 30-50 desks.
+        - (Chairs): Ergonomic or standard classroom chairs, some with armrests, positioned at each desk. The chairs should appear comfortable and functional. Aim for 30-50 chairs.
+        - (Lectern): A wooden or metal lectern at the front of the classroom, with a microphone, a water bottle, and the professor's notes. It should look sturdy and professional.
+    - Teaching Equipment
+        - (Whiteboard/Blackboard): A large whiteboard or blackboard at the front of the classroom, covered in equations, diagrams, or notes related to the lecture. Markers or chalk should be visible nearby.
+        - (Projector Screen): A retractable projector screen mounted on the ceiling or wall, with faint images or text visible from the previous lecture.
+        - (Projector): A digital projector mounted on the ceiling or placed on a stand, with cables running to a laptop or computer.
+    - Classroom Details
+        - (Bookshelves): Several bookshelves lining the walls, filled with textbooks, reference books, and academic journals. The books should appear well-used and organized. Aim for 2-3 bookshelves.
+        - (Wall Decorations): Posters, maps, or academic charts displayed on the walls, adding visual interest and reinforcing the subject matter. Aim for 3-5 posters or charts.
+        - (Windows): Windows providing natural light, with blinds or curtains partially drawn. The view outside could be a campus scene or a cityscape. Aim for 2-3 windows.
+        - (Lighting): Fluorescent or LED lights illuminating the classroom, casting a warm or cool glow. Aim for 6-8 light fixtures.
+
+- Final specific enhancements and details to enrich the scene.
+    - Lighting: Soft, diffused lighting to create a comfortable and focused atmosphere.
+    - Sound: Subtle background noise, such as the rustling of papers, the clicking of keyboards, and the murmur of voices, to create a realistic classroom environment.
+    - Details: Small details, such as coffee cups, water bottles, and personal items on the desks, to add a sense of realism and personality to the scene.
+
+- Any other information in this final section: Consider varying the poses and expressions of the students to create a dynamic and engaging classroom environment. The overall composition should guide the viewer's eye towards the professor and the teaching equipment, emphasizing the academic focus of the scene. The environment should feel authentic and lived-in, with signs of wear and tear adding to the realism.
+
+##End of this response
+--------------------------------------------------
+## Prompt: riverside terrain at night
+
+## Response: 
+ - Overall impression: A serene riverside terrain at night, illuminated by the soft glow of the moon and scattered ambient lights, creating a tranquil and slightly mysterious atmosphere.
+
+- Key Elements and Details
+    - Terrain
+        - (Riverbank): A natural embankment sloping down to the water, composed of soil, grass, and scattered rocks. The texture should vary with patches of exposed dirt and areas covered in vegetation.
+        - (Riverbed): Visible in shallower areas, consisting of smooth stones, pebbles, and silt. The riverbed should have subtle variations in depth and texture to simulate natural erosion and sediment deposition.
+        - (Vegetation): An assortment of riverside flora, including tall grasses, reeds, and small shrubs. Some plants should be slightly submerged in the water along the edges.
+        - (Path): A narrow, dirt path running alongside the riverbank, showing signs of light wear. The path should meander naturally with slight curves and elevation changes.
+    - Water
+        - (River surface): Reflecting the moonlight and ambient lights with subtle ripples and gentle currents. The water should have a slight opacity, allowing glimpses of the riverbed in shallower areas.
+        - (Water edges): Where the water meets the riverbank, creating a wet, reflective surface on the soil and rocks. Small splashes and droplets should be visible.
+    - Lighting
+        - (Moonlight): Soft, diffused light casting long shadows and highlighting the contours of the terrain. The moonlight should create a cool, blueish tone.
+        - (Ambient lights): Scattered artificial light sources from distant buildings or pathways, casting warm, orange glows on the riverbank. These lights should be subtle and not overpowering. Number of lights: 5-10.
+    - Props
+        - (Rocks): Various sizes of rocks scattered along the riverbank, partially submerged in the water. The rocks should have varied textures and colors, ranging from smooth river stones to rougher, jagged rocks. Number of rocks: 15-25.
+        - (Fallen branches): A few fallen tree branches lying on the riverbank, adding to the natural, untamed feel of the environment. These should appear weathered and partially decayed. Number of branches: 3-5.
+
+- Final specific enhancements and details to enrich the scene.
+    - Fog: A thin layer of mist hovering over the water's surface, adding a sense of depth and mystery.
+    - Sound: Subtle ambient sounds of crickets, flowing water, and distant traffic to enhance the immersive experience.
+    - Particles: Fireflies twinkling near the vegetation, adding a magical touch to the night scene. Number of fireflies: 20-30.
+
+- Any other information in this final section: Ensure the color palette remains consistent with a nighttime environment, utilizing dark blues, greens, and browns with subtle highlights from the moonlight and ambient lights. The overall composition should feel natural and undisturbed, with a focus on realism and atmospheric depth.
+
+##End of this response
+--------------------------------------------------
+## Prompt: stadium in a night time
+
+## Response: 
+ - Overall impression: A brightly lit stadium under a dark night sky, filled with thousands of cheering fans, creating a dynamic and energetic atmosphere.
+
+- Key Elements and Details
+    - Stadium Structure
+        - (Exterior facade): A modern architectural design with sweeping curves and illuminated panels, incorporating team colors and large video screens displaying game highlights. The facade should feature a combination of glass, steel, and concrete, with dynamic lighting effects.
+        - (Roof): A partial or fully retractable roof system, with visible support structures and integrated lighting. The roof could be translucent or opaque, depending on the desired aesthetic.
+        - (Entrances and exits): Multiple grand entrances with prominent signage, security checkpoints, and ticket booths. Emergency exits should be clearly marked and easily accessible.
+    - Field and Surroundings
+        - (Playing field): A meticulously maintained grass or artificial turf field, with clearly marked boundaries and painted lines. Consider adding subtle wear and tear for realism.
+        - (Seating): Tiered seating arrangement with tens of thousands of individual seats in team colors. Include variations in seat occupancy to indicate fan activity.
+        - (Jumbotron): A massive high-definition video screen suspended above the field, displaying live game footage, replays, and advertisements. Include dynamic lighting and animation effects.
+        - (Scoreboard): A digital scoreboard displaying the game score, time remaining, and other relevant statistics.
+        - (Perimeter advertisements): A combination of static and dynamic advertisements surrounding the field, featuring local and national brands. These could be displayed on LED screens or traditional billboards.
+    - Lighting
+        - (Field lighting): Powerful stadium lights illuminating the playing field, casting dramatic shadows and creating a visually striking effect. These should be positioned strategically to minimize glare and maximize visibility.
+        - (Architectural lighting): Accent lighting highlighting the stadium's architectural features, using a variety of colors and intensities to create a dynamic and engaging visual experience.
+        - (Emergency lighting): Subtle emergency lighting throughout the stadium, ensuring safe evacuation in case of power outages.
+    - Crowd
+        - (Fans): Tens of thousands of cheering fans in team colors, displaying a range of emotions, from excitement to disappointment. Include variations in clothing, age, and gender to create a diverse crowd.
+        - (Security personnel): Visible security personnel stationed throughout the stadium, monitoring the crowd and ensuring safety.
+        - (Vendors): Mobile vendors selling food, drinks, and merchandise, adding to the lively atmosphere.
+
+- Final specific enhancements and details to enrich the scene.
+    - Fireworks: Add a burst of fireworks launching from behind the stadium, illuminating the night sky with vibrant colors.
+    - Sound effects: Incorporate sound effects such as crowd cheers, music, and game announcements to enhance the immersive experience.
+    - Weather effects: Add subtle weather effects such as light rain or fog to create a more atmospheric scene.
+
+- Any other information in this final section: Consider adding subtle details such as banners, flags, and team logos to reinforce the stadium's identity. The overall composition should guide the viewer's eye towards the playing field and the crowd, emphasizing the excitement and energy of the game.
+
+##End of this response
+--------------------------------------------------
+## Prompt: stadium in a night time
+
+## Response: 
+ - Overall impression: A brightly lit, colossal stadium under a dark, star-speckled night sky, teeming with excited crowds and radiating energy.
+
+- Key Elements and Details
+    - Stadium Structure
+        - (Exterior Facade): A massive, modern architectural design with a mix of glass, steel, and concrete, featuring dynamic lighting patterns and large video screens displaying game highlights. The structure should have distinctive architectural features.
+        - (Roof): A retractable or fixed roof structure, partially open to reveal the night sky, with integrated lighting systems that can change color and intensity.
+        - (Entrances): Multiple large, illuminated entry points with visible security checkpoints and queuing areas filled with people.
+
+    - Interior Details
+        - (Seating): Tiered seating arrangement filled with a diverse crowd of people; individual seats should be visible with varying colors to indicate different sections. The number of seats may vary depending on the actual stadium size, but assuming a big arena with at least 50.000 to 80.000 seats would be appropriate.
+        - (Field/Pitch): A well-maintained sports field (e.g., grass for soccer/football or a track for athletics) with clear markings and visible wear from use.
+        - (Scoreboards/Screens): Multiple large, high-definition scoreboards and video screens displaying live game footage, scores, and advertisements, with dynamic graphics and animations. At least 4 large ones and 10 smaller ones evenly distributed across the stadium.
+        - (Lighting): Intense, focused lighting illuminating the field, with a combination of floodlights and specialized sports lighting to ensure optimal visibility.
+        - (Concessions/Vendor Areas): Visible vendor booths and concession stands around the concourse areas, with bright signage and queues of people buying food and merchandise. Around 20 - 30 booths should be placed around.
+
+    - Crowd
+        - (Spectators): A large, animated crowd of people wearing team colors, cheering, waving flags, and displaying a range of emotions (excitement, anticipation, joy, disappointment).
+        - (Security/Staff): Visible security personnel, ushers, and event staff in uniforms, strategically positioned around the stadium to manage the crowd and ensure safety. At least 50 - 100 personnel should be present.
+
+    - Surrounding Environment
+        - (Parking Lots): Expansive parking areas filled with cars, buses, and other vehicles, with visible traffic flow and streetlights. Should contain a minimum of 3000 cars
+        - (Landscaping): Trees, shrubs, and other greenery around the stadium perimeter, adding a touch of nature to the urban environment.
+        - (Cityscape): Distant city skyline with illuminated buildings and landmarks, providing context and a sense of location. At least 20-30 buildings of different heights and shapes should be present
+
+- Final specific enhancements and details to enrich the scene.
+    - Lighting
+        - Dynamic lighting effects, such as spotlights sweeping across the crowd, pulsating lights synchronized with the game, and color-changing LEDs on the stadium facade.
+    - Atmosphere
+        - Add atmospheric effects such as smoke, haze, or light rain to enhance the mood and create a sense of depth.
+    - Sound
+        - Subtle ambient sounds of the crowd cheering, music playing, and announcements being made to create a more immersive experience.
+    - Visual Effects
+        - Fireworks or pyrotechnics display (if appropriate for the event), adding a burst of color and excitement to the scene.
+    - Weather
+        - Subtle weather effects such as a light breeze or fog rolling in, to add realism.
+        
+- Any other information in this final section: Consider adding details such as banners, flags, and team logos to enhance the sense of place and create a more vibrant and engaging environment. The overall composition should guide the viewer's eye towards the field of play and the energy of the crowd, emphasizing the excitement and spectacle of the event. The environment should feel authentic and lived-in, with signs of wear and tear adding to the realism.
+
+##End of this response
+--------------------------------------------------
+## Prompt: stadium in a night time
+
+## Response: 
+ - Overall impression: A brightly lit stadium under the dark night sky, filled with cheering fans and surrounded by city lights. The atmosphere is electric and full of excitement.
+
+- Key Elements and Details
+    - Stadium Structure
+        - (Exterior Facade): A modern stadium design with visible architectural details, such as steel beams, glass panels, and concrete structures, illuminated by exterior floodlights and dynamic color-changing LED panels.
+        - (Roof): A retractable or fixed roof structure, partially open to reveal the night sky, with integrated lighting elements and support beams.
+        - (Entrances and Exits): Clearly defined entry and exit points with security checkpoints, turnstiles, and signage for crowd management.
+    - Field and Playing Area
+        - (Grass or Turf Field): A meticulously maintained playing surface with visible field markings, team logos, and advertising banners along the sidelines.
+        - (Goalposts or End Zones): Prominent goalposts or end zones with appropriate markings and padding for player safety.
+        - (Surrounding Track or Perimeter): A running track or perimeter area surrounding the field, with safety barriers and access points for officials and emergency personnel.
+    - Seating and Spectators
+        - (Tiered Seating): Multiple levels of seating with various colors to represent different sections or fan groups, filled with animated spectators.
+        - (Spectators): A diverse crowd of animated 50000-80000 spectators cheering, waving flags, and holding up signs, with a variety of clothing, expressions, and animations to create a lively atmosphere.
+        - (VIP Boxes): Enclosed VIP boxes with glass windows, comfortable seating, and catering setups, offering a premium viewing experience.
+    - Lighting and Scoreboards
+        - (Stadium Lights): High-intensity floodlights mounted on tall pylons or integrated into the roof structure, casting bright illumination on the field. Approximately 20-30 light posts.
+        - (Scoreboards): Large LED scoreboards displaying real-time game statistics, replays, and advertisements, with dynamic animations and vibrant colors. 2 scoreboards.
+    - Surrounding Environment
+        - (Parking Lots): Expansive parking lots surrounding the stadium, filled with cars and buses, with visible parking lines and signage. Approximately 1000-2000 cars.
+        - (Cityscape): A distant cityscape with skyscrapers, residential buildings, and streetlights, creating a backdrop for the stadium. Approximately 50-100 buildings.
+        - (Landscaping): Trees, shrubs, and green spaces surrounding the stadium, providing a natural contrast to the urban environment. Around 50-100 trees.
+
+- Final specific enhancements and details to enrich the scene
+    - Lighting: Add dynamic lighting effects, such as flickering lights, spotlights, and color-changing LEDs, to enhance the excitement and energy of the scene.
+    - Weather Effects: Subtle weather effects, such as light rain or fog, can add atmosphere and depth to the environment.
+    - Crowd Animation: Implement realistic crowd animations, such as cheering, waving, and celebrating, to create a lively and immersive experience.
+    - Sound Effects: Incorporate sound effects, such as crowd noise, music, and announcements, to create a realistic and engaging audio environment.
+
+- Any other information in this final section: Pay attention to the scale and proportions of the stadium and its surroundings to create a believable and immersive environment. The lighting and color palette should be carefully chosen to enhance the atmosphere and create a visually appealing scene. Consider adding details such as security personnel, vendors, and media crews to add realism and depth to the stadium environment.
+
+##End of this response
+--------------------------------------------------
+## Prompt: stadium in a night time
+
+## Response: 
+ - Overall impression: A brightly lit stadium under a dark night sky, filled with cheering crowds and vibrant energy, creating a dynamic and exciting atmosphere.
+
+- Key Elements and Details
+    - Stadium Structure
+        - (Exterior Facade): A modern architectural design with a combination of glass, steel, and concrete, featuring illuminated signage and dynamic lighting patterns. The stadium should have a seating capacity of around 60,000-80,000.
+        - (Roof): A retractable or partially open roof structure allowing for a view of the night sky, with integrated lighting systems to enhance the visual appeal.
+        - (Entrances and Exits): Multiple entry points with visible security checkpoints, turnstiles, and wide concourses to accommodate large crowds. Include digital displays showing event information and wayfinding.
+    - Field and Playing Area
+        - (Playing Surface): A meticulously maintained grass or artificial turf field, with clearly marked lines and logos. The field should be evenly lit with high-intensity stadium lights.
+        - (Goals/Nets/Bases): Sport-specific equipment such as soccer goals with nets, baseball bases, or football goalposts, depending on the primary sport the stadium is designed for.
+        - (Surrounding Track/Area): An optional running track around the field or designated areas for other athletic activities, with appropriate safety barriers and markings.
+    - Crowd and Spectators
+        - (Seating Arrangement): Tiered seating with a variety of colors and textures to create a visually appealing pattern. Include luxury boxes, VIP areas, and general admission seating.
+        - (Spectators): A diverse crowd of animated 5000-8000 spectators cheering, waving flags, and wearing team colors. Vary the poses and expressions to create a lively atmosphere.
+        - (Banners and Flags): Team-specific banners, flags, and signs displayed throughout the stadium, adding to the sense of excitement and rivalry.
+    - Lighting and Special Effects
+        - (Stadium Lights): High-powered stadium lights illuminating the field, with a mix of spotlights and floodlights to ensure even coverage.
+        - (Scoreboards and Displays): Large LED scoreboards displaying real-time game information, advertisements, and animated graphics. Include smaller ribbon boards along the seating areas for additional information.
+        - (Pyrotechnics): Optional pyrotechnic effects such as fireworks, sparklers, or laser shows, adding to the spectacle and energy of the event.
+
+- Final specific enhancements and details to enrich the scene
+    - Lighting: Add dynamic lighting effects, such as flickering lights, moving spotlights, and color-changing LEDs, to enhance the sense of motion and energy.
+    - Weather: Include subtle weather effects such as light fog, mist, or distant rain to add depth and atmosphere to the scene.
+    - Sound: Incorporate ambient stadium sounds such as cheering crowds, music, and announcer voices to create an immersive auditory experience.
+
+- Any other information in this final section: The overall composition should focus on capturing the excitement and energy of a live sporting event. Pay attention to details such as the reflections of the stadium lights on the wet ground, the textures of the seating materials, and the expressions of the spectators to create a believable and engaging environment. The stadium should appear well-maintained and modern, with a sense of grandeur and scale that conveys its importance as a venue for major events.
+
+##End of this response
+--------------------------------------------------
+## Prompt: stadium in a night time
+
+## Response: 
+ - Overall impression: A brightly lit stadium in a dark, night time environment, with a palpable sense of excitement and energy radiating from the field and stands.
+
+- Key Elements and Details
+    - Stadium Structure
+        - (Exterior Facade): A modern architectural design with a combination of glass, steel, and concrete, featuring dynamic lighting elements that highlight the stadium's unique shape and contours. The facade should incorporate large screens displaying replays and advertisements.
+        - (Roof): A partial or fully retractable roof structure made of translucent or transparent materials, allowing for natural light during the day and a spectacular view of the night sky when open.
+        - (Entrances and Exits): Multiple well-lit entry points with clear signage and security checkpoints, designed to handle large crowds efficiently. Include turnstiles, ticket scanners, and security personnel.
+
+    - Field and Playing Area
+        - (Playing Surface): A meticulously maintained grass or synthetic field with clearly marked boundaries, lines, and logos of the teams or sponsors. The field should be illuminated by powerful, evenly distributed floodlights.
+        - (Goals/Nets): Depending on the sport, include realistic goals, nets, or hoops with appropriate dimensions and materials. Ensure they are correctly positioned and securely anchored.
+        - (Surrounding Track/Area): If applicable, add a running track or additional playing area around the field, with distinct textures and markings.
+
+    - Seating and Stands
+        - (Seating Arrangement): A multi-tiered seating arrangement with a variety of seating options, including standard seats, premium boxes, and VIP suites. The seats should be colored to match the team's colors or create a visually appealing pattern. Number of seats: 40,000-80,000.
+        - (Crowd): A large, animated crowd of spectators dressed in team colors, displaying a range of emotions from excitement and anticipation to cheering and celebration. Vary the density and behavior of the crowd based on the location within the stadium.
+        - (Scoreboards and Jumbotrons): Large, high-definition screens displaying real-time scores, replays, advertisements, and interactive content. Position at least two jumbotrons at opposite ends of the stadium for optimal visibility.
+
+    - Lighting and Effects
+        - (Floodlights): Powerful floodlights mounted on tall pylons or integrated into the stadium's roof structure, providing bright and even illumination of the playing field. Use a combination of warm and cool lighting to enhance visibility and create a dynamic atmosphere.
+        - (Architectural Lighting): Accent lighting on the stadium's facade, highlighting its architectural features and creating a visually stunning nighttime silhouette. Use color-changing LEDs to add visual interest.
+        - (Special Effects): Pyrotechnics, lasers, and light shows during key moments of the game or event, adding to the excitement and spectacle. Use these effects sparingly to avoid overwhelming the scene.
+
+- Final specific enhancements and details to enrich the scene.
+    - Atmosphere: Add environmental effects such as haze, fog, or light rain to enhance the atmosphere and create a sense of depth.
+    - Sound: Incorporate sound effects such as crowd noise, cheering, music, and announcements to create an immersive audio experience.
+    - Details: Include smaller details such as vendor stalls, concession stands, and signage to add realism and depth to the scene.
+
+- Any other information in this final section: Ensure the overall composition is dynamic and visually engaging, with a clear focal point on the playing field and the crowd. The lighting should be dramatic and well-balanced, creating a sense of excitement and energy. Consider adding subtle details such as birds flying overhead or vehicles approaching the stadium to add realism and depth to the scene.
+
+##End of this response
+--------------------------------------------------
+## Prompt: stadium in a night time
+
+## Response: 
+ - Overall impression: A brightly lit stadium in stark contrast to the dark night sky, filled with the vibrant energy of a live event, showcasing a mix of modern architecture and dynamic lighting.
+
+- Key Elements and Details
+    - Stadium Structure
+        - (Exterior Facade): A modern architectural design featuring a combination of glass, steel, and concrete elements, illuminated by dynamic colored lighting that reflects the team colors or event theme. The structure should be large and imposing, with visible entrances, walkways, and signage. (Approximately 40% glass, 30% steel, and 30% concrete, with a height of about 50-70 meters and a diameter of 250-300 meters).
+        - (Roof): A retractable or fixed roof structure, possibly translucent or partially open, allowing for controlled lighting and weather conditions. The roof should feature integrated lighting systems, such as spotlights or LED panels, enhancing the overall visual impact. (Coverage area of about 70-80% of the stadium, with integrated lighting elements comprising 10-15% of the surface).
+    - Interior Elements
+        - (Seating): Tiered seating arrangement accommodating a large crowd, with individual seats in team colors or neutral tones. The seating should appear densely packed, with visible variations in occupancy to suggest a live event. (Approximately 50,000 - 80,000 seats, with a mix of 80% occupied and 20% empty seats).
+        - (Field/Arena): A well-maintained playing surface, such as grass or synthetic turf, with clearly marked boundaries and lines. The field should be brightly illuminated, with minimal shadows, highlighting the central area of activity. (Playing area dimensions approximately 105m x 68m, with lighting intensity of 2000-2500 lux).
+        - (Jumbotron/Scoreboards): Large, high-definition video screens positioned at each end of the stadium, displaying live footage, scores, and advertisements. The screens should be vibrant and dynamic, capturing the attention of the audience. (Two screens, each approximately 20m x 10m, with a resolution of 4K or higher).
+    - Lighting and Effects
+        - (Floodlights): Powerful floodlights strategically positioned around the stadium to illuminate the field and seating areas. The lights should create a bright, even illumination with minimal glare. (Approximately 200-300 floodlights, each with a power of 2000-3000 watts, positioned at a height of 40-50 meters).
+        - (Architectural Lighting): Integrated lighting systems that accentuate the stadium's architectural features, using colored lights, spotlights, and dynamic effects to create a visually stunning exterior. (LED strips covering about 20% of the facade, with a color range of RGB).
+        - (Crowd Lighting): Spotlights and colored lights directed towards the crowd, enhancing the atmosphere and creating a sense of excitement. (Approximately 50-100 spotlights, with varying colors and intensities, focused on different sections of the crowd).
+    - Surrounding Environment
+        - (Parking Area): Large parking lots surrounding the stadium, filled with cars and buses, indicating a high volume of traffic. The parking area should be well-lit with streetlights and signage. (Capacity for approximately 5000-7000 vehicles, with 100-150 streetlights).
+        - (Access Roads): Roads leading to and from the stadium, with traffic flow and visible vehicles. The roads should be well-maintained and illuminated, indicating a smooth flow of transportation. (Approximately 4-6 access roads, each with 2-3 lanes, and traffic density of 50-70 vehicles per lane).
+
+- Final specific enhancements and details to enrich the scene
+    - Smoke and Haze: Add subtle smoke and haze effects to the air, particularly around the field and lighting fixtures, to enhance the atmosphere and create a sense of depth.
+    - Lens Flares: Incorporate lens flares from the bright stadium lights to add a cinematic touch and enhance the realism of the scene.
+    - Crowd Details: Populate the seating areas with detailed 3D models of people, each with unique clothing, poses, and expressions, to create a lively and engaging crowd scene.
+    - Weather Effects: Add subtle weather effects, such as light rain or mist, to enhance the atmosphere and create a sense of realism.
+
+- Any other information in this final section: Consider adding details such as banners, flags, and advertising boards around the stadium to enhance the visual appeal and create a sense of immersion. The overall composition should emphasize the scale and grandeur of the stadium, capturing the excitement and energy of a live event.
+
+##End of this response
+--------------------------------------------------
+## Prompt: stadium in a night time
+
+## Response: 
+ - Overall impression: A brightly lit stadium against a dark, star-filled night sky, bustling with energy and excitement, with visible signs of a recently concluded or ongoing event.
+
+- Key Elements and Details
+    - Stadium Structure
+        - (Exterior facade): A modern architectural design with a combination of glass, steel, and concrete elements, showcasing dynamic shapes and illuminated panels. The stadium should appear massive, with visible entrances, ramps, and walkways.
+        - (Roof design): A retractable or partially open roof structure, allowing for glimpses of the night sky. The design should be complex and visually interesting, with integrated lighting that enhances its form.
+        - (Surrounding grounds): Include parking lots with [approximately 500-1000] cars, pedestrian walkways, and green spaces with trees and landscaping. Visible security checkpoints and crowd control barriers.
+
+    - Lighting
+        - (Stadium lights): Powerful floodlights illuminating the field and stands, creating stark contrasts and dramatic shadows. Different colored lights can be used to highlight specific areas or create dynamic effects. [Around 100-200 lights] should be visible.
+        - (Exterior lighting): Softer, ambient lighting around the exterior of the stadium, including pathway lights, architectural lighting, and illuminated signage. [Around 50-100 lights].
+        - (Internal lighting): Visible light emanating from inside the stadium through openings and glass panels, hinting at activity within.
+
+    - Atmosphere
+        - (Crowd): Depict a sparse crowd of people leaving the stadium or still milling around, some wearing team jerseys and hats. Include a mix of ages and demographics, showing excitement and chatter. [Around 100-300 people]
+        - (Scoreboards and signage): Large digital scoreboards displaying scores, advertisements, and animated graphics. Include various smaller signs with directions, sponsor logos, and event information.
+        - (Atmospheric effects): Use subtle fog or haze to create depth and atmosphere, with light beams cutting through the air. Include distant city lights in the background for context.
+
+- Final specific enhancements and details to enrich the scene.
+    - Light flares: Add lens flares to the brightest lights to enhance the realism and visual impact.
+    - Color Grading: Use a color palette that emphasizes the contrast between the warm stadium lights and the cool night sky.
+    - Texture Details: Include high-resolution textures for all surfaces, showing wear and tear, dirt, and other realistic details.
+
+- Any other information in this final section: Consider adding subtle details such as security personnel, vendors packing up their carts, and distant sirens to add realism. The overall composition should guide the viewer's eye towards the brightly lit stadium, emphasizing its grandeur and the energy of the event. Pay attention to the reflections on the glass and metal surfaces, enhancing the sense of depth and realism.
+
+##End of this response
+--------------------------------------------------
+## Prompt: university classroom with students studying in it
+
+## Response: 
+ - Overall impression: A bustling university classroom filled with students engaged in various stages of learning, set against a backdrop of academic resources and architectural details that contribute to a focused yet dynamic environment.
+
+- Key Elements and Details
+    - People
+        - (Students): Approximately 20-30 students of diverse ages and ethnicities, seated at desks, engaged in different activities such as taking notes, reading textbooks, working on laptops, or participating in discussions. Their attire should be casual and comfortable, reflecting typical student fashion.
+        - (Professor/Lecturer): One professor or lecturer standing at the front of the class, either speaking or observing the students. Their attire should be professional but approachable, such as business casual.
+    - Furniture
+        - (Desks): 20-30 individual or shared desks arranged in rows or a semi-circular layout, made of wood or laminate with metal frames. Some desks should have visible textbooks, notebooks, and writing utensils on them.
+        - (Chairs): Matching chairs for each desk, designed for comfort and ergonomic support, possibly with wheels or adjustable height.
+        - (Lectern/Podium): A lectern or podium at the front of the class for the professor, equipped with a microphone, laptop, and notes.
+        - (Whiteboard/Blackboard): A large whiteboard or blackboard at the front of the class, covered with equations, diagrams, or notes relevant to the course material.
+    - Academic Resources
+        - (Bookshelves): At least two bookshelves lining the walls, filled with a variety of textbooks, reference books, and academic journals.
+        - (Laptop/Projector): A laptop connected to a projector, displaying a presentation slide or relevant information on a screen.
+        - (Academic Posters/Charts): Several academic posters or charts displayed on the walls, illustrating key concepts or historical information related to the subject matter.
+    - Architectural Details
+        - (Windows): Large windows providing natural light, with views of the campus or surrounding area.
+        - (Lighting Fixtures): Overhead lighting fixtures providing ample illumination, such as fluorescent lights or LED panels.
+        - (Flooring): Tile or linoleum flooring, with visible wear and tear from foot traffic.
+
+- Final specific enhancements and details to enrich the scene.
+    - Lighting: Natural light streaming through the windows, combined with artificial lighting to create a bright and inviting atmosphere.
+    - Textures: Detailed textures for the desks, chairs, and flooring to convey a sense of realism and wear.
+    - Atmosphere: Subtle ambient sounds of students studying, such as the rustling of papers, quiet conversations, and the clicking of keyboards, to create an immersive environment.
+
+- Any other information in this final section: Consider adding personal touches such as coffee cups, water bottles, or backpacks to further enhance the realism and relatability of the scene. The overall composition should convey a sense of intellectual curiosity and academic engagement.
+
+##End of this response
+--------------------------------------------------
+## Prompt: Create a football stadium filled with fans of Barcelona and Real Madrid during a El Classico
+
+## Response: 
+ - Overall impression: A massive, vibrant football stadium, roaring with energy and divided by a sea of color, showcasing the intense rivalry between Barcelona and Real Madrid fans during El Clásico, with every detail amplifying the electric atmosphere.
+
+- Key Elements and Details
+    - Stadium Structure
+        - (Exterior): A colossal stadium featuring modern architectural design, with visible entrances, stairways, and possibly large screens displaying team logos and match information. Consider the stadium to have 4 main stands, each with multiple levels of seating.
+        - (Interior): Multi-tiered seating arrangement, clearly divided sections for Barcelona and Real Madrid fans, VIP boxes, media areas, and the pitch visible at the center. Include details like railings, signage, and emergency exits.
+    - Barcelona Fans
+        - (Seating Sections): Predominantly located on one side of the stadium, fans are dressed in Barcelona's blue and garnet colors, creating a visually dominant block of color. Have around 40,000 fans.
+        - (Individual Fans): A diverse crowd of men, women, and children of various ages and ethnicities, wearing jerseys, scarves, hats, and face paint. Expressions range from excitement and anticipation to tension and passion.
+        - (Fan Actions): Fans waving large flags, banners, and posters with team slogans and player images. Some are jumping, chanting, singing, and creating a dynamic, energetic wave of movement.
+    - Real Madrid Fans
+        - (Seating Sections): Positioned on the opposite side of the stadium, fans are clad in Real Madrid's white colors, forming a stark contrast to the Barcelona side. Have around 40,000 fans.
+        - (Individual Fans): Similar demographic diversity as Barcelona fans, but dressed in white jerseys, scarves, and hats. Displaying equal levels of passion and excitement.
+        - (Fan Actions): Mirroring the actions of Barcelona fans, they wave flags, display banners, and engage in chants and songs to support their team, creating a competitive atmosphere.
+    - Field and Players
+        - (Pitch): A well-maintained grass field with visible markings, team logos, and advertising boards along the sidelines.
+        - (Players): Two teams of 11 players each, wearing the distinct jerseys of Barcelona and Real Madrid, positioned dynamically on the field, ready for action. Include a referee and linesmen.
+    - Additional Stadium Details
+        - (Scoreboard): A large, high-definition scoreboard displaying the game clock, score, and team names.
+        - (Advertising): Digital and static advertising boards around the pitch featuring various brands and logos.
+        - (Security Personnel): Visible security staff and stewards positioned throughout the stadium to maintain order.
+
+- Final specific enhancements and details to enrich the scene.
+    - Lighting: Stadium lights casting bright, focused illumination on the field, with a gradient of light intensity towards the seating areas.
+    - Sound Effects: Add sound of roaring crowd, cheers, chants, whistles, and the stadium announcer's voice.
+    - Weather Effects: Clear sky or slightly overcast conditions to ensure good visibility, or night scene with enhanced lighting effects.
+    - Camera angles : Multiple camera angles
+
+- Any other information in this final section: The composition should capture the intensity and scale of El Clásico, emphasizing the division and rivalry between the two sets of fans. Pay attention to the small details, such as the expressions on the faces of the fans and players, to convey the passion and energy of the event. Add elements that highlight the cultural significance of the match, reflecting the pride and tradition associated with both clubs.
+
+##End of this response
+--------------------------------------------------
+## Prompt: an underwater coral reef or ocean floor
+
+## Response: 
+ - Overall impression: A vibrant and bustling underwater coral reef ecosystem, teeming with life and color, showcasing a diverse range of coral formations, marine creatures, and plant life, all bathed in filtered sunlight creating an ethereal and captivating scene.
+
+- Key Elements and Details
+    - Coral Formations
+        - (Brain Coral): Large, spherical coral with intricate, maze-like patterns on its surface, displaying colors ranging from pale green to brownish-yellow; aim for 5-10 formations of varying sizes.
+        - (Staghorn Coral): Branching coral resembling deer antlers, with a light brown or beige coloration; create clusters of 10-15 to establish dense thickets.
+        - (Table Coral): Wide, flat coral structures forming table-like platforms, exhibiting blue or purple hues; place 3-5 prominent pieces as focal points.
+        - (Soft Coral): Flexible, swaying coral with vibrant colors like red, orange, and yellow, adding movement to the scene; generate groups of 20-30 to fill gaps and create visual interest.
+        - (Sea Anemones): Soft-bodied, colorful invertebrates with tentacles swaying in the water, hosting clownfish; include 10-15 anemones with varying sizes and colors.
+
+    - Marine Life
+        - (Tropical Fish): Schools of brightly colored fish such as parrotfish, angelfish, and butterflyfish, swimming in groups of 50-100, displaying diverse patterns and sizes.
+        - (Sea Turtles): Graceful sea turtles gliding through the water, with detailed shell textures and realistic swimming animations; add 2-3 turtles of different sizes.
+        - (Moray Eels): Elongated, snake-like fish hiding in crevices and coral formations, with mottled patterns and sharp teeth; place 3-5 eels partially concealed in the reef.
+        - (Starfish): Various starfish species clinging to coral or resting on the seafloor, with detailed textures and colors; scatter 10-15 starfish of different sizes and species.
+        - (Crabs and Lobsters): Crustaceans scurrying along the ocean floor or hiding in rock formations, with detailed exoskeletons and realistic movements; include 5-7 crabs and lobsters.
+
+    - Ocean Floor
+        - (Sand): Fine, white sand covering the ocean floor, with subtle ripples and variations in texture, creating a soft and natural base for the reef.
+        - (Rocks and Boulders): Weathered rocks and boulders scattered across the seafloor, providing structure and hiding places for marine life; add 10-15 rocks and boulders of varying sizes and shapes.
+        - (Seagrass): Patches of seagrass swaying gently in the current, adding a touch of greenery and realism to the scene; create 3-5 seagrass patches of varying density.
+
+- Final specific enhancements and details to enrich the scene.
+    - Lighting: Simulate dappled sunlight filtering through the water, creating dynamic shadows and highlights on the coral and marine life.
+    - Particles: Add subtle particle effects such as floating plankton and bubbles to enhance the underwater atmosphere and sense of depth.
+    - Color Grading: Adjust the color palette to create a vibrant and visually appealing scene, with a balance of warm and cool tones.
+
+- Any other information in this final section: Consider incorporating elements such as sunken artifacts or artificial reefs to add unique points of interest. The overall composition should guide the viewer's eye through the scene, showcasing the beauty and diversity of the underwater ecosystem. Aim for a balance between realism and artistic interpretation to create a visually stunning and immersive environment.
+
+##End of this response
+--------------------------------------------------

@@ -83,7 +83,6 @@ The Blender version I have right now is 4.5.2, make sure that the code is compat
 
 The output must only contain the code, no explaination or instructions or anything. Only and only the code that I can copy paste to run on Blender.
 
-
 When generating note a few things:
 - never select, deselect or clear any existing scene
 - Only generate what is asked.
@@ -95,4 +94,8 @@ When generating note a few things:
 - Do not add turbulence anywhere. 
 - Create all the components close to the origin, if something is meant to be in the background, keep it away from origin, but not too far away.
 - Do not have any doc strings or comments, no backticks either in the response.
+"""
+
+reviewer_agent = """
+    You are a visual review agent analyzing 3D scene renderings. You must access the images and the description, based on which you must provide a detailed a review of similar the image is to the description provided, along with the similarity score out of 10.
 """
